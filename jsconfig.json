@@ -11,6 +11,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "allowUmdGlobalAccess": true,
+    "baseUrl": ".",
     "jsx": "preserve"
   },
   "include": ["next-env.d.ts", "**/*.js", "**/*.jsx"],
