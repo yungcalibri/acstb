@@ -1,10 +1,11 @@
 const Home = () => (
   <article id="home">
-    <div className="center">
-      {['c0', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6'].map((id) => (
-        <div key={id} className="circle" data-bg={id} />
-      ))}
-    </div>
+    <header>
+      <div id="title">
+        <h1>arth.li</h1>
+      </div>
+      <h2>A Website by Andrew Stebenné</h2>
+    </header>
   </article>
 )
 
