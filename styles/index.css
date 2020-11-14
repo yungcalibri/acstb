@@ -1,3 +1,4 @@
+@import "../node_modules/normalize.css/normalize.css";
 @import "./colors.css";
 @import "./lengths.css";
 @import "./globals.css";
