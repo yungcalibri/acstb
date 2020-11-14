@@ -1,27 +1,55 @@
 :root {
   /*** Moss and Sky Colorscheme ***/
   /* peat */
-  --c0: lab(14 -4 0);
+  --peat: lab(14 -4 0);
 
   /* moss */
-  --c1: lab(24 -12 7);
+  --moss: lab(24 -12 7);
+
+  /* twilight */
+  --twilight: lab(32, -13, -10);
+
+  /* stream */
+  --stream: lab(47, -18, -2);
 
   /* nowhere */
-  --c2: lab(88 -2 -4);
+  --nowhere: lab(88 -2 -4);
 }
 
-@for $i from 0 to 3 {
-  [data-bg="c#{$i}"] {
-    background-color: var(--c#{$i});
-  }
+[data-bg="peat"] {
+  background-color: var(--peat);
+}
+[data-bg="moss"] {
+  background-color: var(--moss);
+}
+[data-bg="twilight"] {
+  background-color: var(--twilight);
+}
+[data-bg="stream"] {
+  background-color: var(--stream);
+}
+[data-bg="nowhere"] {
+  background-color: var(--nowhere);
+}
 
-  [data-tc="c#{$i}"] {
-    color: var(--c#{$i});
-  }
+[data-tc="peat"] {
+  color: var(--peat);
+}
+[data-tc="moss"] {
+  color: var(--moss);
+}
+[data-tc="twilight"] {
+  color: var(--twilight);
+}
+[data-tc="stream"] {
+  color: var(--stream);
+}
+[data-tc="nowhere"] {
+  color: var(--nowhere);
 }
 
 /*** Default Colors ***/
 :root {
-  background: var(--c0);
-  color: var(--c2);
+  background: var(--peat);
+  color: var(--nowhere);
 }
