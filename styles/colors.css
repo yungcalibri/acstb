@@ -19,3 +19,9 @@
     color: var(--c#{$i});
   }
 }
+
+/*** Default Colors ***/
+:root {
+  background: var(--c0);
+  color: var(--c2);
+}
