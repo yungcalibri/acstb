@@ -1,66 +1,21 @@
 :root {
-  /* cobalt */
-  --c0: lab(19 -2 -14);
+  /*** Moss and Sky Colorscheme ***/
+  /* peat */
+  --c0: lab(14 -4 0);
 
-  /* rust */
-  --c1: lab(34 14 0);
+  /* moss */
+  --c1: lab(24 -12 7);
 
-  /* blood */
-  --c2: lab(50 54 43);
-
-  /* bone */
-  --c3: lab(82 1 3);
-
-  /* steel */
-  --c4: lab(91 2 -9);
-
-  /* sky */
-  --c5: lab(72 13 -43);
-
-  /* stone */
-  --c6: lab(53 11 -21);
+  /* nowhere */
+  --c2: lab(88 -2 -4);
 }
 
-[data-bg="c0"] {
-  background-color: var(--c0);
-}
-[data-bg="c1"] {
-  background-color: var(--c1);
-}
-[data-bg="c2"] {
-  background-color: var(--c2);
-}
-[data-bg="c3"] {
-  background-color: var(--c3);
-}
-[data-bg="c4"] {
-  background-color: var(--c4);
-}
-[data-bg="c5"] {
-  background-color: var(--c5);
-}
-[data-bg="c6"] {
-  background-color: var(--c6);
-}
+@for $i from 0 to 3 {
+  [data-bg="c#{$i}"] {
+    background-color: var(--c#{$i});
+  }
 
-[data-tc="c0"] {
-  color: var(--c0);
-}
-[data-tc="c1"] {
-  color: var(--c1);
-}
-[data-tc="c2"] {
-  color: var(--c2);
-}
-[data-tc="c3"] {
-  color: var(--c3);
-}
-[data-tc="c4"] {
-  color: var(--c4);
-}
-[data-tc="c5"] {
-  color: var(--c5);
-}
-[data-tc="c6"] {
-  color: var(--c6);
+  [data-tc="c#{$i}"] {
+    color: var(--c#{$i});
+  }
 }
