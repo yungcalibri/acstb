@@ -6,8 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint.js": "eslint -- ./pages",
+    "lint.js.fix": "eslint --fix -- ./pages",
+    "lint.style": "stylelint -- ./styles",
+    "lint.style.fix": "stylelint --fix -- ./styles",
+    "lint": "yarn run lint.js ; yarn run lint.style",
+    "lint.fix": "yarn run lint.js.fix && yarn run lint.style.fix"
   },
   "dependencies": {
     "next": "10.0.1",
