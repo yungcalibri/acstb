@@ -15,10 +15,10 @@ a {
 
 #title {
   max-width: fit-content;
-  padding: var(--s1);
+  padding: var(--s-1);
 
   background: var(--moss);
-  font-size: var(--s2);
+  font-size: var(--s1);
   border-radius: 0.25ch;
 
   & h1 {
