@@ -1,4 +1,14 @@
 #home {
   padding-top: var(--s2);
   padding-bottom: var(--s2);
+
+  display: grid;
+  grid-template-columns: minmax(5%, 15ch) minmax(max-content, 90ch) auto minmax(
+      5%,
+      10ch
+    );
+
+  & > * {
+    grid-column: 2 / 3;
+  }
 }
