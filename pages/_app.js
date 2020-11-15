@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import '../styles/index.css'
 
 function MyApp ({ Component, pageProps }) {
@@ -5,3 +6,8 @@ function MyApp ({ Component, pageProps }) {
 }
 
 export default MyApp
+
+MyApp.propTypes = {
+  Component: PropTypes.Component,
+  pageProps: PropTypes.Object
+}
