@@ -14,13 +14,12 @@ a {
 }
 
 #title {
-  font-size: var(--s2);
-  padding: var(--s1);
-  border-radius: 0.25ch;
-
   max-width: fit-content;
+  padding: var(--s1);
 
   background: var(--moss);
+  font-size: var(--s2);
+  border-radius: 0.25ch;
 
   & h1 {
     margin: 0;
