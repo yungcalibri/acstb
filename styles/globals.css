@@ -13,13 +13,16 @@ a {
   box-sizing: border-box;
 }
 
-#title {
+[data-role="title"] {
   max-width: fit-content;
-  padding: var(--s-1);
+  padding: var(--s-1) var(--s-3) var(--s0);
+  margin-inline: calc(-1 * var(--s-1));
 
-  background: var(--moss);
+  background: var(--stream);
+  color: var(--moss);
   font-size: var(--s1);
   border-radius: 0.25ch;
+  text-decoration: dotted underline 0.5ch;
 
   & h1 {
     margin: 0;

@@ -1,7 +1,7 @@
 const Home = () => (
   <article id="home">
     <header>
-      <div id="title">
+      <div data-role="title">
         <h1>arth.li</h1>
       </div>
       <div>
@@ -13,7 +13,7 @@ const Home = () => (
       <h1>Available Here</h1>
       <h2>Blog Posts</h2>
       <h2>Projects</h2>
-      <h2>COntact Me</h2>
+      <h2>Contact Me</h2>
     </main>
   </article>
 )
