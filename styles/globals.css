@@ -15,6 +15,28 @@ a {
   cursor: pointer;
 }
 
+* {
+  --measure: 60ch;
+  max-width: var(--measure);
+}
+
+article,
+body,
+div,
+header,
+html,
+footer,
+main,
+nav,
+section {
+  max-width: none;
+}
+
+p,
+span {
+  line-height: var(--s1);
+}
+
 a {
   padding: var(--s-3);
   border-radius: var(--s-3);
