@@ -1,7 +1,7 @@
 {
   "css.validate": false,
   "stylelintplus.enable": true,
-  "stylelintplus.autoFixOnSave": true,
+  "stylelintplus.validateOnType": true,
 
   "eslint.run": "onSave",
   "eslint.autoFixOnSave": true,
