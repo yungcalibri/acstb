@@ -1,4 +1,4 @@
-#home {
+#__next > :only-child {
   display: grid;
 
   grid-template-columns: minmax(5%, 15ch) minmax(max-content, 90ch) auto minmax(
