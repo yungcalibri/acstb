@@ -7,10 +7,10 @@
   --moss: lab(24 -12 7);
 
   /* twilight */
-  --twilight: lab(32, -13, -10);
+  --twilight: lab(32 -13 -10);
 
   /* stream */
-  --stream: lab(47, -18, -2);
+  --stream: lab(47 -18 -2);
 
   /* nowhere */
   --nowhere: lab(88 -2 -4);
