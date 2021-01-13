@@ -58,7 +58,7 @@ a {
 [data-role="title"] {
   max-width: fit-content;
   padding: var(--s-2) var(--s2) var(--s0);
-  margin-inline: calc(-1 * var(--s-1));
+  margin-inline: calc(-1 * var(--s2));
 
   background: var(--stream);
   color: var(--moss);
