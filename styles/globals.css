@@ -14,11 +14,14 @@ a {
 }
 
 a {
-  color: var(--stream);
+  padding: var(--s-3);
+  border-radius: var(--s-3);
+
+  background-color: var(--twilight);
   text-decoration: underline currentcolor;
 
   &:visited {
-    text-decoration-color: var(--twilight);
+    background-color: var(--peat);
   }
 
   &:focus,
