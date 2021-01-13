@@ -13,15 +13,30 @@ a {
   box-sizing: border-box;
 }
 
+a {
+  color: var(--stream);
+  text-decoration: underline currentcolor;
+
+  &:visited {
+    text-decoration-color: var(--twilight);
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    filter: brightness(0.8);
+  }
+}
+
 [data-role="title"] {
   max-width: fit-content;
-  padding: var(--s-1) var(--s-3) var(--s0);
+  padding: var(--s-2) var(--s2) var(--s0);
   margin-inline: calc(-1 * var(--s-1));
 
   background: var(--stream);
   color: var(--moss);
   font-size: var(--s1);
-  border-radius: 0.25ch;
+  border-radius: var(--s-2);
   text-decoration: dotted underline 0.5ch;
 
   & h1 {
