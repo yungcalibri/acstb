@@ -14,7 +14,7 @@
     "lint.fix": "yarn run lint.js.fix ; yarn run lint.style.fix"
   },
   "dependencies": {
-    "next": "10.0.5",
+    "next": "10.0.6",
     "normalize.css": "^8.0.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
