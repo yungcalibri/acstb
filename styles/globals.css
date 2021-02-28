@@ -32,9 +32,8 @@ section {
   max-width: none;
 }
 
-p,
-span {
-  line-height: var(--s1);
+* {
+  line-height: 116%;
 }
 
 a {
