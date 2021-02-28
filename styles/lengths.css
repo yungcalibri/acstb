@@ -12,3 +12,22 @@
   --s3: calc(var(--s2) * var(--scale));
   --s4: calc(var(--s3) * var(--scale));
 }
+
+* {
+  --measure: 60ch;
+  max-width: var(--measure);
+}
+
+article,
+body,
+div,
+header,
+html,
+footer,
+main,
+nav,
+section,
+ul,
+ol {
+  max-width: none;
+}

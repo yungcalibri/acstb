@@ -13,25 +13,6 @@ body {
 }
 
 * {
-  --measure: 60ch;
-  max-width: var(--measure);
-}
-
-article,
-body,
-div,
-header,
-html,
-footer,
-main,
-nav,
-section,
-ul,
-ol {
-  max-width: none;
-}
-
-* {
   line-height: 116%;
 }
 
