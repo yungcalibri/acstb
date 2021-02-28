@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Broadsheet";
+  src: url("/fonts/Broadsheet/Broadsheet.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Broadsheet";
+  src: url("/fonts/Broadsheet/Broadsheet-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Broadsheet";
+  src: url("/fonts/Broadsheet/Broadsheet-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Broadsheet";
+  src: url("/fonts/Broadsheet/Broadsheet-BoldItalic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: bold;
+}

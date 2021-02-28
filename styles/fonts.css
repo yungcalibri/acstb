@@ -1,0 +1,24 @@
+@import "styles/fonts/epilogue.css";
+@import "styles/fonts/broadsheet.css";
+
+@font-face {
+  font-family: "Recursive";
+  src: url("/fonts/Recursive.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.font-broadsheet {
+  font-family: Broadsheet, var(--font-fallback);
+}
+.font-epilogue {
+  font-family: Epilogue, var(--font-fallback);
+}
+.font-recursive {
+  font-family: Recursive, var(--font-fallback);
+}
