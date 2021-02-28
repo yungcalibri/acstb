@@ -8,13 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-
-  cursor: pointer;
-}
-
 #__next {
   min-height: 100vh;
 }
@@ -43,10 +36,13 @@ ol {
 }
 
 a {
+  cursor: pointer;
+
   padding: var(--s-3);
   border-radius: var(--s-3);
 
   background-color: var(--twilight);
+  color: inherit;
   text-decoration: underline currentcolor;
 
   &:visited {
