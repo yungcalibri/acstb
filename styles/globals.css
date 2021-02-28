@@ -15,6 +15,10 @@ a {
   cursor: pointer;
 }
 
+#__next {
+  min-height: 100vh;
+}
+
 * {
   --measure: 60ch;
   max-width: var(--measure);
@@ -28,7 +32,9 @@ html,
 footer,
 main,
 nav,
-section {
+section,
+ul,
+ol {
   max-width: none;
 }
 
