@@ -22,34 +22,10 @@ a {
   padding: var(--s-3);
   border-radius: var(--s-3);
 
-  background-color: var(--twilight);
-  color: inherit;
   text-decoration: underline currentcolor;
 
-  &:visited {
-    background-color: var(--peat);
-  }
-
-  &:focus,
-  &:hover,
   &:active {
     filter: brightness(0.8);
-  }
-}
-
-[data-role="title"] {
-  max-width: fit-content;
-  padding: var(--s-2) var(--s2) var(--s0);
-  margin-inline: calc(-1 * var(--s2));
-
-  background: var(--stream);
-  color: var(--moss);
-  font-size: var(--s1);
-  border-radius: var(--s-2);
-  text-decoration: dotted underline 0.5ch;
-
-  & h1 {
-    margin: 0;
   }
 }
 
