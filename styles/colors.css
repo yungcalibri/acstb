@@ -1,55 +1,58 @@
 :root {
-  /*** Moss and Sky Colorscheme ***/
-  /* peat */
-  --peat: lab(14 -4 0);
+  /*** Regular Ass Colors ***/
+  --white: lab(98 1 5);
 
-  /* moss */
-  --moss: lab(24 -12 7);
+  --black: lab(22 -3 -1);
 
-  /* twilight */
-  --twilight: lab(32 -13 -10);
+  --blue: lab(49 -2 -44);
+  --desaturated-blue: lab(80 -2 -44);
 
-  /* stream */
-  --stream: lab(47 -18 -2);
-
-  /* nowhere */
-  --nowhere: lab(88 -2 -4);
+  --violet: lab(41 38 -45);
+  --desaturated-violet: lab(72 38 -45);
 }
 
-[data-bg="peat"] {
-  background-color: var(--peat);
-}
-[data-bg="moss"] {
-  background-color: var(--moss);
-}
-[data-bg="twilight"] {
-  background-color: var(--twilight);
-}
-[data-bg="stream"] {
-  background-color: var(--stream);
-}
-[data-bg="nowhere"] {
-  background-color: var(--nowhere);
+:root {
+  --color-background: var(--white);
+  --color-text: var(--black);
+  --color-link: var(--blue);
+  --color-visited: var(--violet);
+  --color-outline: var(--blue);
 }
 
-[data-tc="peat"] {
-  color: var(--peat);
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--white);
+    --color-text: var(--black);
+    --color-link: var(--blue);
+    --color-visited: var(--violet);
+    --color-outline: var(--blue);
+  }
 }
-[data-tc="moss"] {
-  color: var(--moss);
-}
-[data-tc="twilight"] {
-  color: var(--twilight);
-}
-[data-tc="stream"] {
-  color: var(--stream);
-}
-[data-tc="nowhere"] {
-  color: var(--nowhere);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--black);
+    --color-text: var(--white);
+    --color-link: var(--desaturated-blue);
+    --color-visited: var(--desaturated-violet);
+    --color-outline: var(--desaturated-blue);
+  }
 }
 
 /*** Default Colors ***/
 :root {
-  background: var(--moss);
-  color: var(--nowhere);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+a:link {
+  color: var(--color-link);
+  &:focus,
+  &:focus-visible {
+    outline-style: double;
+    outline-color: currentColor;
+    outline-width: var(--s-3);
+  }
+}
+a:visited {
+  color: var(--color-visited);
 }
