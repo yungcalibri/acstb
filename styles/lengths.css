@@ -29,5 +29,5 @@ nav,
 section,
 ul,
 ol {
-  max-width: none;
+  max-width: initial;
 }
