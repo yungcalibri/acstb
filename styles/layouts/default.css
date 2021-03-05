@@ -1,16 +1,26 @@
-#__next > article:only-of-type {
-  display: grid;
+#__next {
+  width: 100vw;
 
-  grid-template-columns: minmax(5%, 15ch) minmax(max-content, 90ch) auto minmax(
-      5%,
-      10ch
-    );
-
-  padding-top: var(--s2);
-  padding-bottom: var(--s2);
+  /* padding-left: calc(max((100vw - 110ch) / 2, 100vw / 13)); */
+  /* padding-right: calc(max((100vw - 110ch) / 2, 100vw / 13)); */
 
   & > * {
-    grid-column: 2 / 3;
-    padding: var(--s0);
+    max-width: calc(min(110ch, (11/13 * 100vw)));
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+#__next > article:only-of-type,
+#__next > .default-layout {
+  display: grid;
+
+  grid-template-columns: 7fr 4fr;
+
+  margin-top: var(--s2);
+  margin-bottom: var(--s2);
+
+  & > * {
+    grid-column: 1 / -1;
   }
 }
