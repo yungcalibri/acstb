@@ -1,38 +1,19 @@
 export const propStyles = (...params) => {
-  // Transform the input array into an array of pairs
-  const pairs = params.reduce((result, _current, index, array) => {
-    if (
-      index % 2 === 0 &&
-      array.length - index > 1 // Exclude the last element if length is odd
-    ) {
-      result.push(array.slice(index, index + 2))
-    }
-    return result
-  }, [])
-
   // Remove entries with falsy conditions
-  const filterConditions = pairs.filter(([condition, _predicate]) =>
+  const filterConditions = params.filter(([condition, ..._predicates]) =>
     Boolean(condition)
   )
 
-  // Ensure all predicates are arrays
-  const arrayPredicates = filterConditions.map((pair) => {
-    const [condition, predicate] = pair
-    if (!Array.isArray(predicate)) {
-      return [condition, [predicate]]
-    }
-    return pair
-  })
+  const formattedStyles = filterConditions
+    .map(([condition, ...predicates]) =>
+      predicates.map(formatStyle(condition)).join(' ')
+    )
+    .join(' ')
 
-  const formattedPredicates = arrayPredicates.map(([condition, predicates]) => {
-    const formatThisPredicate = formatPredicate(condition)
-    return predicates.map(formatThisPredicate).join('')
-  })
-
-  return formattedPredicates
+  return formattedStyles
 }
 
-const formatPredicate = (rawValue) => (predicate) => {
+const formatStyle = (rawValue) => (predicate) => {
   const value = String(rawValue)
   // === ERRORS: ===
   // 1. Predicate must not end with a colon (or a colon with trailing whitespace)
