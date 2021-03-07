@@ -12,7 +12,8 @@
     "noEmit": true,
     "paths": {
       "styles/*": ["./styles/*"],
-      "components/*": ["./components/*"]
+      "components/*": ["./components/*"],
+      "util/*": ["./util/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
