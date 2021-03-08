@@ -2,11 +2,32 @@ import Link from 'next/link'
 import Stack from 'components/Stack'
 import Box from 'components/Box'
 import Cluster from 'components/Cluster'
+import Avatar from 'components/Avatar'
 
 const Home = () => (
   <article id="home">
+    <Cluster space="var(--s2)">
+      <section>
+        <h1>I'm Andrew Stebenné.</h1>
+        <p>
+          I'm a programmer by trade. Most of my work has been building Web
+          frontends, but I take pleasure in solving interesting problems of any
+          type.
+        </p>
+        <p>You can get in touch with me here:</p>
+        <Box>
+          <Stack space="var(--s0)">
+            <Box borderWidth="var(--s-3)">GitHub</Box>
+            <Box borderWidth="var(--s-3)">Email</Box>
+          </Stack>
+        </Box>
+      </section>
+      <Avatar />
+    </Cluster>
+
+    <div style={{ height: '50vh' }} />
     <Cluster>
-      <Box invert>Alpha</Box>
+      <Box>Alpha</Box>
       <Box>Bravo</Box>
       <Box>Charlie</Box>
       <Box>Delta</Box>
