@@ -22,7 +22,7 @@ const Home = () => (
           </Stack>
         </Box>
       </section>
-      <Avatar />
+      <Avatar className="align-self:center" />
     </Cluster>
 
     <div style={{ height: '50vh' }} />
