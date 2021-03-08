@@ -14,7 +14,7 @@
 }
 
 * {
-  --measure: 60ch;
+  --measure: 70ch;
   max-width: var(--measure);
 }
 
