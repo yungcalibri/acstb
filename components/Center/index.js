@@ -40,3 +40,7 @@ const Center = (props) => {
 }
 
 export default Center
+
+export const PageCenter = ({ maxWidth: _, ...props }) => (
+  <Center maxWidth="var(--page-content-width)" {...props} />
+)
