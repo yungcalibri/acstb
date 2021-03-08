@@ -1,7 +1,3 @@
-#__next {
-  width: 100vw;
-}
-
 #__next > article:only-of-type,
 #__next > .default-layout {
   margin-top: var(--s2);
