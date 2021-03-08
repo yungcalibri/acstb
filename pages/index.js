@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { PageCenter } from 'components/Center'
 import Stack from 'components/Stack'
 import Box from 'components/Box'
 import Cluster from 'components/Cluster'
