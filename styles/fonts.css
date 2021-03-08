@@ -1,5 +1,7 @@
 @import "styles/fonts/epilogue.css";
 @import "styles/fonts/broadsheet.css";
+@import "styles/fonts/merriweather.css";
+@import "styles/fonts/public-sans.css";
 
 @font-face {
   font-family: "Recursive";
@@ -13,12 +15,22 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.font-broadsheet {
+.font-family\:Broadsheet {
   font-family: Broadsheet, var(--font-fallback);
 }
-.font-epilogue {
+.font-family\:Epilogue {
   font-family: Epilogue, var(--font-fallback);
 }
-.font-recursive {
+.font-family\:Recursive {
   font-family: Recursive, var(--font-fallback);
+}
+.font-family\:Merriweather {
+  font-family: Merriweather, var(--font-fallback);
+}
+.font-family\:Public-Sans {
+  font-family: Public Sans, var(--font-fallback);
+}
+
+:root {
+  font-family: Public Sans, var(--font-fallback);
 }
