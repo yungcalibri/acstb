@@ -3,6 +3,7 @@ import Stack from 'components/Stack'
 import Box from 'components/Box'
 import Cluster from 'components/Cluster'
 import Avatar from 'components/Avatar'
+import ContactMe from 'components/ContactMe'
 
 const Home = () => (
   <article id="home">
@@ -15,12 +16,7 @@ const Home = () => (
           type.
         </p>
         <p>You can get in touch with me here:</p>
-        <Box>
-          <Stack space="var(--s0)">
-            <Box borderWidth="var(--s-3)">GitHub</Box>
-            <Box borderWidth="var(--s-3)">Email</Box>
-          </Stack>
-        </Box>
+        <ContactMe relMe />
       </section>
       <Avatar className="align-self:center" />
     </Cluster>
