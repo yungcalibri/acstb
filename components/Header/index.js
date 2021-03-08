@@ -8,7 +8,7 @@ const Header = (props) => {
 
   return (
     <header>
-      <PageCenter className="text-align:center">
+      <PageCenter>
         <h1>
           <Link href="/">
             <code>
