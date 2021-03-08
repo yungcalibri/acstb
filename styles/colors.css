@@ -18,6 +18,9 @@
   --color-link: var(--blue);
   --color-visited: var(--violet);
   --color-outline: var(--blue);
+
+  --color-invert-background: var(--black);
+  --color-invert-text: var(--white);
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,6 +30,9 @@
     --color-link: var(--blue);
     --color-visited: var(--violet);
     --color-outline: var(--blue);
+
+    --color-invert-background: var(--black);
+    --color-invert-text: var(--white);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -36,6 +42,9 @@
     --color-link: var(--desaturated-blue);
     --color-visited: var(--desaturated-violet);
     --color-outline: var(--desaturated-blue);
+
+    --color-invert-background: var(--white);
+    --color-invert-text: var(--lighter-black);
   }
 }
 
