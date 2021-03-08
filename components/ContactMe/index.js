@@ -12,16 +12,14 @@ const ContactMe = (props) => {
         <div>
           <a
             href="https://github.com/arthropodSeven/"
-            rel={`${relMe ? 'me' : ''} external`}
-          >
+            rel={`${relMe ? 'me' : ''} external`}>
             github.com/arthropodSeven
           </a>
         </div>
         <div>
           <a
             href="mailto:arthropodSeven@pm.me"
-            rel={`${relMe ? 'me' : ''} external`}
-          >
+            rel={`${relMe ? 'me' : ''} external`}>
             arthropodSeven@pm.me
           </a>
         </div>
