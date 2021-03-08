@@ -6,7 +6,6 @@ const sources = [
   ['/images/me_three_qtr_345.jpg', '345w'],
   ['/images/me_full_460.jpg', '460w']
 ]
-
 const srcSet = sources.map((pair) => pair.join(' ')).join(', ')
 
 const Avatar = (props) => {
