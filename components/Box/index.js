@@ -11,7 +11,6 @@ const Box = (props) => {
     [padding, 'padding']
   )
 
-  console.debug(myStyles)
   return (
     <div className={myClass}>
       {children}
