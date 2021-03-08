@@ -19,7 +19,7 @@
  * measure
  */
 * {
-  --measure: 70ch;
+  --measure: 60ch;
   max-width: var(--measure);
 }
 
