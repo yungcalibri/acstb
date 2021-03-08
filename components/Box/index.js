@@ -2,7 +2,7 @@ import { propStyles } from 'util/style'
 import styles from './box.module.css'
 
 const Box = (props) => {
-  const { borderWidth, children, invert, padding } = props
+  const { borderWidth, children, invert, padding, ...rest } = props
 
   const myClass = !invert ? styles.box : styles.boxInvert
 
@@ -12,7 +12,7 @@ const Box = (props) => {
   )
 
   return (
-    <div className={myClass}>
+    <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
         .${myClass} {
