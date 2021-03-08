@@ -1,13 +1,28 @@
+import { Children, cloneElement, isValidElement } from 'react'
 import styles from './stack.module.css'
 
 const Stack = (props) => {
-  const { children, recursive, space, splitAfter, ...rest } = props
+  const {
+    asList,
+    children,
+    recursive,
+    role = '',
+    space,
+    splitAfter,
+    ...rest
+  } = props
 
   const myClass = recursive ? styles.stackRecursive : styles.stack
 
   return (
-    <div className={myClass} {...rest}>
-      {children}
+    <div className={myClass} role={asList ? 'list' : role} {...rest}>
+      {asList
+        ? Children.map(children, (child) =>
+          isValidElement(child)
+            ? cloneElement(child, { role: 'listitem' })
+            : child
+        )
+        : children}
       <style jsx>
         {`
           .${myClass} {
