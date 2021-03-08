@@ -1,0 +1,17 @@
+* {
+  line-height: initial;
+}
+*:not(:--heading) {
+  line-height: 1.62;
+}
+
+h1 {
+  font-size: var(--s3);
+}
+h2 {
+  font-size: var(--s1);
+}
+
+code {
+  font-family: Recursive;
+}
