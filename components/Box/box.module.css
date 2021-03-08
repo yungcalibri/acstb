@@ -1,7 +1,5 @@
 .box,
 .boxInvert {
-  --border-width: var(--s-3);
-
   width: fit-content;
 
   padding: var(--s-1);
@@ -20,11 +18,13 @@
 }
 
 .box {
+  --border-width: var(--s-3);
   background-color: var(--color-background);
   color: var(--color-text);
   border-color: var(--color-text);
 }
 .boxInvert {
+  --border-width: 0;
   background-color: var(--color-invert-background);
   color: var(--color-invert-text);
   border-color: var(--color-invert-text);
