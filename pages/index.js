@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Center from 'components/Center'
 import Stack from 'components/Stack'
 import Box from 'components/Box'
+import Cluster from 'components/Cluster'
 
 const Home = () => (
   <Center maxWidth="var(--page-content-width)">
@@ -14,6 +15,15 @@ const Home = () => (
           <h2>A Website by Andrew Stebenné</h2>
         </div>
       </header>
+
+      <Cluster>
+        <Box>Alpha</Box>
+        <Box>Bravo</Box>
+        <Box>Charlie</Box>
+        <Box>Delta</Box>
+        <Box>Echo</Box>
+        <Box>Foxtrot</Box>
+      </Cluster>
 
       <Stack space="var(--s0)" asList>
         <p>1</p>
