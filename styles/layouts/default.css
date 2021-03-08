@@ -1,26 +1,14 @@
 #__next {
   width: 100vw;
-
-  /* padding-left: calc(max((100vw - 110ch) / 2, 100vw / 13)); */
-  /* padding-right: calc(max((100vw - 110ch) / 2, 100vw / 13)); */
-
-  & > * {
-    max-width: calc(min(110ch, (11/13 * 100vw)));
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 #__next > article:only-of-type,
 #__next > .default-layout {
-  display: grid;
-
-  grid-template-columns: 7fr 4fr;
-
   margin-top: var(--s2);
   margin-bottom: var(--s2);
+}
 
-  & > * {
-    grid-column: 1 / -1;
-  }
+/*** Page Size ***/
+:root {
+  --page-content-width: calc(min(110ch, 11/13 * 100vw));
 }
