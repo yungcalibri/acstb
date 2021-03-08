@@ -8,22 +8,16 @@ const Header = (props) => {
 
   return (
     <header>
-      <PageCenter>
-        <Link href="/">
-          <h1 id="homeLink">
+      <PageCenter className="text-align:center">
+        <h1>
+          <Link href="/">
             <code>
               <a>acstb.name</a>
             </code>
-          </h1>
-        </Link>
-        <h2>Andrew Stebenné</h2>
+          </Link>
+        </h1>
         {/* Should swap out the self-aggrandizement for some breadcrumbs here when the time comes. */}
       </PageCenter>
-      <style jsx>{`
-        #homeLink {
-          ${atRoot ? 'font-size: var(--s3);' : ''}
-        }
-      `}</style>
     </header>
   )
 }
