@@ -7,10 +7,6 @@
   min-height: 100vh;
 }
 
-* {
-  line-height: 116%;
-}
-
 a {
   cursor: pointer;
 
