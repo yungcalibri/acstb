@@ -1,11 +1,8 @@
 .avatar {
   border-radius: var(--s-1);
-
   border-width: var(--s-3);
   border-color: var(--color-text);
   border-style: solid;
 
   object-fit: fill;
-  align-self: center;
-  justify-self: end;
 }

@@ -10,13 +10,18 @@ const sources = [
 const srcSet = sources.map((pair) => pair.join(' ')).join(', ')
 
 const Avatar = (props) => {
+  const { className = '', ...rest } = props
+
+  const myClass = `${styles.avatar} ${className}`
+
   return (
     <img
-      className={styles.avatar}
+      className={myClass}
       alt="Andrew Stebenné's avatar, an iridescent golden beetle on a fingertip"
       srcSet={srcSet}
       sizes="(min-width: 180ch) 460px, (min-width: 160ch) 345w, 230px"
       src="/images/me_three_qtr_345.jpg"
+      {...rest}
     />
   )
 }
