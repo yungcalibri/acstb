@@ -1,0 +1,27 @@
+.box,
+.boxInvert {
+  --border-width: var(--s-2);
+
+  padding: var(--s1);
+
+  outline-width: 0.125rem;
+  outline-width: var(--border-width);
+  outline-style: solid;
+  outline-offset: -0.125rem;
+  outline-offset: calc(-1 * var(--border-width));
+
+  & * {
+    color: inherit;
+  }
+}
+
+.box {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  outline-color: var(--color-text);
+}
+.boxInvert {
+  background-color: var(--color-invert-background);
+  color: var(--color-invert-text);
+  outline-color: transparent;
+}
