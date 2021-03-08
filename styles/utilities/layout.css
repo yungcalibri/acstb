@@ -1,0 +1,39 @@
+.justify-content\:start {
+  justify-content: start;
+}
+.justify-content\:center {
+  justify-content: center;
+}
+.justify-content\:end {
+  justify-content: end;
+}
+
+.align-items\:start {
+  align-items: start;
+}
+.align-items\:center {
+  align-items: center;
+}
+.align-items\:end {
+  align-items: end;
+}
+
+.justify-self\:start {
+  justify-self: start;
+}
+.justify-self\:center {
+  justify-self: center;
+}
+.justify-self\:end {
+  justify-self: end;
+}
+
+.align-self\:start {
+  align-self: start;
+}
+.align-self\:center {
+  align-self: center;
+}
+.align-self\:end {
+  align-self: end;
+}
