@@ -2,9 +2,18 @@ import { propStyles } from 'util/style'
 import styles from './box.module.css'
 
 const Box = (props) => {
-  const { borderWidth, children, invert, padding, ...rest } = props
+  const {
+    borderWidth,
+    children,
+    className = '',
+    invert,
+    padding,
+    ...rest
+  } = props
 
-  const myClass = !invert ? styles.box : styles.boxInvert
+  const propClass = !invert ? styles.box : styles.boxInvert
+
+  const myClass = `${propClass} ${className}`
 
   const myStyles = propStyles(
     [borderWidth, '--border-width'],

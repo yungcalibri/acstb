@@ -5,6 +5,7 @@ const Stack = (props) => {
   const {
     asList,
     children,
+    className = '',
     recursive,
     role = '',
     space,
@@ -12,7 +13,9 @@ const Stack = (props) => {
     ...rest
   } = props
 
-  const myClass = recursive ? styles.stackRecursive : styles.stack
+  const propClass = recursive ? styles.stackRecursive : styles.stack
+
+  const myClass = `${propClass} ${className}`
 
   return (
     <div className={myClass} role={asList ? 'list' : role} {...rest}>

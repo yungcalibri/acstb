@@ -3,7 +3,17 @@ import { propStyles } from 'util/style'
 import styles from './center.module.css'
 
 const Center = (props) => {
-  const { children, gutters, intrinsic, maxWidth, text, ...rest } = props
+  const {
+    children,
+    className = '',
+    gutters,
+    intrinsic,
+    maxWidth,
+    text,
+    ...rest
+  } = props
+
+  const myClass = `${styles.center} ${className}`
 
   const myStyles = propStyles(
     [gutters, 'padding-left', 'padding-right'],
@@ -18,7 +28,7 @@ const Center = (props) => {
   )
 
   return (
-    <div className={styles.center} {...rest}>
+    <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
         .${styles.center} {
