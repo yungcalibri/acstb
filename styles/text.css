@@ -1,12 +1,40 @@
+/***
+ * font size
+ */
 :root {
   font-size: calc(1rem + 0.35vmin);
 }
 
+/***
+ * line height
+ */
 * {
   line-height: initial;
 }
 *:not(:--heading) {
   line-height: 1.62;
+}
+
+/***
+ * measure
+ */
+* {
+  --measure: 70ch;
+  max-width: var(--measure);
+}
+
+article,
+body,
+div,
+header,
+html,
+footer,
+main,
+nav,
+section,
+ul,
+ol {
+  max-width: initial;
 }
 
 /* This is a neat trick from Mozilla's default style sheet for Firefox.
