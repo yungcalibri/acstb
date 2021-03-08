@@ -26,7 +26,7 @@ const Stack = (props) => {
       <style jsx>
         {`
           .${myClass} {
-            ${!space ? '' : `--space: ${space}`}
+            ${!space ? '' : `--space: ${space};`}
           }
           .${myClass}:only-child {
             ${!splitAfter ? '' : 'height: 100%;'}
