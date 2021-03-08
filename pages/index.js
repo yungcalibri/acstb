@@ -7,17 +7,8 @@ import Cluster from 'components/Cluster'
 const Home = () => (
   <Center maxWidth="var(--page-content-width)">
     <article id="home">
-      <header>
-        <div className="title">
-          <h1>arth.li</h1>
-        </div>
-        <div>
-          <h2>A Website by Andrew Stebenné</h2>
-        </div>
-      </header>
-
       <Cluster>
-        <Box>Alpha</Box>
+        <Box invert>Alpha</Box>
         <Box>Bravo</Box>
         <Box>Charlie</Box>
         <Box>Delta</Box>
