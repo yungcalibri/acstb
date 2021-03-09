@@ -1,4 +1,4 @@
 module.exports = {
-  "*.js": "eslint --cache --fix",
-  "*.css": "stylelint --fix",
+  "*.js": ["prettier --write", "eslint --cache --fix"],
+  "*.css": ["prettier --write", "stylelint --fix"],
 };

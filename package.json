@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint.js": "eslint -- ./pages ./components ./util",
-    "lint.js.fix": "eslint --fix -- ./pages ./components ./util",
+    "lint.pretty": "prettier -- ./pages ./components ./util ./styles",
+    "lint.pretty.fix": "prettier --write -- ./pages ./components ./util ./styles",
+    "lint.js": "eslint --cache -- ./pages ./components ./util",
+    "lint.js.fix": "eslint --cache --fix -- ./pages ./components ./util",
     "lint.style": "stylelint -- ./styles",
     "lint.style.fix": "stylelint --fix -- ./styles",
-    "lint": "yarn run lint.js && yarn run lint.style",
-    "lint.fix": "yarn run lint.js.fix && yarn run lint.style.fix"
+    "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
+    "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix"
   },
   "dependencies": {
     "next": "10.0.8",
