@@ -26,6 +26,8 @@ jobs:
 
       - name: Run the linter
         run: yarn lint.ci
+        # continue even if a bad lint yields a nonzero exit code
+        continue-on-error: true
 
       - name: Annotate linter output
         uses: ataylorme/eslint-annotate-action@1.1.2
