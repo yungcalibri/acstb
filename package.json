@@ -10,12 +10,11 @@
     "lint.pretty.fix": "prettier --write -- ./pages ./components ./util ./styles",
     "lint.js": "eslint --cache -- ./pages ./components ./util",
     "lint.js.fix": "eslint --cache --fix -- ./pages ./components ./util",
-    "lint.js.xml": "eslint --cache --format checkstyle -- ./pages ./components ./util",
-    "lint.js.html": "eslint --cache --format html -- ./pages ./components ./util",
     "lint.style": "stylelint -- ./styles",
     "lint.style.fix": "stylelint --fix -- ./styles",
     "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
-    "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix"
+    "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix",
+    "lint.ci": "eslint --cache --format checkstyle --output ./.artifacts/eslint.result.xml -- ./pages ./components ./util"
   },
   "dependencies": {
     "next": "10.0.8",
