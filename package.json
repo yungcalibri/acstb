@@ -15,7 +15,7 @@
     "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
     "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix",
     "lint.js.ci": "eslint --cache --format json --output-file ./.artifacts/eslint.result.json -- ./pages ./components ./util",
-    "lint.style.ci": "stylelint --cache --format json --output-file ./.artifacts/stylelint.result.json -- ./pages ./components ./util",
+    "lint.style.ci": "stylelint --cache --formatter json --output-file ./.artifacts/stylelint.result.json -- ./pages ./components ./util",
     "lint.ci": "yarn run lint.js.ci ; yarn run lint.style.ci"
   },
   "dependencies": {
