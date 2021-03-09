@@ -29,8 +29,14 @@ jobs:
         # continue even if a bad lint yields a nonzero exit code
         continue-on-error: true
 
-      - name: Annotate linter output
+      - name: Annotate eslint output
         uses: ataylorme/eslint-annotate-action@1.1.2
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          report-json: "./.artifacts/*.result.json"
+          report-json: "./.artifacts/eslint.result.json"
+
+      - name: Annotate stylelint output
+        uses: ataylorme/eslint-annotate-action@1.1.2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          report-json: "./.artifacts/stylelint.result.json"
