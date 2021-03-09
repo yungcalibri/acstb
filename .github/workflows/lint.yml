@@ -27,7 +27,8 @@ jobs:
       - name: Run the linter
         run: yarn lint.ci
 
-      - name: Display linter output
-        uses: jwgmeligmeyling/checkstyle-github-action@master
+      - name: Annotate linter output
+        uses: ataylorme/eslint-annotate-action@1.1.2
         with:
-          path: './.artifacts/*.result.xml'
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          report-json: "./.artifacts/*.result.json"
