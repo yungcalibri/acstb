@@ -10,6 +10,8 @@
     "lint.pretty.fix": "prettier --write -- ./pages ./components ./util ./styles",
     "lint.js": "eslint --cache -- ./pages ./components ./util",
     "lint.js.fix": "eslint --cache --fix -- ./pages ./components ./util",
+    "lint.js.xml": "eslint --cache --format xml -- ./pages ./components ./util",
+    "lint.js.html": "eslint --cache --format html -- ./pages ./components ./util",
     "lint.style": "stylelint -- ./styles",
     "lint.style.fix": "stylelint --fix -- ./styles",
     "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
