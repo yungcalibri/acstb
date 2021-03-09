@@ -14,7 +14,7 @@
     "lint.style.fix": "stylelint --fix -- ./styles",
     "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
     "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix",
-    "lint.ci": "eslint --cache --format checkstyle --output ./.artifacts/eslint.result.xml -- ./pages ./components ./util"
+    "lint.ci": "eslint --cache --format checkstyle --output-file ./.artifacts/eslint.result.xml -- ./pages ./components ./util"
   },
   "dependencies": {
     "next": "10.0.8",

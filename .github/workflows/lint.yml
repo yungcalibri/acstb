@@ -30,4 +30,4 @@ jobs:
       # - name: Display linter output
       #   uses: jwgmeligmeyling/checkstyle-github-action@master
       #   with:
-      #     path: './artifacts/*.result.xml'
+      #     path: './.artifacts/*.result.xml'
