@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint.pretty": "prettier -- ./pages ./components ./util ./styles",
+    "lint.pretty": "prettier --check -- ./pages ./components ./util ./styles",
     "lint.pretty.fix": "prettier --write -- ./pages ./components ./util ./styles",
     "lint.js": "eslint --cache -- ./pages ./components ./util",
     "lint.js.fix": "eslint --cache --fix -- ./pages ./components ./util",
