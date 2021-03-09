@@ -2,32 +2,32 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'standard'],
+  extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: "module",
   },
-  plugins: ['react'],
+  plugins: ["react"],
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: "detect",
+    },
   },
   rules: {
-    'react/no-unescaped-entities': 0,
-    'react/prop-types': 0,
-    'react/react-in-jsx-scope': 0,
-    'react/jsx-closing-bracket-location': [
+    "react/no-unescaped-entities": 0,
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-closing-bracket-location": [
       1,
       {
-        nonEmpty: 'after-props',
-        selfClosing: 'line-aligned'
-      }
-    ]
-  }
-}
+        nonEmpty: "after-props",
+        selfClosing: "line-aligned",
+      },
+    ],
+  },
+};
