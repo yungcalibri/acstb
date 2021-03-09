@@ -12,7 +12,7 @@ const EveryLayout = () => (
     <main>
       <p>
         I've had a lot of fun following along with Heydon Pickering and Andy
-        Bell in their fantastic book,{' '}
+        Bell in their fantastic book,{" "}
         <a href="https://every-layout.dev">Every Layout.</a> Scattered about the
         internet, there are thirty million prescriptions for "how to build a
         layout system for your website," but Every Layout is the first such text
@@ -28,6 +28,6 @@ const EveryLayout = () => (
       </p>
     </main>
   </article>
-)
+);
 
-export default EveryLayout
+export default EveryLayout;

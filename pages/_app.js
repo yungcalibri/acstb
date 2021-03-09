@@ -1,7 +1,7 @@
-import React from 'react'
-import { PageCenter } from 'components/Center'
-import Header from 'components/Header'
-import 'styles/index.css'
+import React from "react";
+import { PageCenter } from "components/Center";
+import Header from "components/Header";
+import "styles/index.css";
 
 const MyApp = ({ Component, pageProps }) => (
   <React.Fragment>
@@ -10,6 +10,6 @@ const MyApp = ({ Component, pageProps }) => (
       <Component {...pageProps} />
     </PageCenter>
   </React.Fragment>
-)
+);
 
-export default MyApp
+export default MyApp;

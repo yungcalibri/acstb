@@ -1,16 +1,16 @@
-import { propStyles } from 'util/style'
-import styles from './cluster.module.css'
+import { propStyles } from "util/style";
+import styles from "./cluster.module.css";
 
 const Cluster = (props) => {
-  const { align, children, className = '', justify, space, ...rest } = props
+  const { align, children, className = "", justify, space, ...rest } = props;
 
-  const myClass = `${styles.cluster} ${className}`
+  const myClass = `${styles.cluster} ${className}`;
 
   const myStyles = propStyles(
-    [justify, 'justify-content'],
-    [align, 'align-items'],
-    [space, '--space']
-  )
+    [justify, "justify-content"],
+    [align, "align-items"],
+    [space, "--space"]
+  );
 
   return (
     <div className={myClass} {...rest}>
@@ -23,7 +23,7 @@ const Cluster = (props) => {
         `}</style>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Cluster
+export default Cluster;

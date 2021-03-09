@@ -1,46 +1,46 @@
-import { Children, cloneElement, isValidElement } from 'react'
-import styles from './stack.module.css'
+import { Children, cloneElement, isValidElement } from "react";
+import styles from "./stack.module.css";
 
 const Stack = (props) => {
   const {
     asList,
     children,
-    className = '',
+    className = "",
     recursive,
-    role = '',
+    role = "",
     space,
     splitAfter,
     ...rest
-  } = props
+  } = props;
 
-  const propClass = recursive ? styles.stackRecursive : styles.stack
+  const propClass = recursive ? styles.stackRecursive : styles.stack;
 
-  const myClass = `${propClass} ${className}`
+  const myClass = `${propClass} ${className}`;
 
   return (
-    <div className={myClass} role={asList ? 'list' : role} {...rest}>
+    <div className={myClass} role={asList ? "list" : role} {...rest}>
       {asList
         ? Children.map(children, (child) =>
-          isValidElement(child)
-            ? cloneElement(child, { role: 'listitem' })
-            : child
-        )
+            isValidElement(child)
+              ? cloneElement(child, { role: "listitem" })
+              : child
+          )
         : children}
       <style jsx>
         {`
           .${myClass} {
-            ${!space ? '' : `--space: ${space};`}
+            ${!space ? "" : `--space: ${space};`}
           }
           .${myClass}:only-child {
-            ${!splitAfter ? '' : 'height: 100%;'}
+            ${!splitAfter ? "" : "height: 100%;"}
           }
           .${myClass} > :nth-child(${splitAfter || 0}) {
-            ${!splitAfter ? '' : 'margin-bottom: auto;'}
+            ${!splitAfter ? "" : "margin-bottom: auto;"}
           }
         `}
       </style>
     </div>
-  )
-}
+  );
+};
 
-export default Stack
+export default Stack;

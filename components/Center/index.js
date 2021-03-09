@@ -1,31 +1,31 @@
-import React from 'react'
-import { propStyles } from 'util/style'
-import styles from './center.module.css'
+import React from "react";
+import { propStyles } from "util/style";
+import styles from "./center.module.css";
 
 const Center = (props) => {
   const {
     children,
-    className = '',
+    className = "",
     gutters,
     intrinsic,
     maxWidth,
     text,
     ...rest
-  } = props
+  } = props;
 
-  const myClass = `${styles.center} ${className}`
+  const myClass = `${styles.center} ${className}`;
 
   const myStyles = propStyles(
-    [gutters, 'padding-left', 'padding-right'],
+    [gutters, "padding-left", "padding-right"],
     [
       intrinsic,
-      'display: flex',
-      'flex-direction: column',
-      'align-items: center'
+      "display: flex",
+      "flex-direction: column",
+      "align-items: center",
     ],
-    [maxWidth, 'max-width'],
-    [text, 'text-align: center']
-  )
+    [maxWidth, "max-width"],
+    [text, "text-align: center"]
+  );
 
   return (
     <div className={myClass} {...rest}>
@@ -36,11 +36,11 @@ const Center = (props) => {
         }
       `}</style>
     </div>
-  )
-}
+  );
+};
 
-export default Center
+export default Center;
 
 export const PageCenter = ({ maxWidth: _, ...props }) => (
   <Center maxWidth="var(--page-content-width)" {...props} />
-)
+);

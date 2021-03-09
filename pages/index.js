@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import Stack from 'components/Stack'
-import Box from 'components/Box'
-import Cluster from 'components/Cluster'
-import Avatar from 'components/Avatar'
-import ContactMe from 'components/ContactMe'
+import Link from "next/link";
+import Stack from "components/Stack";
+import Box from "components/Box";
+import Cluster from "components/Cluster";
+import Avatar from "components/Avatar";
+import ContactMe from "components/ContactMe";
 
 const Home = () => (
   <article id="home">
@@ -21,7 +21,7 @@ const Home = () => (
       <Avatar className="align-self:center" />
     </Cluster>
 
-    <div style={{ height: '50vh' }} />
+    <div style={{ height: "50vh" }} />
     <Cluster>
       <Box>Alpha</Box>
       <Box>Bravo</Box>
@@ -75,10 +75,10 @@ const Home = () => (
         Ihr naht euch wieder, schwankende Gestalten! Die früh sich einst dem
         trüben Blick gezeigt. Versuch’ ich wohl euch diesmal fest zu halten?
         Fühl’ ich mein Herz noch jenem Wahn geneigt? Ihr drängt euch zu! nun
-        gut, so mögt ihr walten.{' '}
+        gut, so mögt ihr walten.{" "}
         <Link href="/colors">
           <a>Wie ihr aus Dunst und Nebel um mich steigt.</a>
-        </Link>{' '}
+        </Link>{" "}
         Mein Busen fühlt sich jugendlich erschüttert. Vom Zauberhauch der euren
         Zug umwittert. Ihr bringt mit euch die Bilder froher Tage. Und manche
         liebe Schatten steigen auf Gleich einer alten, halbverklungnen Sage.
@@ -99,6 +99,6 @@ const Home = () => (
       </p>
     </main>
   </article>
-)
+);
 
-export default Home
+export default Home;
