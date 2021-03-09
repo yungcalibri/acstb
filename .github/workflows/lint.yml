@@ -27,7 +27,7 @@ jobs:
       - name: Run the linter
         run: yarn lint.ci
 
-      # - name: Display linter output
-      #   uses: jwgmeligmeyling/checkstyle-github-action@master
-      #   with:
-      #     path: './.artifacts/*.result.xml'
+      - name: Display linter output
+        uses: jwgmeligmeyling/checkstyle-github-action@master
+        with:
+          path: './.artifacts/*.result.xml'
