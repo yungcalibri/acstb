@@ -25,18 +25,18 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Run the linter
-        run: yarn lint.ci
+        run: yarn lint.js.ci
         # continue even if a bad lint yields a nonzero exit code
         continue-on-error: true
 
-      - name: Annotate eslint output
-        uses: ataylorme/eslint-annotate-action@1.1.2
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          report-json: "./.artifacts/eslint.result.json"
+      # - name: Annotate eslint output
+      #   uses: ataylorme/eslint-annotate-action@1.1.2
+      #   with:
+      #     repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      #     report-json: "./.artifacts/eslint.result.json"
 
-      - name: Annotate stylelint output
-        uses: ataylorme/eslint-annotate-action@1.1.2
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          report-json: "./.artifacts/stylelint.result.json"
+      # - name: Annotate stylelint output
+      #   uses: ataylorme/eslint-annotate-action@1.1.2
+      #   with:
+      #     repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      #     report-json: "./.artifacts/stylelint.result.json"
