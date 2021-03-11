@@ -5,6 +5,12 @@ import Cluster from "components/Cluster";
 import Avatar from "components/Avatar";
 import ContactMe from "components/ContactMe";
 
+const PeePaw = (props) => <
+
+  article id="peepaw" notAProperty="meemaw"
+
+/>
+
 const Home = () => (
   <article id="home">
     <Cluster space="var(--s2)">

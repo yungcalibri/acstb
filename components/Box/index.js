@@ -2,20 +2,19 @@ import { propStyles } from "util/style";
 import styles from "./box.module.css";
 
 const Box = (props) => {
-  const { borderWidth,
-    children,
-    className = "", padding, ...rest } = props;
+  const { borderWidth, children, className = "", padding, ...rest } = props;
+
+  const unusedThing = "pee pee poo poo";
 
   const myClass = `${styles.box} ${className}`;
 
   const myStyles = propStyles(
-    [borderWidth, '--border-width'],
-    [padding, 'padding']
+    [borderWidth, "--border-width"],
+    [padding, "padding"]
   );
 
   return (
-    <div className={myClass} {...rest}
-    >
+    <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
         .${styles.box} {
