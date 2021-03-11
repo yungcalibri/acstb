@@ -14,7 +14,7 @@
     "lint.style.fix": "stylelint --fix .",
     "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
     "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix",
-    "lint.js.ci": "eslint --cache --format @jamesacarr/eslint-formatter-github-actions ./",
+    "lint.js.ci": "eslint --cache --format json ./",
     "lint.style.ci": "stylelint --cache --formatter json --output-file ./.artifacts/stylelint.result.json .",
     "lint.ci": "yarn run lint.js.ci ; yarn run lint.style.ci"
   },
@@ -27,7 +27,6 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@jamesacarr/eslint-formatter-github-actions": "^0.1.0",
     "@types/node": "^14.14.33",
     "@types/react": "^17.0.3",
     "eslint": "^7.21.0",
