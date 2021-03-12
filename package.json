@@ -12,11 +12,11 @@
     "lint.js.fix": "eslint --cache --fix .",
     "lint.style": "stylelint .",
     "lint.style.fix": "stylelint --fix .",
-    "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
-    "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix",
+    "lint": "yarn lint.pretty && yarn lint.js && yarn lint.style",
+    "lint.fix": "yarn lint.pretty.fix && yarn lint.js.fix && yarn lint.style.fix",
     "ci.lint.js": "./.github/add-match/eslint.sh ; eslint --cache --format compact ./ ; ./.github/rm-match/eslint.sh",
     "ci.lint.style": "stylelint --cache --formatter json --output-file ./.artifacts/stylelint.result.json .",
-    "ci.lint": "yarn run ci.lint.js ; yarn run ci.lint.style"
+    "ci.lint": "yarn ci.lint.js ; yarn ci.lint.style"
   },
   "dependencies": {
     "next": "10.0.8",
