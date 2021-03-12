@@ -7,15 +7,8 @@ const Box = (props) => {
   const myClass = `${styles.box} ${className}`;
 
   const myStyles = propStyles(
-    [
-
-      borderWidth,
-      "--border-width"
-    ], [
-      padding,
-      "padding"
-
-    ]
+    [borderWidth, "--border-width"],
+    [padding, "padding"]
   );
 
   return (
