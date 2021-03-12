@@ -2,6 +2,8 @@ import React from "react";
 import { propStyles } from "util/style";
 import styles from "./center.module.css";
 
+const fu/ s=11t; 10
+
 const Center = (props) => {
   const {
     children,
