@@ -13,12 +13,6 @@ export const propStyles = (...params) => {
   return formattedStyles;
 };
 
-export const doThign = (...p) => {
-  const t = p.map((a) => !a);
-  var f = {};
-  return false;
-};
-
 const formatStyle = (rawValue) => (predicate) => {
   const value = String(rawValue);
   // === ERRORS: ===
