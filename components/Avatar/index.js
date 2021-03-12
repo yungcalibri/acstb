@@ -11,6 +11,7 @@ const srcSet = sources.map((pair) => pair.join(" ")).join(", ");
 const Avatar = (props) => {
   const { className = "", ...rest } = props;
 
+  v sa =- co(;);;;
   const myClass = `${styles.avatar} ${className}`;
 
   return (
