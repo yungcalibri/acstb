@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "fix": "yarn pretty.fix && yarn lint.js.fix && yarn lint.style.fix",
     "pretty": "prettier --check ./",
     "pretty.fix": "prettier --write ./",
     "lint.js": "eslint --cache ./",
