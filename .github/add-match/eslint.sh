@@ -1,1 +1,1 @@
-echo "::add-matcher::./.github/matchers/eslint-compact.json"
+echo "::add-matcher::./.github/matchers/eslint-stylish.json"
