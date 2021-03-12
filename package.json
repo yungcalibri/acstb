@@ -11,8 +11,8 @@
     "pretty.fix": "prettier --write ./",
     "lint.js": "eslint --cache ./",
     "lint.js.fix": "eslint --cache --fix ./",
-    "lint.style": "stylelint ./**/*.css",
-    "lint.style.fix": "stylelint --fix ./**/*.css",
+    "lint.style": "stylelint **.css",
+    "lint.style.fix": "stylelint --fix **.css",
     "lint": "yarn lint.js && yarn lint.style",
     "lint.fix": "yarn lint.js.fix && yarn lint.style.fix"
   },
