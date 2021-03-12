@@ -1,1 +1,1 @@
-echo "::remove-matcher owner=eslint-compact"
+echo "::remove-matcher owner=eslint-compact::"
