@@ -8,6 +8,7 @@ const LAST_CHILD = ":last-child";
 const Sidebar = (props) => {
   const {
     children,
+    className = "",
     side = LEFT,
     sideWidth,
     contentMin = "50%",
@@ -20,8 +21,10 @@ const Sidebar = (props) => {
 
   const space = String(rawSpace) === "0" ? "0px" : rawSpace;
 
+  const myClass = `${styles.sidebarRoot} ${className}`;
+
   return (
-    <div className={styles.sidebarRoot} {...rest}>
+    <div className={myClass} {...rest}>
       {children}
       {/* My styles */}
       <style jsx>{`
