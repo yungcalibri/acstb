@@ -6,14 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint.pretty": "prettier -- ./pages ./components ./util ./styles",
-    "lint.pretty.fix": "prettier --write -- ./pages ./components ./util ./styles",
-    "lint.js": "eslint --cache -- ./pages ./components ./util",
-    "lint.js.fix": "eslint --cache --fix -- ./pages ./components ./util",
-    "lint.style": "stylelint -- ./styles",
-    "lint.style.fix": "stylelint --fix -- ./styles",
-    "lint": "yarn run lint.pretty && yarn run lint.js && yarn run lint.style",
-    "lint.fix": "yarn run lint.pretty.fix && yarn run lint.js.fix && yarn run lint.style.fix"
+    "fix": "yarn pretty.fix && yarn lint.js.fix && yarn lint.style.fix",
+    "pretty": "prettier --check ./",
+    "pretty.fix": "prettier --write ./",
+    "lint.js": "eslint --cache ./",
+    "lint.js.fix": "eslint --cache --fix ./",
+    "lint.style": "stylelint ./**/*.css",
+    "lint.style.fix": "stylelint --fix ./**/*.css",
+    "lint": "yarn lint.js && yarn lint.style",
+    "lint.fix": "yarn lint.js.fix && yarn lint.style.fix"
   },
   "dependencies": {
     "next": "10.0.8",
@@ -37,8 +38,8 @@
     "prettier": "2.2.1",
     "stylelint": "^13.12.0",
     "stylelint-a11y": "^1.2.3",
-    "stylelint-config-idiomatic-css": "^1.1.0",
     "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^21.0.0",
     "stylelint-high-performance-animation": "^1.5.2",
     "typescript": "^4.2.3"
   },

@@ -33,7 +33,3 @@ yarn-error.log*
 # vercel
 .vercel
 .eslintcache
-
-# prettier-specific
-node_modules/*
-.next/*
