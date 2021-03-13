@@ -26,6 +26,7 @@ jobs:
 
       - name: Check for Prettier errors
         run: yarn pretty
+        continue-on-error: true
 
       - name: Lint JavaScript
         run: yarn lint.js
