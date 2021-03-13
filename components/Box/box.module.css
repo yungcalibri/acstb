@@ -1,16 +1,16 @@
 .box {
-
   width: fit-content;
 
   padding: var(--s-1);
 
-  border-width: var(--border-width);
   outline-width: 0.125rem;
   outline-offset: -0.125rem;
   outline-color: transparent;
   outline-style: solid;
+
+  border-width: var(--border-width);
   border-style: solid;
-  border-color: var(--color-text);
 
   --border-width: var(--s-3);
+  border-color: var(--color-text);
 }
