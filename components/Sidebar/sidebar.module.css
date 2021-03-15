@@ -20,12 +20,12 @@
     flex-basis: var(--sideWidth);
   }
 
-  &.sidebarLeft > * > :first-child {
+  &.sidebarLeft > * > :last-child {
     flex-basis: 0;
     flex-grow: 999;
     min-width: calc(var(--contentMin) - var(--space));
   }
-  &.sidebarRight > * > :last-child {
+  &.sidebarRight > * > :first-child {
     flex-basis: 0;
     flex-grow: 999;
     min-width: calc(var(--contentMin) - var(--space));
