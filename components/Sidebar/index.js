@@ -1,6 +1,5 @@
 import styles from "./sidebar.module.css";
 
-const me = styles.sidebarRoot;
 const LEFT = "left";
 const FIRST_CHILD = ":first-child";
 const LAST_CHILD = ":last-child";
@@ -28,31 +27,25 @@ const Sidebar = (props) => {
       {children}
       {/* My styles */}
       <style jsx>{`
-        ${me} {
+        ${styles.sidebarRoot} {
           ${sideWidth ? `flex-basis: ${sideWidth}` : ""}
           --space: ${space};
         }
-      `}</style>
-      {/* Intermediary wrapper styles */}
-      <style jsx>{`
-        ${me} > * {
-          margin: calc(${space} / 2 * -1);
+        ${styles.sidebarRoot} > * {
+          display: flex;
+          flex-wrap: wrap;
+          margin: calc(var(--space) / 2 * -1);
           ${noStretch ? "align-items: flex-start;" : ""}
         }
-      `}</style>
-      {/* Second child styles */}
-      <style jsx>{`
-        ${me} > * > * {
-          margin: calc(${space} / 2);
-          ${this.sideWidth ? `flex-basis: ${this.sideWidth};` : ""}
+        ${styles.sidebarRoot} > * > * {
+          margin: calc(var(--space) / 2);
+          ${sideWidth ? `flex-basis: ${sideWidth};` : ""}
+          flex-grow: 1;
         }
-      `}</style>
-      {/* Styles for whichever element is the sidebar */}
-      <style jsx>{`
-        ${me} > * > ${sidebarSelector} {
+        ${styles.sidebarRoot} > * > ${sidebarSelector} {
           flex-basis: 0;
           flex-grow: 999;
-          min-width: calc(${contentMin} - ${space});
+          min-width: calc(${contentMin} - var(--space));
         }
       `}</style>
     </div>
