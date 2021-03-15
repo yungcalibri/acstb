@@ -29,9 +29,6 @@ const Sidebar = (props) => {
     [sideWidth, "--sideWidth"]
   );
 
-  console.debug(myStyles);
-  console.debug(myClass);
-
   const sidebar = css.resolve`
     ${myStyles}
   `;
@@ -41,11 +38,6 @@ const Sidebar = (props) => {
   return (
     <div className={`${myClass} ${sidebar.className}`} {...rest}>
       {children}
-      {/* <style jsx>{` */}
-      {/*   ${styles.sidebarRoot} { */}
-      {/*     ${myStyles} */}
-      {/*   } */}
-      {/* `}</style> */}
       {sidebar.styles}
     </div>
   );
