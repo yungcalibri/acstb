@@ -16,29 +16,28 @@ const Sidebar = (props) => {
     ...rest
   } = props;
 
-  const sidebarSelectorClass =
-    side === LEFT ? styles.sidebarLeft : styles.sidebarRight;
-  const noStretchClass = noStretch ? styles.noStretch : "";
-  const sideWidthClass = sideWidth ? styles.sideWidth : "";
-  const myClass = ` ${styles.sidebarRoot} ${sidebarSelectorClass} ${noStretchClass} ${sideWidthClass} ${className} `;
-
   const space = String(rawSpace) === "0" ? "0px" : rawSpace;
-  const myStyles = propStyles(
-    [space, "--space"],
-    [contentMin, "--contentMin"],
-    [sideWidth, "--sideWidth"]
-  );
-
-  const sidebar = css.resolve`
-    ${myStyles}
+  const myPropStyles = css.resolve`
+    ${propStyles(
+      [space, "--space"],
+      [contentMin, "--contentMin"],
+      [sideWidth, "--sideWidth"]
+    )}
   `;
 
-  console.debug(sidebar);
+  const myClass = [
+    styles.sidebarRoot,
+    myPropStyles.className,
+    side === LEFT ? styles.sidebarLeft : styles.sidebarRight,
+    noStretch ? styles.noStretch : "",
+    sideWidth ? styles.sideWidth : "",
+    className,
+  ].join(" ");
 
   return (
-    <div className={`${myClass} ${sidebar.className}`} {...rest}>
+    <div className={myClass} {...rest}>
       {children}
-      {sidebar.styles}
+      {myPropStyles.styles}
     </div>
   );
 };
