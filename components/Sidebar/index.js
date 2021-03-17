@@ -30,18 +30,18 @@ const Sidebar = (props) => {
         .${styles.sidebarRoot} {
           --space: ${space};
         }
-        .${styles.sidebarRoot} > :global(*) {
+        :global(.${styles.sidebarRoot} > *) {
           display: flex;
           flex-wrap: wrap;
           margin: calc(var(--space) / 2 * -1);
           ${propStyles([noStretch, "align-items: flex-start"])}
         }
-        .${styles.sidebarRoot} > :global(*) > :global(*) {
+        :global(.${styles.sidebarRoot} > * > *) {
           margin: calc(var(--space) / 2);
           ${propStyles([sideWidth, "flex-basis"])}
           flex-grow: 1;
         }
-        .${styles.sidebarRoot} > :global(*) > :global(${sidebarSelector}) {
+        :global(.${styles.sidebarRoot} > * > ${sidebarSelector}) {
           flex-basis: 0;
           flex-grow: 999;
           min-width: calc(${contentMin} - var(--space));
