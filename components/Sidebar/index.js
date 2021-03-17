@@ -16,7 +16,7 @@ const Sidebar = (props) => {
     ...rest
   } = props;
 
-  const sidebarSelector = side === LEFT ? FIRST_CHILD : LAST_CHILD;
+  const sidebarSelector = side === LEFT ? LAST_CHILD : FIRST_CHILD;
 
   const space = String(rawSpace) === "0" ? "0px" : rawSpace;
 
