@@ -5,6 +5,8 @@ const Switcher = (props) => {
   const {
     children,
     className = "",
+    /* TODO Add prop: exceptions [[childIdx, flexGrowValue]] - see here
+     * https://every-layout.dev/layouts/switcher/#managing-proportions */
     threshold,
     space,
     limit = 7,
