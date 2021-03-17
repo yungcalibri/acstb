@@ -33,7 +33,7 @@ const Stack = (props) => {
           .${primaryClass} {
             ${propStyles([space, "--space"])}
           }
-          .${splitClass} > :global(:nth-child(${splitAfter || 999})) {
+          :global(.${splitClass} > :nth-child(${splitAfter || 999})) {
             ${propStyles([splitAfter, "margin-bottom: auto"])}
           }
         `}
