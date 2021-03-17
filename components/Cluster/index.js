@@ -6,19 +6,17 @@ const Cluster = (props) => {
 
   const myClass = `${styles.cluster} ${className}`;
 
-  const myStyles = propStyles(
-    [justify, "justify-content"],
-    [align, "align-items"],
-    [space, "--space"]
-  );
-
   return (
     <div className={myClass} {...rest}>
       <div>
         {children}
         <style jsx>{`
           .${styles.cluster} {
-            ${myStyles}
+            ${propStyles(
+              [justify, "justify-content"],
+              [align, "align-items"],
+              [space, "--space"]
+            )}
           }
         `}</style>
       </div>
