@@ -25,7 +25,6 @@ const Sidebar = (props) => {
   return (
     <div className={myClass} {...rest}>
       {children}
-      {/* My styles */}
       <style jsx>{`
         .${styles.sidebarRoot} {
           ${sideWidth ? `flex-basis: ${sideWidth}` : ""}
