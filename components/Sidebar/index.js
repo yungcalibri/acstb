@@ -1,8 +1,8 @@
-import css from "styled-jsx/css";
-import { propStyles } from "util/style";
 import styles from "./sidebar.module.css";
 
 const LEFT = "left";
+const FIRST_CHILD = ":first-child";
+const LAST_CHILD = ":last-child";
 
 const Sidebar = (props) => {
   const {
@@ -16,28 +16,38 @@ const Sidebar = (props) => {
     ...rest
   } = props;
 
-  const space = String(rawSpace) === "0" ? "0px" : rawSpace;
-  const myPropStyles = css.resolve`
-    ${propStyles(
-      [space, "--space"],
-      [contentMin, "--contentMin"],
-      [sideWidth, "--sideWidth"]
-    )}
-  `;
+  const sidebarSelector = side === LEFT ? FIRST_CHILD : LAST_CHILD;
 
-  const myClass = [
-    styles.sidebarRoot,
-    myPropStyles.className,
-    side === LEFT ? styles.sidebarLeft : styles.sidebarRight,
-    noStretch ? styles.noStretch : "",
-    sideWidth ? styles.sideWidth : "",
-    className,
-  ].join(" ");
+  const space = String(rawSpace) === "0" ? "0px" : rawSpace;
+
+  const myClass = `${styles.sidebarRoot} ${className}`;
 
   return (
     <div className={myClass} {...rest}>
       {children}
-      {myPropStyles.styles}
+      {/* My styles */}
+      <style jsx>{`
+        ${styles.sidebarRoot} {
+          ${sideWidth ? `flex-basis: ${sideWidth}` : ""}
+          --space: ${space};
+        }
+        ${styles.sidebarRoot} > * {
+          display: flex;
+          flex-wrap: wrap;
+          margin: calc(var(--space) / 2 * -1);
+          ${noStretch ? "align-items: flex-start;" : ""}
+        }
+        ${styles.sidebarRoot} > * > * {
+          margin: calc(var(--space) / 2);
+          ${sideWidth ? `flex-basis: ${sideWidth};` : ""}
+          flex-grow: 1;
+        }
+        ${styles.sidebarRoot} > * > ${sidebarSelector} {
+          flex-basis: 0;
+          flex-grow: 999;
+          min-width: calc(${contentMin} - var(--space));
+        }
+      `}</style>
     </div>
   );
 };

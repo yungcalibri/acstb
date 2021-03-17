@@ -1,33 +1,3 @@
 .sidebarRoot {
   overflow: hidden;
-
-  & > * {
-    display: flex;
-    flex-wrap: wrap;
-    margin: calc(var(--space) / 2 * -1);
-  }
-
-  & > * > * {
-    flex-grow: 1;
-    margin: calc(var(--space) / 2);
-  }
-
-  &.noStretch > * {
-    align-items: flex-start;
-  }
-
-  &.sideWidth > * > * {
-    flex-basis: var(--sideWidth);
-  }
-
-  &.sidebarLeft > * > :last-child {
-    flex-basis: 0;
-    flex-grow: 999;
-    min-width: calc(var(--contentMin) - var(--space));
-  }
-  &.sidebarRight > * > :first-child {
-    flex-basis: 0;
-    flex-grow: 999;
-    min-width: calc(var(--contentMin) - var(--space));
-  }
 }
