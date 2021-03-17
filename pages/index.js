@@ -4,26 +4,38 @@ import Box from "components/Box";
 import Cluster from "components/Cluster";
 import Avatar from "components/Avatar";
 import ContactMe from "components/ContactMe";
+import Sidebar from "components/Sidebar";
+import Switcher from "components/Switcher";
 
 const Home = () => (
   <article id="home">
-    <Cluster space="var(--s2)">
-      <section>
-        <h1>I'm Andrew Stebenné.</h1>
-        <p>
-          I'm a programmer by trade. Most of my work has been building Web
-          frontends, but I take pleasure in solving interesting problems of any
-          type.
-        </p>
-        <p>You can get in touch with me here:</p>
-        <ContactMe relMe />
-      </section>
-      <Avatar className="align-self:center" />
-    </Cluster>
+    <Sidebar space="var(--s2)" side="left" contentMin="25%" noStretch>
+      <div>
+        <section>
+          <h1>I'm Andrew Stebenné.</h1>
+          <p>
+            I'm a programmer by trade. Most of my work has been building Web
+            frontends, but I take pleasure in solving interesting problems of
+            any type.
+          </p>
+          <p>You can get in touch with me here:</p>
+          <ContactMe relMe />
+        </section>
+        <Avatar className="align-self:center" />
+      </div>
+    </Sidebar>
 
-    <div style={{ height: "50vh" }} />
-    <Cluster>
+    <Switcher space="var(--s2)">
       <Box>Alpha</Box>
+      <Box>Bravo</Box>
+      <Box>Charlie</Box>
+      <Box>Delta</Box>
+      <Box>Echo</Box>
+      <Box>Foxtrot</Box>
+    </Switcher>
+    <div style={{ height: "50vh" }} />
+    <Cluster justify="space-evenly" space="var(--s3)">
+      <Box padding="var(--s1)">Alpha</Box>
       <Box>Bravo</Box>
       <Box>Charlie</Box>
       <Box>Delta</Box>
@@ -31,18 +43,19 @@ const Home = () => (
       <Box>Foxtrot</Box>
     </Cluster>
 
-    <Stack space="var(--s0)" asList>
-      <p>1</p>
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
-      <div>
-        <p>5</p>
-        <p>8</p>
-        <p>13</p>
-      </div>
-    </Stack>
-
+    <div>
+      <Stack space="var(--s2)" asList splitAfter="3">
+        <p>1</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <div>
+          <p>5</p>
+          <p>8</p>
+          <p>13</p>
+        </div>
+      </Stack>
+    </div>
     <Box borderWidth="var(--s-2)">
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
