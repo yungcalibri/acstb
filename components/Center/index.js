@@ -15,24 +15,22 @@ const Center = (props) => {
 
   const myClass = `${styles.center} ${className}`;
 
-  const myStyles = propStyles(
-    [gutters, "padding-left", "padding-right"],
-    [
-      intrinsic,
-      "display: flex",
-      "flex-direction: column",
-      "align-items: center",
-    ],
-    [maxWidth, "max-width"],
-    [text, "text-align: center"]
-  );
-
   return (
     <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
         .${styles.center} {
-          ${myStyles}
+          ${propStyles(
+            [gutters, "padding-left", "padding-right"],
+            [
+              intrinsic,
+              "display: flex",
+              "flex-direction: column",
+              "align-items: center",
+            ],
+            [maxWidth, "max-width"],
+            [text, "text-align: center"]
+          )}
         }
       `}</style>
     </div>
