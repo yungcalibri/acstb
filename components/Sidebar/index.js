@@ -34,7 +34,7 @@ const Sidebar = (props) => {
           display: flex;
           flex-wrap: wrap;
           margin: calc(var(--space) / 2 * -1);
-          ${propStyles([noStretch, "align-items: flex-start;"])}
+          ${propStyles([noStretch, "align-items: flex-start"])}
         }
         .${styles.sidebarRoot} > :global(*) > :global(*) {
           margin: calc(var(--space) / 2);
