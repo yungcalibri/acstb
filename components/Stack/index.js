@@ -1,4 +1,5 @@
 import { Children, cloneElement, isValidElement } from "react";
+import { propStyles } from "util/style";
 import styles from "./stack.module.css";
 
 const Stack = (props) => {
@@ -13,9 +14,10 @@ const Stack = (props) => {
     ...rest
   } = props;
 
-  const propClass = recursive ? styles.stackRecursive : styles.stack;
+  const primaryClass = recursive ? styles.stackRecursive : styles.stack;
+  const splitClass = splitAfter ? styles.splitAfter : "";
 
-  const myClass = `${propClass} ${className}`;
+  const myClass = [primaryClass, splitClass, className].join(" ");
 
   return (
     <div className={myClass} role={asList ? "list" : role} {...rest}>
@@ -28,14 +30,11 @@ const Stack = (props) => {
         : children}
       <style jsx>
         {`
-          .${myClass} {
-            ${!space ? "" : `--space: ${space};`}
+          .${primaryClass} {
+            ${propStyles([space, "--space"])}
           }
-          .${myClass}:only-child {
-            ${!splitAfter ? "" : "height: 100%;"}
-          }
-          .${myClass} > :nth-child(${splitAfter || 0}) {
-            ${!splitAfter ? "" : "margin-bottom: auto;"}
+          .${splitClass} > :global(:nth-child(${splitAfter || 999})) {
+            ${propStyles([splitAfter, "margin-bottom: auto"])}
           }
         `}
       </style>

@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  &.splitAfter:only-child {
+    height: 100%;
+  }
 }
 
 .stack {
