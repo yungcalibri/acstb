@@ -27,22 +27,22 @@ const Sidebar = (props) => {
       {children}
       {/* My styles */}
       <style jsx>{`
-        ${styles.sidebarRoot} {
+        .${styles.sidebarRoot} {
           ${sideWidth ? `flex-basis: ${sideWidth}` : ""}
           --space: ${space};
         }
-        ${styles.sidebarRoot} > * {
+        .${styles.sidebarRoot} > :global(*) {
           display: flex;
           flex-wrap: wrap;
           margin: calc(var(--space) / 2 * -1);
           ${noStretch ? "align-items: flex-start;" : ""}
         }
-        ${styles.sidebarRoot} > * > * {
+        .${styles.sidebarRoot} > :global(*) > :global(*) {
           margin: calc(var(--space) / 2);
           ${sideWidth ? `flex-basis: ${sideWidth};` : ""}
           flex-grow: 1;
         }
-        ${styles.sidebarRoot} > * > ${sidebarSelector} {
+        .${styles.sidebarRoot} > :global(*) > :global(${sidebarSelector}) {
           flex-basis: 0;
           flex-grow: 999;
           min-width: calc(${contentMin} - var(--space));
