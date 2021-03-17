@@ -6,17 +6,12 @@ const Box = (props) => {
 
   const myClass = `${styles.box} ${className}`;
 
-  const myStyles = propStyles(
-    [borderWidth, "--border-width"],
-    [padding, "padding"]
-  );
-
   return (
     <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
         .${styles.box} {
-          ${myStyles}
+          ${propStyles([borderWidth, "--border-width"], [padding, "padding"])}
         }
       `}</style>
     </div>
