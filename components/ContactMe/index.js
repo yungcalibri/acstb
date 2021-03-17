@@ -10,9 +10,7 @@ const ContactMe = (props) => {
   return (
     <Stack className={myClass} asList space="var(--s-2)" {...rest}>
       <div>
-        <ContactCard
-          href="https://github.com/arthropodSeven/"
-          className="padding:0 margin:0">
+        <ContactCard href="https://github.com/arthropodSeven/">
           <div>github.com/arthropodSeven</div>
           <div
             style={{
@@ -23,9 +21,7 @@ const ContactMe = (props) => {
         </ContactCard>
       </div>
       <div>
-        <ContactCard
-          href="mailto:arthropodSeven@pm.me"
-          className="padding:0 margin:0">
+        <ContactCard href="mailto:arthropodSeven@pm.me">
           <div>arthropodSeven@pm.me</div>
           <div
             style={{
@@ -43,13 +39,14 @@ const ContactMe = (props) => {
 
 const ContactCard = (props) => {
   const { children, className = "", href, ...rest } = props;
+  const myClass = [styles.contactCard, className].join(" ");
 
   return (
-    <a href={href} className={className} rel="me external" {...rest}>
-      <Box className={styles.contactCard} borderWidth="var(--s-3)">
+    <Box className={myClass} borderWidth="var(--s-3)" {...rest}>
+      <a href={href} rel="me external" className="padding:0 margin:0">
         <Cluster align="center">{children}</Cluster>
-      </Box>
-    </a>
+      </a>
+    </Box>
   );
 };
 
