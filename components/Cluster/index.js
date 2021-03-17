@@ -12,11 +12,10 @@ const Cluster = (props) => {
         {children}
         <style jsx>{`
           .${styles.cluster} {
-            ${propStyles(
-              [justify, "justify-content"],
-              [align, "align-items"],
-              [space, "--space"]
-            )}
+            ${propStyles([space, "--space"])}
+          }
+          :global(.${styles.cluster} > *) {
+            ${propStyles([justify, "justify-content"], [align, "align-items"])}
           }
         `}</style>
       </div>
