@@ -6,6 +6,8 @@ const Cluster = (props) => {
 
   const myClass = `${styles.cluster} ${className}`;
 
+  // TODO the global child selector is applying to every cluster on the page. fucked.
+
   return (
     <div className={myClass} {...rest}>
       <div>
