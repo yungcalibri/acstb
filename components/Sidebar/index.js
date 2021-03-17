@@ -1,3 +1,4 @@
+import { propStyles } from "util/style";
 import styles from "./sidebar.module.css";
 
 const LEFT = "left";
@@ -27,18 +28,17 @@ const Sidebar = (props) => {
       {children}
       <style jsx>{`
         .${styles.sidebarRoot} {
-          ${sideWidth ? `flex-basis: ${sideWidth}` : ""}
           --space: ${space};
         }
         .${styles.sidebarRoot} > :global(*) {
           display: flex;
           flex-wrap: wrap;
           margin: calc(var(--space) / 2 * -1);
-          ${noStretch ? "align-items: flex-start;" : ""}
+          ${propStyles([noStretch, "align-items: flex-start;"])}
         }
         .${styles.sidebarRoot} > :global(*) > :global(*) {
           margin: calc(var(--space) / 2);
-          ${sideWidth ? `flex-basis: ${sideWidth};` : ""}
+          ${propStyles([sideWidth, "flex-basis"])}
           flex-grow: 1;
         }
         .${styles.sidebarRoot} > :global(*) > :global(${sidebarSelector}) {
