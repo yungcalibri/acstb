@@ -1,5 +1,4 @@
 import { propStyles } from "util/style";
-import styles from "./sidebar.module.css";
 
 const LEFT = "left";
 const FIRST_CHILD = ":first-child";
@@ -11,8 +10,8 @@ const Sidebar = (props) => {
     className = "",
     side = LEFT,
     sideWidth,
-    contentMin = "50%",
-    space: rawSpace = "var(--s1)",
+    contentMin,
+    space: rawSpace,
     noStretch = false,
     ...rest
   } = props;
@@ -21,30 +20,25 @@ const Sidebar = (props) => {
 
   const space = String(rawSpace) === "0" ? "0px" : rawSpace;
 
-  const myClass = `${styles.sidebarRoot} ${className}`;
+  const myClass = `sidebarRoot ${className}`;
 
   return (
     <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
-        .${styles.sidebarRoot} {
-          --space: ${space};
+        .sidebarRoot {
+          ${propStyles([space, "--space"], [contentMin, "--contentMin"])}
         }
-        :global(.${styles.sidebarRoot} > *) {
-          display: flex;
-          flex-wrap: wrap;
-          margin: calc(var(--space) / 2 * -1);
+        .sidebarRoot > :global(*) {
           ${propStyles([noStretch, "align-items: flex-start"])}
         }
-        :global(.${styles.sidebarRoot} > * > *) {
-          margin: calc(var(--space) / 2);
+        .sidebarRoot > :global(*) > :global(*) {
           ${propStyles([sideWidth, "flex-basis"])}
-          flex-grow: 1;
         }
-        :global(.${styles.sidebarRoot} > * > ${sidebarSelector}) {
+        .sidebarRoot > :global(*) > :global(${sidebarSelector}) {
           flex-basis: 0;
           flex-grow: 999;
-          min-width: calc(${contentMin} - var(--space));
+          min-width: calc(var(--contentMin) - var(--space));
         }
       `}</style>
     </div>
