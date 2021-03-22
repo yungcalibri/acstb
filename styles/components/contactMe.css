@@ -1,9 +1,0 @@
-.contactMe {
-}
-
-.contactCard {
-  background: var(--color-invert-background);
-  color: var(--color-invert-text);
-
-  border-radius: var(--s-3);
-}
