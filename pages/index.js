@@ -9,7 +9,7 @@ import Switcher from "components/Switcher";
 
 const Home = () => (
   <article id="home">
-    <Sidebar space="var(--s2)" side="left" contentMin="25%" noStretch>
+    <Sidebar space="var(--s1)" contentMin="65%" side="right" noStretch>
       <div>
         <section>
           <h1>I'm Andrew Stebenné.</h1>
@@ -21,20 +21,12 @@ const Home = () => (
           <p>You can get in touch with me here:</p>
           <ContactMe relMe />
         </section>
-        <Avatar className="align-self:center" />
+        <Avatar />
       </div>
     </Sidebar>
 
-    <Switcher space="var(--s2)">
-      <Box>Alpha</Box>
-      <Box>Bravo</Box>
-      <Box>Charlie</Box>
-      <Box>Delta</Box>
-      <Box>Echo</Box>
-      <Box>Foxtrot</Box>
-    </Switcher>
     <div style={{ height: "50vh" }} />
-    <Cluster justify="space-evenly" space="var(--s3)">
+    <Cluster justify="space-evenly" align="center" space="var(--s3)">
       <Box padding="var(--s1)">Alpha</Box>
       <Box>Bravo</Box>
       <Box>Charlie</Box>
@@ -42,9 +34,25 @@ const Home = () => (
       <Box>Echo</Box>
       <Box>Foxtrot</Box>
     </Cluster>
+    <Cluster justify="space-around" align="flex-end" space="var(--s3)">
+      <Box>Alpha</Box>
+      <Box>Bravo</Box>
+      <Box>Charlie</Box>
+      <Box padding="var(--s1)">Delta</Box>
+      <Box>Echo</Box>
+      <Box>Foxtrot</Box>
+    </Cluster>
+    <Switcher>
+      <Box>Alpha</Box>
+      <Box>Bravo</Box>
+      <Box>Charlie</Box>
+      <Box>Delta</Box>
+      <Box>Echo</Box>
+      <Box>Foxtrot</Box>
+    </Switcher>
 
     <div>
-      <Stack space="var(--s2)" asList splitAfter="3">
+      <Stack space="var(--s4)" asList splitAfter="3">
         <p>1</p>
         <p>1</p>
         <p>2</p>
