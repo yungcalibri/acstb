@@ -12,8 +12,6 @@ const Cluster = (props) => {
         .cluster {
           ${propStyles([space, "--space"])}
         }
-      `}</style>
-      <style jsx>{`
         .cluster > :global(*) {
           ${propStyles([justify, "justify-content"], [align, "align-items"])}
         }
