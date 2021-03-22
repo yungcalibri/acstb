@@ -1,6 +1,5 @@
 import React from "react";
 import { propStyles } from "util/style";
-import styles from "./center.module.css";
 
 const Center = (props) => {
   const {
@@ -13,13 +12,13 @@ const Center = (props) => {
     ...rest
   } = props;
 
-  const myClass = `${styles.center} ${className}`;
+  const myClass = `center ${className}`;
 
   return (
     <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
-        .${styles.center} {
+        .center {
           ${propStyles(
             [gutters, "padding-left", "padding-right"],
             [

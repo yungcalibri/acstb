@@ -1,6 +1,0 @@
-.center {
-  box-sizing: content-box;
-  max-width: var(--measure);
-  margin-right: auto;
-  margin-left: auto;
-}
