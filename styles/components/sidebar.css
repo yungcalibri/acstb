@@ -1,0 +1,16 @@
+.sidebarRoot {
+  --contentMin: 50%;
+  --space: var(--s1);
+  overflow: hidden;
+
+  & > * {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(var(--space) / 2 * -1);
+  }
+
+  & > * > * {
+    margin: calc(var(--space) / 2);
+    flex-grow: 1;
+  }
+}
