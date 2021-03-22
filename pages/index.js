@@ -5,6 +5,7 @@ import Cluster from "components/Cluster";
 import Avatar from "components/Avatar";
 import ContactMe from "components/ContactMe";
 import Sidebar from "components/Sidebar";
+import Switcher from "components/Switcher";
 
 const Home = () => (
   <article id="home">
@@ -41,9 +42,17 @@ const Home = () => (
       <Box>Echo</Box>
       <Box>Foxtrot</Box>
     </Cluster>
+    <Switcher>
+      <Box>Alpha</Box>
+      <Box>Bravo</Box>
+      <Box>Charlie</Box>
+      <Box>Delta</Box>
+      <Box>Echo</Box>
+      <Box>Foxtrot</Box>
+    </Switcher>
 
     <div>
-      <Stack space="var(--s2)" asList splitAfter="3">
+      <Stack space="var(--s4)" asList splitAfter="3">
         <p>1</p>
         <p>1</p>
         <p>2</p>
