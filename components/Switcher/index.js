@@ -1,5 +1,4 @@
 import { propStyles } from "util/style";
-import styles from "./switcher.module.css";
 
 const Switcher = (props) => {
   const {
@@ -13,21 +12,19 @@ const Switcher = (props) => {
     ...rest
   } = props;
 
-  const myClass = [styles.switcher, className].join(" ");
+  const myClass = `switcher ${className}`;
 
   return (
     <div className={myClass} {...rest}>
       <div>{children}</div>
       <style jsx>{`
-        .${styles.switcher} {
+        .switcher {
           ${propStyles([threshold, "--threshold"], [space, "--space"])}
         }
-      `}</style>
-      <style jsx>{`
-        :global(.${styles.switcher} > * > :nth-last-child(n + ${limit})) {
+        .switcher > :global(* > :nth-last-child(n + ${limit})) {
           ${propStyles([limit, "flex-basis: 100%"])}
         }
-        :global(.${styles.switcher} > * > :nth-last-child(n + ${limit}) ~ *) {
+        .switcher > :global(* > :nth-last-child(n + ${limit}) ~ *) {
           ${propStyles([limit, "flex-basis: 100%"])}
         }
       `}</style>
