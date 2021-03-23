@@ -1,0 +1,6 @@
+.DEV-ONLY--draw-all-boxes {
+  &,
+  & * {
+    border: 1px solid red !important;
+  }
+}
