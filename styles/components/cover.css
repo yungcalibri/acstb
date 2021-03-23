@@ -1,0 +1,25 @@
+.cover {
+  --space: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--space);
+
+  & > * {
+    margin-top: var(--space);
+    margin-bottom: var(--space);
+  }
+
+  & > :first-child:not(.centered) {
+    margin-top: 0;
+  }
+
+  & > :last-child:not(.centered) {
+    margin-bottom: 0;
+  }
+
+  & > .centered {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
