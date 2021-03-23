@@ -13,6 +13,7 @@
     "paths": {
       "styles/*": ["./styles/*"],
       "components/*": ["./components/*"],
+      "constants/*": ["./constants/*"],
       "util/*": ["./util/*"]
     },
     "resolveJsonModule": true,
