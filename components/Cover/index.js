@@ -1,7 +1,7 @@
 import { propStyles } from "util/style";
 
 const Cover = (props) => {
-  const { children, className = "", minHeight, space } = props;
+  const { children, className = "", minHeight, space, noPad } = props;
 
   const myClass = `cover ${className}`;
 
@@ -10,7 +10,11 @@ const Cover = (props) => {
       {children}
       <style jsx>{`
         .cover {
-          ${propStyles([space, "--space"], [minHeight, "min-height"])}
+          ${propStyles(
+            [space, "--space"],
+            [minHeight, "min-height"],
+            [noPad, "padding: 0"]
+          )}
         }
       `}</style>
     </div>
