@@ -1,5 +1,13 @@
 import { propStyles } from "util/style";
 
+/**
+ * @typedef {Object} SwitcherProps
+ * @prop {string=} threshold - Below this width, switch to the vertical layout.
+ * @prop {string=} space - Total margin between siblings.
+ * @prop {number=} limit - With more than `limit` children, use only the vertical layout.
+ */
+
+/** @param {SwitcherProps} props */
 const Switcher = (props) => {
   const {
     children,
