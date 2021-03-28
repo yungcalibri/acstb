@@ -6,7 +6,10 @@ import { propStyles } from "util/style";
  * @prop {string=} space - Padding between elements in grid
  */
 
-/** @param {GridProps} props */
+/**
+ * Displays children as a grid, each item having equal dimensions.
+ * @param {GridProps} props
+ */
 const Grid = (props) => {
   const { children, className = "", min, space } = props;
 
