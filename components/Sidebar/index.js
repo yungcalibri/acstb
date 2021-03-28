@@ -13,7 +13,11 @@ const LAST_CHILD = ":last-child";
  * @prop {boolean=} noStretch - Whether children should adopt their natural height in the horizontal layout.
  */
 
-/** @param {SidebarProps} props */
+/**
+ * * Places two grandchildren side by side. When there is not enough space, the two grandchildren wrap to a vertical layout.
+ * * *Requires* an intermediary wrapper.
+ * @param {SidebarProps} props
+ */
 const Sidebar = (props) => {
   const {
     children,
