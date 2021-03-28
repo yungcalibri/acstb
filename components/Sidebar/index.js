@@ -16,6 +16,8 @@ const LAST_CHILD = ":last-child";
 /**
  * * Places two grandchildren side by side. When there is not enough space, the two grandchildren wrap to a vertical layout.
  * * *Requires* an intermediary wrapper.
+ * @todo Validate that `contentMin` is a string value containing a percentage.
+ * @todo Validate that there is one and only one direct child.
  * @param {SidebarProps} props
  */
 const Sidebar = (props) => {

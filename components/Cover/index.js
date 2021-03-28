@@ -10,6 +10,7 @@ import { propStyles } from "util/style";
 /**
  * - Centers an element vertically.
  * - When there are two or three children, the central element must have the class `centered`. The first child will appear at the top of the space, and the last will appear at the bottom.
+ * @todo Apply centering to `:only-child`.
  * @param {CoverProps} props
  * */
 const Cover = (props) => {
