@@ -22,12 +22,14 @@ const getRatioValues = (raw) => {
  * @param {FrameProps} props
  */
 const Frame = (props) => {
-  const { children, ratio: rawRatio } = props;
+  const { children, className = "", ratio: rawRatio, ...rest } = props;
 
   const [numerator, denominator] = getRatioValues(rawRatio);
 
+  const myClass = `frame ${className}`;
+
   return (
-    <div>
+    <div className={myClass} {...rest}>
       {children}
       <style jsx>{`
         .frame {
