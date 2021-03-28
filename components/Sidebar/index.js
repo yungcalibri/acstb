@@ -7,10 +7,10 @@ const LAST_CHILD = ":last-child";
 /**
  * @typedef {Object} SidebarProps
  * @prop {string=} side - "left" indicates the first child is the sidebar. "right" indicates the last child. (Default "left", any other value is considered equivalent to "right")
- * @prop {string=} sideWidth - Width of the sidebar.
- * @prop {string=} contentMin - Minimum width of the content part of the sidebar. Should be a percentage. When the content is below this percentage of the container's size, the sidebar wraps to the vertical layout.
+ * @prop {string=} sideWidth - Width of the sidebar. Defaults to the width of its content.
+ * @prop {string=} contentMin - *Must* be a percentage. The sidebar becomes vertical when its content takes less than this proportion of the available space.
  * @prop {string=} space - Gutter space between children.
- * @prop {boolean=} noStretch - Whether to apply `align-items: flex-start`.
+ * @prop {boolean=} noStretch - Whether children should adopt their natural height in the horizontal layout.
  */
 
 /** @param {SidebarProps} props */
