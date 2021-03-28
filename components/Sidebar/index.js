@@ -4,6 +4,22 @@ const LEFT = "left";
 const FIRST_CHILD = ":first-child";
 const LAST_CHILD = ":last-child";
 
+/**
+ * @typedef {Object} SidebarProps
+ * @prop {string=} side - "left" indicates the first child is the sidebar. "right" indicates the last child. (Default "left", any other value is considered equivalent to "right")
+ * @prop {string=} sideWidth - Width of the sidebar. Defaults to the width of its content.
+ * @prop {string=} contentMin - *Must* be a percentage. The sidebar becomes vertical when its content takes less than this proportion of the available space.
+ * @prop {string=} space - Gutter space between children.
+ * @prop {boolean=} noStretch - Whether children should adopt their natural height in the horizontal layout.
+ */
+
+/**
+ * * Places two grandchildren side by side. When there is not enough space, the two grandchildren wrap to a vertical layout.
+ * * *Requires* an intermediary wrapper.
+ * @todo Validate that `contentMin` is a string value containing a percentage.
+ * @todo Validate that there is one and only one direct child.
+ * @param {SidebarProps} props
+ */
 const Sidebar = (props) => {
   const {
     children,

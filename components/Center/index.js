@@ -1,6 +1,18 @@
 import React from "react";
 import { propStyles } from "util/style";
 
+/**
+ * @typedef {Object} CenterProps
+ * @prop {string=} gutters - Horizontal gutters; minimum empty horizontal space around children.
+ * @prop {boolean=} intrinsic - Whether to center elements within the Center's area
+ * @prop {string=} maxWidth
+ * @prop {boolean=} text - Whether to apply `text-align: center`
+ */
+
+/**
+ * Centers its children horizontally.
+ * @param {CenterProps} props
+ */
 const Center = (props) => {
   const {
     children,
