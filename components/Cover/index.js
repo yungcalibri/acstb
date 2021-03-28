@@ -7,7 +7,11 @@ import { propStyles } from "util/style";
  * @prop {boolean=} noPad - Whether to remove padding around the Cover
  */
 
-/** @param {CoverProps} props */
+/**
+ * - Centers an element vertically.
+ * - When there are two or three children, the central element must have the class `centered`. The first child will appear at the top of the space, and the last will appear at the bottom.
+ * @param {CoverProps} props
+ * */
 const Cover = (props) => {
   const { children, className = "", minHeight, space, noPad } = props;
 
