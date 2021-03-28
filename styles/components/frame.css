@@ -1,2 +1,27 @@
 .frame {
+  --aspect-numerator: 9;
+  --aspect-denominator: 16;
+  padding-bottom: calc(
+    var(--aspect-numerator) / var(--aspect-denominator) * 100%
+  );
+  position: relative;
+
+  & > * {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & > img,
+  & > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
