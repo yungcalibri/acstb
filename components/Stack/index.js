@@ -10,7 +10,10 @@ import { propStyles } from "util/style";
  * - Apply `height: 100%` to the parent, so that there is always space available for the split.
  */
 
-/** @param {SidebarProps} props */
+/**
+ * Injects space between immediate children, and potentially non-immediate children.
+ * @param {SidebarProps} props
+ */
 const Stack = (props) => {
   const {
     asList,
