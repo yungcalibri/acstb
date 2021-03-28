@@ -10,7 +10,10 @@ import { propStyles } from "util/style";
  * @prop {number=} limit - With more than `limit` children, use only the vertical layout. Default 7.
  */
 
-/** @param {SwitcherProps} props */
+/**
+ * Displays children horizontally with equal length, when space permits. When space is insufficient, or children too numerous, switches to a vertical layout.
+ * @param {SwitcherProps} props
+ */
 const Switcher = (props) => {
   const {
     children,
