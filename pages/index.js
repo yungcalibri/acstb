@@ -7,6 +7,8 @@ import ContactMe from "components/ContactMe";
 import Sidebar from "components/Sidebar";
 import Switcher from "components/Switcher";
 import Cover from "components/Cover";
+import Reel from "components/Reel";
+import { natoRange } from "util/misc";
 
 const Home = () => (
   <article id="home">
@@ -33,6 +35,27 @@ const Home = () => (
       </Sidebar>
     </Cover>
 
+    <h2>Reel with three elements</h2>
+    <Reel>
+      {natoRange(4).map((content) => (
+        <Box key={content} padding="var(--s2)">
+          <p>{content}</p>
+        </Box>
+      ))}
+    </Reel>
+
+    <h2>Reel with ten elements</h2>
+    <Reel>
+      {natoRange(10).map((content) => (
+        <Box key={content} padding="var(--s2)">
+          <p>{content}</p>
+        </Box>
+      ))}
+    </Reel>
+
+    <h2>
+      Cluster with <code>justify-content: space-evenly</code>
+    </h2>
     <Cluster justify="space-evenly" align="center" space="var(--s3)">
       <Box padding="var(--s1)">Alpha</Box>
       <Box>Bravo</Box>
@@ -41,6 +64,11 @@ const Home = () => (
       <Box>Echo</Box>
       <Box>Foxtrot</Box>
     </Cluster>
+
+    <h2>
+      Cluster with <code>justify-content: space-around</code> and{" "}
+      <code>align-items: flex-end</code>
+    </h2>
     <Cluster justify="space-around" align="flex-end" space="var(--s3)">
       <Box>Alpha</Box>
       <Box>Bravo</Box>
@@ -49,6 +77,8 @@ const Home = () => (
       <Box>Echo</Box>
       <Box>Foxtrot</Box>
     </Cluster>
+
+    <h2>Switcher with seven items</h2>
     <Switcher>
       <Box>Alpha</Box>
       <Box>Bravo</Box>
