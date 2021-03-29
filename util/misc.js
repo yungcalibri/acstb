@@ -7,5 +7,7 @@ export function natoRange(...args) {
     .map((a) => Math.abs(a))
     .map((a) => a % 26)
     .filter(Boolean);
-  return safeRange.map(nato.get);
+  return safeRange.map((val) => {
+    return nato.get(val);
+  });
 }
