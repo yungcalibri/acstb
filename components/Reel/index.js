@@ -1,5 +1,7 @@
+import { propStyles } from "util/style";
+
 const Reel = (props) => {
-  const { children, className = "", ...rest } = props;
+  const { children, className = "", space, ...rest } = props;
 
   const myClass = `reel ${className}`;
 
@@ -8,6 +10,7 @@ const Reel = (props) => {
       {children}
       <style jsx>{`
         .reel {
+          ${propStyles([space, "--space"])}
         }
       `}</style>
     </div>

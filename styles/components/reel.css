@@ -1,2 +1,32 @@
 .reel {
+  --space: var(--s1);
+
+  display: flex;
+  overflow-x: auto;
+  border: var(--color-outline);
+  padding-bottom: var(--s-1);
+
+  scrollbar-color: var(--color-background) var(--color-text);
+
+  /* stylelint-disable selector-pseudo-element-no-unknown */
+  &::-webkit-scrollbar {
+    height: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-outline);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-dark);
+    background-image: linear-gradient(
+      var(--color-outline) 0,
+      var(--color-outline) 0.25rem,
+      var(--color-text) 0.25rem,
+      var(--color-text) 0.75rem,
+      var(--color-dark) 0.75rem
+    );
+  }
+
+  & > * + * {
+    margin-left: var(--space);
+  }
 }
