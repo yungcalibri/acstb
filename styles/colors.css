@@ -1,6 +1,7 @@
 :root {
   /*** Regular Ass Colors ***/
   --white: lab(98 1 5);
+  --gray: lab(58 3 0);
 
   --black: lab(22 -3 -1);
   --lighter-black: lab(35 -3 -1);

@@ -12,7 +12,11 @@ const Colors = (props) => {
             <h3>
               <code>{name}</code>
             </h3>
-            <p style={{ backgroundColor: `var(--${name})` }}>
+            <p
+              style={{
+                color: "transparent",
+                backgroundColor: `var(--${name})`,
+              }}>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et
@@ -31,6 +35,7 @@ export async function getServerSideProps() {
     props: {
       colors: [
         "white",
+        "gray",
         "black",
         "lighter-black",
         "blue",
