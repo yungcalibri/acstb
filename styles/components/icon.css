@@ -1,0 +1,29 @@
+.icon-container {
+  vertical-align: baseline;
+  & .icon {
+    /* stylelint-disable unit-no-unknown */
+    height: 0.75em;
+    height: 1cap;
+    width: 1.75em;
+    width: 1cap;
+    /* stylelint-enable unit-no-unknown */
+  }
+
+  &.reverse {
+    direction: rtl;
+  }
+}
+
+/**
+ * Note: In cases where the character closest to the icon is lowercase, it may
+ * be preferable to make the icon take the height of a lowercase letter.
+ * This is possible with the `ex` length unit:
+ * .icon-runner {
+ *   text-transform: lowercase;
+ *
+ *   .icon {
+ *     width: 1ex;
+ *     height: 1ex;
+ *   }
+ * }
+ */
