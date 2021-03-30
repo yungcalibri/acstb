@@ -7,6 +7,7 @@ import { propStyles } from "util/style";
 
 /**
  * Displays children horizontally, overflowing in the X-axis if necessary.
+ * @todo Update design and functionality to support using this component without a scrollbar
  * @param {ReelProps} props
  */
 const Reel = (props) => {
