@@ -3,26 +3,25 @@
 
   display: flex;
   overflow-x: auto;
-  border: var(--color-outline);
   padding-bottom: var(--s-1);
 
-  scrollbar-color: var(--color-background) var(--color-text);
+  scrollbar-color: var(--color-offset) var(--color-background);
 
   /* stylelint-disable selector-pseudo-element-no-unknown */
   &::-webkit-scrollbar {
     height: 1rem;
   }
   &::-webkit-scrollbar-track {
-    background-color: var(--color-outline);
+    background-color: var(--color-background);
   }
   &::-webkit-scrollbar-thumb {
-    background-color: var(--color-dark);
+    background-color: var(--color-text);
     background-image: linear-gradient(
-      var(--color-outline) 0,
-      var(--color-outline) 0.25rem,
-      var(--color-text) 0.25rem,
-      var(--color-text) 0.75rem,
-      var(--color-dark) 0.75rem
+      var(--color-background) 0,
+      var(--color-background) 0.25rem,
+      var(--color-offset) 0.25rem,
+      var(--color-offset) 0.75rem,
+      var(--color-background) 0.75rem
     );
   }
 
