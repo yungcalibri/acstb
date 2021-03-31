@@ -1,10 +1,13 @@
 .icon-container {
-  vertical-align: baseline;
-  & .icon {
+  &,
+  & > * {
+    vertical-align: baseline;
+  }
+  & > .icon {
     /* stylelint-disable unit-no-unknown */
     height: 0.75em;
     height: 1cap;
-    width: 1.75em;
+    width: 0.75em;
     width: 1cap;
     /* stylelint-enable unit-no-unknown */
   }
