@@ -1,3 +1,37 @@
 .text-align\:center {
   text-align: center !important;
 }
+
+.font-size\:smaller {
+  font-size: smaller;
+}
+.font-size\:larger {
+  font-size: larger;
+}
+.font-size\:s-4 {
+  font-size: var(--s-4);
+}
+.font-size\:s-3 {
+  font-size: var(--s-3);
+}
+.font-size\:s-2 {
+  font-size: var(--s-2);
+}
+.font-size\:s-1 {
+  font-size: var(--s-1);
+}
+.font-size\:s0 {
+  font-size: var(--s0);
+}
+.font-size\:s1 {
+  font-size: var(--s1);
+}
+.font-size\:s2 {
+  font-size: var(--s2);
+}
+.font-size\:s3 {
+  font-size: var(--s3);
+}
+.font-size\:s4 {
+  font-size: var(--s4);
+}
