@@ -19,16 +19,16 @@ const Icon = (props) => {
   const myUrl = `/images/icons.svg#${iconId}`;
 
   return (
-    <div
+    <span
       className={myClass}
       role={label ? "img" : ""}
       aria-label={label || ""}
       {...rest}>
-      {children}
-      <svg className="icon" style={{ color: "currentColor" }}>
+      {children}{" "}
+      <svg className="icon">
         <use xlinkHref={myUrl}></use>
       </svg>
-    </div>
+    </span>
   );
 };
 
