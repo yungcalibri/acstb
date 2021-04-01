@@ -5,6 +5,11 @@
 #__next {
   max-width: 100vw;
   min-height: 100vh;
+
+  & > header:first-of-type {
+    margin-top: var(--s0);
+    margin-bottom: var(--s0);
+  }
 }
 
 a {

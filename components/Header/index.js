@@ -4,13 +4,13 @@ import { PageCenter } from "components/Center";
 const Header = () => (
   <header>
     <PageCenter>
-      <h1>
+      <nav>
         <Link href="/">
-          <code>
-            <a>acstb.name</a>
-          </code>
+          <a>
+            <code>acstb.name</code>
+          </a>
         </Link>
-      </h1>
+      </nav>
       {/* Should swap out the self-aggrandizement for some breadcrumbs here when the time comes. */}
     </PageCenter>
   </header>
