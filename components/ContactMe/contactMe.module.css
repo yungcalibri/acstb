@@ -1,5 +1,3 @@
 .contactCard {
-  background: var(--color-invert-background);
-
   border-radius: var(--s-3);
 }

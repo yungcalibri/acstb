@@ -9,7 +9,7 @@ const ContactMe = (props) => {
 
   return (
     <Stack className={myClass} asList space="var(--s-1)" {...rest}>
-      <Box className={styles.contactCard}>
+      <Box className={styles.contactCard} borderWidth="var(--s-4)">
         <a
           href="https://github.com/arthropodSeven"
           rel="me external"
@@ -19,7 +19,7 @@ const ContactMe = (props) => {
           </Icon>
         </a>
       </Box>
-      <Box className={styles.contactCard}>
+      <Box className={styles.contactCard} borderWidth="var(--s-4)">
         <a
           href="mailto:arthropodSeven@pm.me"
           rel="me external"
