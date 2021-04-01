@@ -14,10 +14,9 @@ const Home = () => (
         className="centered"
         space="var(--s1)"
         contentMin="50%"
-        side="right"
-        noStretch>
+        side="right">
         <div>
-          <section>
+          <div>
             <p>
               This is my website,{" "}
               <Link href="/">
@@ -26,17 +25,17 @@ const Home = () => (
               .
             </p>
             <p>
-              I'm a programmer by trade. Most of my work has been building Web
-              frontends, but I take pleasure in solving interesting problems of
-              any type.
+              I'm a programmer by trade. My experience centers on building Web
+              frontends with React, but I take pleasure in solving interesting
+              problems of any type.
             </p>
             <p>
               In most places, you can look me up at @
-              <span className="p-nickname">arthropodSeven</span>. You can get in
-              touch with me here:
+              <span className="p-nickname">arthropodSeven</span>. Get in touch
+              here:
             </p>
             <ContactMe />
-          </section>
+          </div>
           <div>
             <Avatar className="u-photo" />
           </div>
