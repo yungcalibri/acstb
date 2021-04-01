@@ -12,12 +12,12 @@ import { natoRange } from "util/misc";
 
 const Home = () => (
   <article id="home">
-    <Cover minHeight="75vh">
+    <Cover minHeight="60vh" noPad>
       <h1>I'm Andrew Stebenné.</h1>
       <Sidebar
         className="centered"
         space="var(--s1)"
-        contentMin="65%"
+        contentMin="50%"
         side="right"
         noStretch>
         <div>
@@ -28,9 +28,11 @@ const Home = () => (
               any type.
             </p>
             <p>You can get in touch with me here:</p>
-            <ContactMe relMe />
+            <ContactMe />
           </section>
-          <Avatar />
+          <div>
+            <Avatar />
+          </div>
         </div>
       </Sidebar>
     </Cover>
