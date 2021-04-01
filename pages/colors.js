@@ -30,7 +30,7 @@ const Colors = (props) => {
 
 export default Colors;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   if (!process.env.NODE_ENV === "development") {
     return {
       notFound: true,
@@ -38,6 +38,7 @@ export async function getStaticProps() {
   }
 
   return {
+    notFound: !process.env.NODE_ENV === "development",
     props: {
       colors: [
         "white",
