@@ -14,9 +14,7 @@ const ContactMe = (props) => {
           href="https://github.com/arthropodSeven"
           rel="me external"
           className="padding:0 margin:0">
-          <Icon iconId="github" className="font-size:larger">
-            github.com/arthropodSeven
-          </Icon>
+          <Icon iconId="github">github.com/arthropodSeven</Icon>
         </a>
       </Box>
       <Box className={styles.contactCard} borderWidth="var(--s-4)">
@@ -24,9 +22,7 @@ const ContactMe = (props) => {
           href="mailto:arthropodSeven@pm.me"
           rel="me external"
           className="u-email padding:0 margin:0">
-          <Icon iconId="envelope" className="font-size:larger">
-            arthropodSeven@pm.me
-          </Icon>
+          <Icon iconId="envelope">arthropodSeven@pm.me</Icon>
         </a>
       </Box>
     </Stack>
