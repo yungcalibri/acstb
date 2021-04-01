@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Home = () => (
   <article id="home">
-    <Cover minHeight="60vh" noPad className="h-card">
+    <Cover minHeight="80vh" noPad className="h-card">
       <h1>
         I'm <span className="p-name">Andrew Stebenné</span>.
       </h1>
@@ -41,6 +41,7 @@ const Home = () => (
           </div>
         </div>
       </Sidebar>
+      <p>There will be blog posts here soon, but not quite yet.</p>
     </Cover>
   </article>
 );
