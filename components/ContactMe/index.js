@@ -9,34 +9,27 @@ const ContactMe = (props) => {
 
   return (
     <Stack className={myClass} asList space="var(--s-1)" {...rest}>
-      <div>
-        <ContactCard href="https://github.com/arthropodSeven/">
+      <Box className={styles.contactCard}>
+        <a
+          href="https://github.com/arthropodSeven"
+          rel="me external"
+          className="padding:0 margin:0">
           <Icon iconId="github" className="font-size:larger">
             github.com/arthropodSeven
           </Icon>
-        </ContactCard>
-      </div>
-      <div>
-        <ContactCard href="mailto:arthropodSeven@pm.me">
+        </a>
+      </Box>
+      <Box className={styles.contactCard}>
+        <a
+          href="mailto:arthropodSeven@pm.me"
+          rel="me external"
+          className="u-email padding:0 margin:0">
           <Icon iconId="envelope" className="font-size:larger">
             arthropodSeven@pm.me
           </Icon>
-        </ContactCard>
-      </div>
+        </a>
+      </Box>
     </Stack>
-  );
-};
-
-const ContactCard = (props) => {
-  const { children, className = "", href, ...rest } = props;
-  const myClass = [styles.contactCard, className].join(" ");
-
-  return (
-    <Box className={myClass} borderWidth="var(--s-3)" {...rest}>
-      <a href={href} rel="me external" className="padding:0 margin:0">
-        {children}
-      </a>
-    </Box>
   );
 };
 
