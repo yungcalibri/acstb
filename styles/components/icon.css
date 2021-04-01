@@ -13,6 +13,7 @@
   }
 
   &.reverse {
+    unicode-bidi: embed;
     direction: rtl;
   }
 }
