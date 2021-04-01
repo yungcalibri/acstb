@@ -15,7 +15,7 @@ const Home = () => (
         space="var(--s1)"
         contentMin="50%"
         side="right">
-        <div>
+        <div className="align-items:center">
           <div>
             <p>
               This is my website,{" "}
