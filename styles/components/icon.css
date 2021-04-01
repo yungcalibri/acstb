@@ -3,6 +3,10 @@
   & > * {
     vertical-align: baseline;
   }
+  &.v-middle,
+  &.v-middle > * {
+    vertical-align: middle;
+  }
   & > .icon {
     /* stylelint-disable unit-no-unknown */
     height: 0.75em;

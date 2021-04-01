@@ -4,6 +4,7 @@
  * @prop {boolean=} focusable
  * @prop {string} iconId - The ID of the SVG to reference in the icons file
  * @prop {string=} label - Applied `aria-label`. When applied, the icon will also get `role="img"`.
+ * @prop {boolean=} lower - Use `true` if the icon appears next to a fully lowercase string. Applies `vertical-align: middle`.
  */
 
 /**
@@ -11,11 +12,24 @@
  * @param {IconProps} props
  */
 const Icon = (props) => {
-  const { children, className = "", head, iconId, label, ...rest } = props;
+  const {
+    children,
+    className = "",
+    head,
+    iconId,
+    label,
+    lower,
+    ...rest
+  } = props;
   if (!iconId) {
     throw new Error("Icon element requires iconId prop");
   }
-  const myClass = `icon-container ${head ? "reverse" : ""} ${className}`;
+  const myClass = [
+    "icon-container",
+    head ? "reverse" : "",
+    lower ? "v-middle" : "",
+    className,
+  ].join(" ");
   const myUrl = `/images/icons.svg#${iconId}`;
 
   return (
