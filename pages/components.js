@@ -92,16 +92,3 @@ const Components = () => {
 };
 
 export default Components;
-
-export async function getServerSideProps() {
-  if (!process.env.NODE_ENV === "development") {
-    return {
-      notFound: true,
-    };
-  }
-
-  return {
-    notFound: !process.env.NODE_ENV === "development",
-    props: {},
-  };
-}

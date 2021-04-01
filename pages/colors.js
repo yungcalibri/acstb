@@ -1,13 +1,22 @@
 import React from "react";
 
-const Colors = (props) => {
-  const { colors } = props;
+const COLORS = [
+  "white",
+  "gray",
+  "black",
+  "lighter-black",
+  "blue",
+  "desaturated-blue",
+  "violet",
+  "desaturated-violet",
+];
 
+const Colors = () => {
   return (
     <div>
       <h2>Colors Demo</h2>
       <main>
-        {colors.map((name) => (
+        {COLORS.map((name) => (
           <React.Fragment key={name}>
             <h3>
               <code>{name}</code>
@@ -29,27 +38,3 @@ const Colors = (props) => {
 };
 
 export default Colors;
-
-export async function getServerSideProps() {
-  if (!process.env.NODE_ENV === "development") {
-    return {
-      notFound: true,
-    };
-  }
-
-  return {
-    notFound: !process.env.NODE_ENV === "development",
-    props: {
-      colors: [
-        "white",
-        "gray",
-        "black",
-        "lighter-black",
-        "blue",
-        "desaturated-blue",
-        "violet",
-        "desaturated-violet",
-      ],
-    },
-  };
-}
