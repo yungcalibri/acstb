@@ -1,13 +1,16 @@
 import Link from "next/link";
 import { PageCenter } from "components/Center";
+import Icon from "components/Icon";
 
 const Header = () => (
   <header>
     <PageCenter>
       <nav>
         <Link href="/">
-          <a>
-            <code>acstb.name</code>
+          <a id="home-link">
+            <Icon iconId="home" head lower>
+              acstb.name
+            </Icon>
           </a>
         </Link>
       </nav>
