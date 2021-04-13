@@ -7,8 +7,8 @@
   min-height: 100vh;
 
   & > header:first-of-type {
-    margin-top: var(--s0);
-    margin-bottom: var(--s0);
+    padding-top: var(--s0);
+    padding-bottom: var(--s0);
   }
 }
 
