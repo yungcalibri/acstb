@@ -17,6 +17,8 @@
     "lint.fix": "yarn lint.js.fix && yarn lint.style.fix"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.1.3",
     "lodash": "^4.17.21",
     "next": "10.1.3",
     "normalize.css": "^8.0.1",
