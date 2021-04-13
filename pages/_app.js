@@ -9,13 +9,15 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
   return (
     <React.Fragment>
       <Header />
-      {center ? (
-        <PageCenter>
+      <main>
+        {center ? (
+          <PageCenter>
+            <Component {...pageProps} />
+          </PageCenter>
+        ) : (
           <Component {...pageProps} />
-        </PageCenter>
-      ) : (
-        <Component {...pageProps} />
-      )}
+        )}
+      </main>
     </React.Fragment>
   );
 };
