@@ -41,7 +41,7 @@ const Home = () => (
           </div>
         </div>
       </Sidebar>
-      <p>There will be blog posts here soon, but not quite yet.</p>
+      <p>There will be blog posts here soon.</p>
     </Cover>
   </article>
 );
