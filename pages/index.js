@@ -8,7 +8,12 @@ const Home = () => (
   <article id="home">
     <Cover minHeight="80vh" noPad className="h-card">
       <h1>
-        I'm <span className="p-name">Andrew Stebenné</span>.
+        I'm{" "}
+        <span className="p-name">
+          <span className="p-given-name">Andrew</span>{" "}
+          <span className="p-family-name">Stebenné</span>
+        </span>
+        .
       </h1>
       <Sidebar
         className="centered"
