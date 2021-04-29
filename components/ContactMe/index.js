@@ -21,8 +21,10 @@ const ContactMe = (props) => {
         <a
           href="mailto:arthropodSeven@pm.me"
           rel="me external"
-          className="u-email padding:0 margin:0">
-          <Icon iconId="envelope">arthropodSeven@pm.me</Icon>
+          className="padding:0 margin:0">
+          <Icon iconId="envelope">
+            <span className="u-email">arthropodSeven@pm.me</span>
+          </Icon>
         </a>
       </Box>
     </Stack>
