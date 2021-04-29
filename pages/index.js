@@ -24,17 +24,24 @@ const Home = () => (
               </Link>
               .
             </p>
-            <p>
-              I'm a programmer by trade. My experience centers on building Web
-              frontends with React, but I take pleasure in solving interesting
-              problems of any type.
+            <p className="p-note">
+              My friends know me as a quiet person, possessed of great hair and
+              adamant opinions about modern history.
             </p>
             <p>
-              In most places, you can look me up at @
-              <span className="p-nickname">arthropodSeven</span>. Get in touch
-              here:
+              By trade I'm a programmer, mostly building Web frontends with
+              React, but I take pleasure in solving interesting problems of any
+              type.
             </p>
+            <p>Contact:</p>
             <ContactMe />
+            <p>
+              Or look for{" "}
+              <em>
+                <span className="p-nickname">arthropodSeven</span>
+              </em>{" "}
+              wherever fine nicknames are used.
+            </p>
           </div>
           <div>
             <Avatar className="u-photo" />
