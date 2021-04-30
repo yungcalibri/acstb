@@ -41,12 +41,16 @@ const Home = () => (
               Next.js, but I take pleasure in solving interesting problems of
               any type.
             </p>
-            <p>Contact:</p>
+            <p>You can contact me here:</p>
             <ContactMe />
             <p>
-              Or look for{" "}
+              Or look for me online, under{" "}
               <em>
                 <span className="p-nickname">arthropodSeven</span>
+              </em>{" "}
+              or{" "}
+              <em>
+                <span className="p-nickname">acstb</span>,
               </em>{" "}
               wherever fine nicknames are used.
             </p>
