@@ -17,10 +17,13 @@ const Home = () => (
       </h1>
       <Sidebar
         className="centered"
-        space="var(--s1)"
-        contentMin="50%"
-        side="right">
+        space="var(--s2)"
+        contentMin="60%"
+        side="left">
         <div className="align-items:center">
+          <div>
+            <Avatar className="u-photo" />
+          </div>
           <div>
             <p>
               This is my website,{" "}
@@ -47,9 +50,6 @@ const Home = () => (
               </em>{" "}
               wherever fine nicknames are used.
             </p>
-          </div>
-          <div>
-            <Avatar className="u-photo" />
           </div>
         </div>
       </Sidebar>
