@@ -34,12 +34,12 @@ const Home = () => (
             </p>
             <p className="p-note">
               My friends know me as a quiet person, possessed of great hair and
-              adamant opinions about modern history.
+              of adamant opinions about modern history.
             </p>
             <p>
-              By trade I'm a programmer, mostly building Web frontends with
-              React, but I take pleasure in solving interesting problems of any
-              type.
+              By trade I'm a programmer. I primarily build websites with
+              Next.js, but I take pleasure in solving interesting problems of
+              any type.
             </p>
             <p>Contact:</p>
             <ContactMe />
