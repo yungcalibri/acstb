@@ -11,8 +11,8 @@ const Test = (props) => {
 export default Test;
 
 export async function getStaticProps() {
-  if (!process.env.NODE_ENV === "development") {
-    return { notFound: true };
+  if (process.env.VERCEL_ENV === "development") {
+    return { props: {} };
   }
-  return { props: {} };
+  return { notFound: true };
 }
