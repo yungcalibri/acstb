@@ -44,3 +44,19 @@
 .padding\:0 {
   padding: 0 !important;
 }
+
+.display\:block {
+  display: block !important;
+}
+.display\:inline {
+  display: inline !important;
+}
+.display\:grid {
+  display: grid !important;
+}
+.display\:flex {
+  display: flex !important;
+}
+.display\:none {
+  display: none !important;
+}
