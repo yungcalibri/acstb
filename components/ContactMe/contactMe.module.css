@@ -1,3 +1,4 @@
 .contactCard {
+  width: fit-content;
   border-radius: var(--s-3);
 }
