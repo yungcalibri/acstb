@@ -1,6 +1,4 @@
 .box {
-  width: fit-content;
-
   padding: var(--s-1);
 
   outline-width: 0.125rem;
