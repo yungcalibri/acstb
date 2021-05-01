@@ -8,6 +8,9 @@
   justify-content: end !important;
 }
 
+.align-items\:baseline {
+  align-items: baseline !important;
+}
 .align-items\:start {
   align-items: start !important;
 }
@@ -28,6 +31,9 @@
   justify-self: end !important;
 }
 
+.align-self\:baseline {
+  align-self: baseline !important;
+}
 .align-self\:start {
   align-self: start !important;
 }
