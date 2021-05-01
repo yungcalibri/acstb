@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "vercel dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "fix": "yarn pretty.fix && yarn lint.js.fix && yarn lint.style.fix",
