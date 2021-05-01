@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
           content="acstb.name - Andrew Stebenné's Personal Website"
           key="title"
         />
-        <meta property="og:image" content="/images/seo-preview.webp" />
+        <meta property="og:image" content="/images/acstb.webp" />
         <meta name="author" content="Andrew Stebenné" key="author" />
         <meta
           name="description"
