@@ -1,0 +1,11 @@
+/* SVGs with undefined fill/stroke should get the text color for both */
+svg {
+  & path:not([fill]),
+  & path[fill=""] {
+    fill: var(--color-text);
+  }
+  & path:not([stroke]),
+  & path[stroke=""] {
+    stroke: var(--color-text);
+  }
+}
