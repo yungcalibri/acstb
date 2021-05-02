@@ -46,11 +46,16 @@ const Home = () => (
             <p>
               Or look for me online, under{" "}
               <em>
-                <span className="p-nickname">arthropodSeven</span>
+                <span className="p-nickname">
+                  @<span className="value">arthropodSeven</span>
+                </span>
               </em>{" "}
               or{" "}
               <em>
-                <span className="p-nickname">acstb</span>,
+                <span className="p-nickname">
+                  @<span className="value">acstb</span>
+                </span>
+                ,
               </em>{" "}
               wherever fine nicknames are used.
             </p>
