@@ -9,10 +9,10 @@
  * line height
  */
 * {
-  line-height: initial;
-}
-*:not(:--heading) {
   line-height: 1.62;
+}
+:--heading {
+  line-height: initial;
 }
 
 /* stylelint-disable no-descending-specificity */
