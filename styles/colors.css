@@ -26,6 +26,7 @@
 
   --color-invert-background: var(--black);
   --color-invert-text: var(--white);
+  --color-invert-text-highlight: var(--goldenrod);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,12 +40,22 @@
     --color-outline: var(--desaturated-blue);
 
     --color-invert-background: var(--white);
-    --color-invert-text: var(--lighter-black);
+    --color-invert-text: var(--black);
+    --color-invert-text-highlight: var(--desaturated-blue);
   }
 }
 
 /*** Default Colors ***/
 :root {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.invert {
+  --color-background: var(--color-invert-background);
+  --color-text: var(--color-invert-text);
+  --color-text-highlight: var(--color-invert-text-highlight);
+
   background: var(--color-background);
   color: var(--color-text);
 }
