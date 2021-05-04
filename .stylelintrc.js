@@ -11,5 +11,6 @@ module.exports = {
     "no-duplicate-selectors": undefined,
     "custom-property-empty-line-before": undefined,
     "declaration-empty-line-before": undefined,
+    "selector-type-no-unknown": undefined,
   },
 };
