@@ -38,9 +38,76 @@ export default function Resume() {
         .
       </p>
       <h2>Experience</h2>
-      <ul className="p-experience"></ul>
+      <ul className="p-experience">
+        <li>alfa 20XX-20XX</li>
+        <li>bravo 20XX-20XX</li>
+        <li>charley 20XX-20XX</li>
+        <li>delta 20XX-20XX</li>
+      </ul>
       <h2>Education</h2>
-      <ul className="p-education"></ul>
+      <ul className="p-education">
+        <li className="h-event">
+          <h3 className="p-name">Northern Arizona University</h3>{" "}
+          <h4>
+            <time className="dt-start" dateTime="2012">
+              2012
+            </time>{" "}
+            -{" "}
+            <time className="dt-end" dateTime="2017">
+              2017
+            </time>
+          </h4>
+          Computer Science and Comparative Cultural Studies.
+        </li>
+        <li className="h-event">
+          <h3>
+            <span className="p-name">
+              Chongqing University of Posts and Telecommunications
+            </span>{" "}
+            <span className="p-name">(重庆邮电大学)</span>{" "}
+          </h3>{" "}
+          <h4>
+            <time className="dt-start" dateTime="2012">
+              2015
+            </time>{" "}
+            -{" "}
+            <time className="dt-end" dateTime="2017">
+              2016
+            </time>
+          </h4>
+          Foreign exchange program.
+        </li>
+      </ul>
     </article>
   );
+}
+
+export async function getServerSideProps(context) {
+  const {
+    params,
+    req,
+    res,
+    query,
+    preview,
+    previewData,
+    resolvedUrl,
+  } = context;
+
+  console.debug(Object.keys(req.cookies));
+
+  // const headers = new Map(Object.entries(req.cookies));
+  // if (!headers.has(TICKET_HEADER)) {
+  //   console.debug("missing x-acstb-ticket");
+  //   res.setCookie(TICKET_HEADER, "PORCELANOSA");
+  // } else {
+  //   console.debug("has x-acstb-ticket");
+  //   return {
+  //     props: {},
+  //   };
+  // }
+
+  return {
+    // notFound: true,
+    props: {},
+  };
 }
