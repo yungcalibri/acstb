@@ -32,7 +32,7 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
       </Head>
       <Header />
       {center ? (
-        <PageCenter>
+        <PageCenter id="page-root">
           <Component {...pageProps} />
         </PageCenter>
       ) : (
