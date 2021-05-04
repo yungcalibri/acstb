@@ -44,12 +44,9 @@ export default function Resume() {
       </ul>
       <h2>Education</h2>
       <Stack space="var(--s-1)" asList className="max-width:var(--measure)">
-        <Box
-          borderWidth="var(--s-4)"
-          padding="var(--s0)"
-          className="p-education h-event">
+        <Box borderWidth="var(--s-4)" padding="var(--s0)">
           <Sidebar contentMin="75%" space="var(--s-1)">
-            <div>
+            <div className="p-education h-event">
               <div className="text-align:center">
                 <time className="dt-start" dateTime="2012">
                   2012
@@ -76,21 +73,19 @@ export default function Resume() {
                   </small>
                 </div>
                 <p>
-                  {"Two courses of study: "}
-                  <span className="p-name">Computer Science</span>
-                  {" and "}
-                  <span className="p-name">Comparative Cultural Studies</span>.
+                  Two courses of study:{" "}
+                  <span className="p-name">
+                    Computer Science and Comparative Cultural Studies
+                  </span>
+                  .
                 </p>
               </div>
             </div>
           </Sidebar>
         </Box>
-        <Box
-          borderWidth="var(--s-4)"
-          padding="var(--s0)"
-          className="p-education h-event">
+        <Box borderWidth="var(--s-4)" padding="var(--s0)">
           <Sidebar contentMin="75%" space="var(--s-1)">
-            <div>
+            <div className="p-education h-event">
               <div className="text-align:center">
                 <time className="dt-start" dateTime="2012">
                   2015
@@ -120,10 +115,11 @@ export default function Resume() {
                   </small>
                 </div>
                 <p>
-                  {"Exchange program: "}
-                  <span className="p-name">Chinese Language and Culture</span>
-                  {" and "}
-                  <span className="p-name">Computer Science</span>.
+                  Exchange program:{" "}
+                  <span className="p-name">
+                    Chinese Language and Culture, and Computer Science
+                  </span>
+                  .
                 </p>
               </div>
             </div>
