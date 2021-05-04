@@ -66,3 +66,7 @@
 .display\:none {
   display: none !important;
 }
+
+.max-width\:var\(\-\-measure\) {
+  max-width: var(--measure) !important;
+}
