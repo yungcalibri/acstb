@@ -87,11 +87,11 @@ export default function Resume() {
           <Sidebar contentMin="75%" space="var(--s-1)">
             <div className="p-education h-event">
               <div className="text-align:center">
-                <time className="dt-start" dateTime="2012">
+                <time className="dt-start" dateTime="2015">
                   2015
                 </time>
                 {" - "}
-                <time className="dt-end" dateTime="2017">
+                <time className="dt-end" dateTime="2016">
                   2016
                 </time>
                 <hr />
