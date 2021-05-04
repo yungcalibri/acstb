@@ -59,7 +59,7 @@ export default function Resume() {
               </div>
               <div style={{ paddingInline: "var(--s0)" }}>
                 <div className="p-location h-card">
-                  <a href="https://nau.edu/" className="u-url">
+                  <a className="u-url" href="https://nau.edu/">
                     <strong className="p-name">
                       Northern Arizona University
                     </strong>
@@ -98,7 +98,7 @@ export default function Resume() {
               </div>
               <div style={{ paddingInline: "var(--s0)" }}>
                 <div className="p-location h-card">
-                  <a href="http://english.cqupt.edu.cn" className="u-url">
+                  <a className="u-url" href="http://english.cqupt.edu.cn">
                     <strong className="p-name">
                       Chongqing University of Posts and Telecommunications
                     </strong>
