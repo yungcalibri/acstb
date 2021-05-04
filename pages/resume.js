@@ -43,67 +43,92 @@ export default function Resume() {
         <li>XOJet 2015-2018</li>
       </ul>
       <h2>Education</h2>
-      <Stack space="var(--s-1)" asList>
-        <div className="p-education h-event">
-          <Box borderWidth="var(--s-4)">
-            <Sidebar contentMin="75%" space="var(--s0)">
-              <div>
-                <div className="time">
-                  <time className="dt-start" dateTime="2012">
-                    2012
-                  </time>
-                  {" - "}
-                  <time className="dt-end" dateTime="2017">
-                    2017
-                  </time>
-                </div>
-                <div>
-                  <strong className="p-name">
-                    Northern Arizona University
-                  </strong>{" "}
-                  <div className="p-location p-adr h-adr">
-                    <span className="p-locality">Flagstaff</span>,{" "}
-                    <span className="p-region">Arizona</span>,{" "}
-                    <span className="p-country-name">United States</span>
-                  </div>
-                  <span className="p-summary">
-                    Computer Science and Comparative Cultural Studies.
-                  </span>
-                </div>
+      <Stack space="var(--s-1)" asList className="max-width:var(--measure)">
+        <Box
+          borderWidth="var(--s-4)"
+          padding="var(--s0)"
+          className="p-education h-event">
+          <Sidebar contentMin="75%" space="var(--s-1)">
+            <div>
+              <div className="text-align:center">
+                <time className="dt-start" dateTime="2012">
+                  2012
+                </time>
+                {" - "}
+                <time className="dt-end" dateTime="2017">
+                  2017
+                </time>
+                <hr />
               </div>
-            </Sidebar>
-          </Box>
-        </div>
-        <div className="p-education h-event">
-          <Box borderWidth="var(--s-4)">
-            <Sidebar contentMin="75%" space="var(--s0)">
-              <div>
-                <div className="time">
-                  <time className="dt-start" dateTime="2012">
-                    2015
-                  </time>
-                  {" - "}
-                  <time className="dt-end" dateTime="2017">
-                    2016
-                  </time>
-                </div>{" "}
-                <div>
-                  <strong className="p-name">
-                    Chongqing University of Posts and Telecommunications{" "}
-                  </strong>
+              <div style={{ paddingInline: "var(--s0)" }}>
+                <div className="p-location h-card">
+                  <a href="https://nau.edu/" className="u-url">
+                    <strong className="p-name">
+                      Northern Arizona University
+                    </strong>
+                  </a>{" "}
+                  <small>
+                    <div className="p-adr h-adr">
+                      <span className="p-locality">Flagstaff</span>,{" "}
+                      <span className="p-region">Arizona</span>,{" "}
+                      <span className="p-country-name">United States</span>
+                    </div>
+                  </small>
+                </div>
+                <p>
+                  {"Two courses of study: "}
+                  <span className="p-name">Computer Science</span>
+                  {" and "}
+                  <span className="p-name">Comparative Cultural Studies</span>.
+                </p>
+              </div>
+            </div>
+          </Sidebar>
+        </Box>
+        <Box
+          borderWidth="var(--s-4)"
+          padding="var(--s0)"
+          className="p-education h-event">
+          <Sidebar contentMin="75%" space="var(--s-1)">
+            <div>
+              <div className="text-align:center">
+                <time className="dt-start" dateTime="2012">
+                  2015
+                </time>
+                {" - "}
+                <time className="dt-end" dateTime="2017">
+                  2016
+                </time>
+                <hr />
+              </div>
+              <div style={{ paddingInline: "var(--s0)" }}>
+                <div className="p-location h-card">
+                  <a href="http://english.cqupt.edu.cn" className="u-url">
+                    <strong className="p-name">
+                      Chongqing University of Posts and Telecommunications
+                    </strong>
+                  </a>
                   <div>
                     (<span className="p-name">重庆邮电大学</span>)
                   </div>
-                  <div className="p-location p-adr h-adr">
-                    <span className="p-locality">Chongqing</span>,{" "}
-                    <span className="p-country-name">China</span>
-                  </div>
-                  <span className="p-summary">Foreign exchange program.</span>
+                  <small>
+                    <div className="p-adr h-adr">
+                      <span className="p-locality">Nanshan</span>,{" "}
+                      <span className="p-region">Chongqing</span>,{" "}
+                      <span className="p-country-name">China</span>
+                    </div>
+                  </small>
                 </div>
+                <p>
+                  {"Exchange program: "}
+                  <span className="p-name">Chinese Language and Culture</span>
+                  {" and "}
+                  <span className="p-name">Computer Science</span>.
+                </p>
               </div>
-            </Sidebar>
-          </Box>
-        </div>
+            </div>
+          </Sidebar>
+        </Box>
       </Stack>
     </article>
   );
