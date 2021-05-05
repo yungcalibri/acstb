@@ -7,5 +7,10 @@
   background: var(--color-background);
 
   flex-basis: 13ch;
-  text-align: right;
+
+  writing-mode: vertical-rl;
+}
+
+.line-item .invert-title {
+  flex-basis: content;
 }
