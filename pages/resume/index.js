@@ -3,6 +3,7 @@ import Cluster from "components/Cluster";
 import Stack from "components/Stack";
 import Head from "next/head";
 import LineItem from "./components/LineItem";
+import Skill from "./components/Skill";
 
 const copy = {
   title: "Andrew Stebenné - Web Developer",
@@ -46,19 +47,8 @@ export default function Resume() {
 
       <h2>Skills</h2>
       <Cluster space="var(--s0)">
-        {skills.map(([skill, time]) => (
-          <Box
-            borderWidth="var(--s-4)"
-            padding="0"
-            className="p-skill display:flex"
-            key={skill}>
-            <span style={{ padding: "var(--s-1)" }}>{skill}</span>
-            {time && (
-              <div className="invert" style={{ padding: "var(--s-1)" }}>
-                {time}yr.
-              </div>
-            )}
-          </Box>
+        {skills.map(([name, years]) => (
+          <Skill name={name} years={years} key={name} />
         ))}
       </Cluster>
 
