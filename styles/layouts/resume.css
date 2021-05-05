@@ -6,6 +6,13 @@
   }
 }
 
+.line-item .p-location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
 .invert-title {
   --color-background: var(--color-invert-background);
   --color-text: var(--color-invert-text);
