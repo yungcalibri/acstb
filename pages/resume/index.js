@@ -31,8 +31,19 @@ export default function Resume() {
     <article id="resume" className="h-resume">
       <Head>
         <title>{copy.title}</title>
-        <meta property="og:title" content={copy.title} key="title" />
         <meta name="description" content={copy.summary} key="description" />
+        <link
+          rel="canonical"
+          href="https://acstb.name/resume"
+          key="canonical"
+        />
+        <meta property="og:title" content={copy.title} key="og:title" />
+        <meta property="og:type" content="profile" key="og:type" />
+        <meta
+          property="og:url"
+          content="https://acstb.name/resume"
+          key="og:url"
+        />
       </Head>
       <h1 className="p-name">{copy.title}</h1>
       <div className="p-summary">
