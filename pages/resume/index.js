@@ -194,11 +194,11 @@ const Resume = () => (
             <span className="u-email">arthropodSeven@pm.me</span>
           </Icon>
         </a>
-        <p className="p-adr h-adr">
+        <p className="p-adr h-adr display:none">
           <span className="p-locality">Highland Park</span>
           {", "}
           <span className="p-region">New Jersey</span>
-          <span className="p-country-name display:none">United States</span>
+          <span className="p-country-name">United States</span>
         </p>
       </div>
     </main>
