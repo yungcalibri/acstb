@@ -80,7 +80,7 @@ export default function Resume() {
           }>
           <p>
             Worked one-on-one with designers and stakeholders to implement new
-            features throughout AEDIT's Web platform, from a new editorial blog
+            features throughout AEDIT's Web presence, from a new editorial blog
             platform to a full person-to-person video chat app.
           </p>
         </LineItem>
@@ -121,8 +121,8 @@ export default function Resume() {
           }>
           <p>
             As a member of a small tech team, contributed major features to
-            XOJet's internal Web apps, enabling the booking team to price simple
-            even the most complex flights faster than ever before.
+            XOJet's internal Web apps, enabling the booking team to price even
+            the most complex flights faster than ever before.
           </p>
         </LineItem>
       </Stack>
