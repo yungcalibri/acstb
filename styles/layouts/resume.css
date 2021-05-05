@@ -40,7 +40,11 @@
   & > .dotted-line {
     width: var(--s-4);
 
-    flex-basis: calc(2 * var(--s3));
+    /* Such that the full height of these flex items works out to roughly
+     * the full height of their container, divided by 1.62 */
+    flex-basis: calc(
+      (100% - ((2 * var(--s-2) + (2 * var(--s-4) + 1.5em)))) / 1.62
+    );
 
     background: repeating-linear-gradient(
       to bottom,
