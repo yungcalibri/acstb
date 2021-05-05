@@ -7,7 +7,7 @@ const Skill = (props) => {
 
   return (
     <Box borderWidth="var(--s-4)" padding="0" className={myClass} {...rest}>
-      <span>{name}</span>
+      <span className="p-skill">{name}</span>
       {years && <div className="invert">{years}y</div>}
     </Box>
   );
