@@ -18,9 +18,9 @@ const LineItem = (props) => {
     <Box
       borderWidth="var(--s-4)"
       padding="0"
-      className={`${className} line-item`}>
+      className={`${className} line-item h-event`}>
       <Sidebar contentMin="75%" space="0">
-        <div className="p-education h-event">
+        <div>
           <div className="invert-title" style={{ padding: "var(--s-1)" }}>
             <strong>
               <time className="dt-start" dateTime={start}>
