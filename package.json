@@ -28,8 +28,8 @@
     "vercel": "^22.0.1"
   },
   "devDependencies": {
-    "@types/node": "^15.0.1",
-    "@types/react": "^17.0.4",
+    "@types/node": "^15.0.2",
+    "@types/react": "^17.0.5",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
