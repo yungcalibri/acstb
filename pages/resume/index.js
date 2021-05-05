@@ -101,8 +101,8 @@ export default function Resume() {
             </div>
           }>
           <p>
-            Contributed new features and improvements to Domio's primary booking
-            product, and sharpened my understanding of React.js and Web
+            Contributed new features and improvements to Domio's primary hotel
+            booking Web app, and sharpened my understanding of React.js and Web
             fundamentals.
           </p>
         </LineItem>
@@ -123,7 +123,7 @@ export default function Resume() {
           }>
           <p>
             As a member of a small tech team, contributed major features to
-            XOJet's internal Web apps, enabling the booking team to price even
+            XOJet's internal Web apps, enabling their booking team to price even
             the most complex flights faster than ever before.
           </p>
         </LineItem>
