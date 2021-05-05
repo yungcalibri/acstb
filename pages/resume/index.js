@@ -39,7 +39,7 @@ export default function Resume() {
           I consider software engineering to be a craft. I have a thorough
           understanding of HTML, CSS, and JavaScript, and I can harness them
           effectively. I go to great pains in building <em>truly responsive</em>{" "}
-          websites which maintain a unique and consistent voice{"\u2014"}on any
+          websites which present a unique and consistent voice{"\u2014"}on any
           device, for any reader.
         </p>
       </div>
