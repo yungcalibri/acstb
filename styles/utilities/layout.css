@@ -11,6 +11,9 @@
 .align-items\:baseline {
   align-items: baseline !important;
 }
+.align-items\:first {
+  align-items: first baseline !important;
+}
 .align-items\:start {
   align-items: start !important;
 }
