@@ -13,15 +13,17 @@ const skills = [
   ["Next.js", 3],
   ["React.js", 6],
   ["JavaScript", 6],
+  ["Continuous Integration", 2],
+  ["Continuous Delivery", 1],
   ["Node.js", 6],
   ["HTML", 6],
   ["CSS", 6],
-  ["Project Management", 1],
-  ["Continuous Integration", 2],
-  ["Continuous Delivery", 1],
   ["Git", 6],
   ["GitHub", 6],
+  ["Project Management", 1],
   ["Vim", 10],
+  ["REST APIs", 6],
+  ["GraphQL", 1],
 ];
 
 export default function Resume() {
