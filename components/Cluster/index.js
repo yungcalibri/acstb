@@ -1,3 +1,4 @@
+import { Children, cloneElement, isValidElement } from "react";
 import { propStyles } from "util/style";
 
 /**
@@ -5,21 +6,38 @@ import { propStyles } from "util/style";
  * @prop {string=} align - Value of `align-items`
  * @prop {string=} justify - Value of `justify-content`
  * @prop {string=} space - Padding between items in cluster
+ * @prop {boolean=} asList - Mark up the cluster as a list
  */
 
 /**
  * Displays children as a horizontally wrapping list with consistent spacing between items.
- * @todo Add param `asList` to apply list and list-item roles to the Cluster and its children, respectively.
  * @param {ClusterProps} props
  */
 const Cluster = (props) => {
-  const { align, children, className = "", justify, space, ...rest } = props;
+  const {
+    align,
+    asList,
+    children,
+    className = "",
+    justify,
+    space,
+    role,
+    ...rest
+  } = props;
 
   const myClass = `cluster ${className}`;
 
   return (
-    <div className={myClass} {...rest}>
-      <div>{children}</div>
+    <div className={myClass} role={asList ? "list" : role} {...rest}>
+      <div>
+        {asList
+          ? Children.map(children, (child) =>
+              isValidElement(child)
+                ? cloneElement(child, { role: "listitem" })
+                : child
+            )
+          : children}
+      </div>
       <style jsx>{`
         .cluster {
           ${propStyles([space, "--space"])}
