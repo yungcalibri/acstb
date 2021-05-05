@@ -1,4 +1,3 @@
-import Box from "components/Box";
 import Cluster from "components/Cluster";
 import Stack from "components/Stack";
 import Head from "next/head";
