@@ -37,17 +37,17 @@
     border-top: var(--s-4) solid currentColor;
   }
 
-  & > b {
-    width: 0.35ch;
+  & > .dotted-line {
+    width: var(--s-4);
 
-    flex-basis: 50%;
+    flex-basis: calc(2 * var(--s3));
 
     background: repeating-linear-gradient(
       to bottom,
       currentColor 0,
-      currentColor 0.75ch,
-      transparent 0.75ch,
-      transparent 1.5ch
+      currentColor var(--s-1),
+      transparent var(--s-1),
+      transparent var(--s0)
     );
   }
 }

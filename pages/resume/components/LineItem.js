@@ -23,7 +23,7 @@ const LineItem = (props) => {
             </time>
           </strong>
         </small>
-        <b />
+        <b className="dotted-line" />
         <small>
           <strong>
             <time className="dt-start" dateTime={start}>
