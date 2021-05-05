@@ -2,6 +2,7 @@ import Box from "components/Box";
 import Sidebar from "components/Sidebar";
 import Stack from "components/Stack";
 import Head from "next/head";
+import LineItem from "./components/LineItem";
 
 const copy = {
   title: "Andrew Stebenné - Web Developer",
@@ -44,88 +45,47 @@ export default function Resume() {
       </ul>
       <h2>Education</h2>
       <Stack space="var(--s-1)" asList className="max-width:var(--measure)">
-        <Box borderWidth="var(--s-4)" padding="0">
-          <Sidebar contentMin="75%" space="0">
-            <div className="p-education h-event">
-              <div className="invert-title">
-                <time className="dt-start" dateTime="2012">
-                  2012
-                </time>
-                {" - "}
-                <time className="dt-end" dateTime="2017">
-                  2017
-                </time>
-              </div>
-              <div
-                style={{
-                  padding: "var(--s0)",
-                }}>
-                <div className="p-location h-card">
-                  <a className="u-url" href="https://nau.edu/">
-                    <strong className="p-name">
-                      Northern Arizona University
-                    </strong>
-                  </a>{" "}
-                  <small>
-                    <div className="p-adr h-adr">
-                      <span className="p-locality">Flagstaff</span>,{" "}
-                      <span className="p-region">Arizona</span>,{" "}
-                      <span className="p-country-name">United States</span>
-                    </div>
-                  </small>
-                </div>
-                <p>
-                  Two courses of study:{" "}
-                  <span className="p-name">
-                    Computer Science and Comparative Cultural Studies
-                  </span>
-                  .
-                </p>
-              </div>
+        <LineItem
+          start="2012"
+          end="2017"
+          url="https://nau.edu/"
+          mainHeading="Northern Arizona University"
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">Flagstaff</span>,{" "}
+              <span className="p-region">Arizona</span>,{" "}
+              <span className="p-country-name">United States</span>
             </div>
-          </Sidebar>
-        </Box>
-        <Box borderWidth="var(--s-4)" padding="0">
-          <Sidebar contentMin="75%" space="0">
-            <div className="p-education h-event">
-              <div className="invert-title">
-                <time className="dt-start" dateTime="2015">
-                  2015
-                </time>
-                {" - "}
-                <time className="dt-end" dateTime="2016">
-                  2016
-                </time>
-              </div>
-              <div style={{ padding: "var(--s0)" }}>
-                <div className="p-location h-card">
-                  <a className="u-url" href="http://english.cqupt.edu.cn">
-                    <strong className="p-name">
-                      Chongqing University of Posts and Telecommunications
-                    </strong>
-                  </a>
-                  <div>
-                    (<span className="p-name">重庆邮电大学</span>)
-                  </div>
-                  <small>
-                    <div className="p-adr h-adr">
-                      <span className="p-locality">Nanshan</span>,{" "}
-                      <span className="p-region">Chongqing</span>,{" "}
-                      <span className="p-country-name">China</span>
-                    </div>
-                  </small>
-                </div>
-                <p>
-                  Exchange program:{" "}
-                  <span className="p-name">
-                    Chinese Language and Culture, and Computer Science
-                  </span>
-                  .
-                </p>
-              </div>
+          }>
+          <span>
+            Two courses of study:{" "}
+            <span className="p-name">
+              Computer Science and Comparative Cultural Studies
+            </span>
+            .
+          </span>
+        </LineItem>
+
+        <LineItem
+          start="2015"
+          end="2016"
+          url="http://english.cqupt.edu.cn/"
+          mainHeading="Chongqing University of Posts and Telecommunications "
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">Nanshan</span>,{" "}
+              <span className="p-region">Chongqing</span>,{" "}
+              <span className="p-country-name">China</span>
             </div>
-          </Sidebar>
-        </Box>
+          }>
+          <span>
+            Exchange program:{" "}
+            <span className="p-name">
+              Chinese Language and Culture, and Computer Science
+            </span>
+            .
+          </span>
+        </LineItem>
       </Stack>
     </article>
   );

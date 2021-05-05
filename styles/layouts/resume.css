@@ -6,9 +6,6 @@
   color: var(--color-text);
   background: var(--color-background);
 
-  text-align: center;
-  padding-left: var(--s0);
-  padding-right: var(--s0);
-  padding-top: var(--s-2);
-  padding-bottom: var(--s-2);
+  flex-basis: 13ch;
+  text-align: right;
 }
