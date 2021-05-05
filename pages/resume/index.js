@@ -19,30 +19,24 @@ export default function Resume() {
         <meta name="description" content={copy.summary} key="description" />
       </Head>
       <h1 className="p-name">{copy.title}</h1>
-      <p className="p-summary">{copy.summary}</p>
+      <div className="p-summary">
+        <p>{copy.summary}</p>
+        <p>
+          I have a thorough understanding of HTML, CSS, and JavaScript, and I go
+          to great pains in building truly responsive websites, which maintain a
+          unique and consistent voice on any device.
+        </p>
+      </div>
+
       <h2>Skills</h2>
-      <p>
-        I'm an expert at{" "}
-        <span className="p-skill">
-          building scalable and maintainable React apps with Next.js
-        </span>
-        . I have a{" "}
-        <span className="p-skill">
-          thorough understanding of HTML, CSS, and JavaScript
-        </span>
-        , and I go to great pains in{" "}
-        <span className="p-skill">
-          building truly responsive websites, which maintain a unique and
-          consistent voice on any device
-        </span>
-        .
-      </p>
+
       <h2>Experience</h2>
       <ul className="p-experience">
         <li>AEDIT 2019-2021</li>
         <li>Domio 2018-2019</li>
         <li>XOJet 2015-2018</li>
       </ul>
+
       <h2>Education</h2>
       <Stack space="var(--s-1)" asList className="max-width:var(--measure)">
         <LineItem
