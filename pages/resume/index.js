@@ -31,15 +31,74 @@ export default function Resume() {
       <h2>Skills</h2>
 
       <h2>Experience</h2>
-      <ul className="p-experience">
-        <li>AEDIT 2019-2021</li>
-        <li>Domio 2018-2019</li>
-        <li>XOJet 2015-2018</li>
-      </ul>
+      <Stack space="var(--s1)" asList className="max-width:var(--measure)">
+        <LineItem
+          start="2019"
+          end="2021"
+          url="https://aedit.com/"
+          mainHeading="Senior Software Engineer at AEDIT"
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">New York</span>
+              {", "}
+              <span className="p-region">New York</span>
+              {", "}
+              <span className="p-country-name">United States</span>
+            </div>
+          }>
+          <p>
+            Worked one-on-one with designers and stakeholders to implement new
+            features throughout AEDIT's Web platform, from a new editorial blog
+            platform to a full person-to-person video chat app.
+          </p>
+        </LineItem>
+        <LineItem
+          start="2018"
+          end="2019"
+          url="https://domio.com/"
+          mainHeading="Software Engineer at Domio"
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">New York</span>
+              {", "}
+              <span className="p-region">New York</span>
+              {", "}
+              <span className="p-country-name">United States</span>
+            </div>
+          }>
+          <p>
+            Contributed new features and improvements to Domio's primary booking
+            product, and sharpened my understanding of React.js and Web
+            fundamentals.
+          </p>
+        </LineItem>
+        <LineItem
+          className="p-experience"
+          start="2015"
+          end="2018"
+          url="https://xojet.com/"
+          mainHeading="Software Engineer at XOJet"
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">Sacramento</span>
+              {", "}
+              <span className="p-region">California</span>
+              {", "}
+              <span className="p-country-name">United States</span>
+            </div>
+          }>
+          <p>
+            As a member of a small tech team, contributed major features to
+            XOJet's internal Web apps, enabling the booking team to price simple
+            even the most complex flights faster than ever before.
+          </p>
+        </LineItem>
+      </Stack>
 
       <h2>Education</h2>
-      <Stack space="var(--s-1)" asList className="max-width:var(--measure)">
+      <Stack space="var(--s1)" asList className="max-width:var(--measure)">
         <LineItem
+          className="p-education"
           start="2012"
           end="2017"
           url="https://nau.edu/"
@@ -51,16 +110,17 @@ export default function Resume() {
               <span className="p-country-name">United States</span>
             </div>
           }>
-          <span>
+          <p>
             Two courses of study:{" "}
             <span className="p-name">
               Computer Science and Comparative Cultural Studies
             </span>
             .
-          </span>
+          </p>
         </LineItem>
 
         <LineItem
+          className="p-education"
           start="2015"
           end="2016"
           url="http://english.cqupt.edu.cn/"
@@ -72,13 +132,13 @@ export default function Resume() {
               <span className="p-country-name">China</span>
             </div>
           }>
-          <span>
+          <p>
             Exchange program:{" "}
             <span className="p-name">
               Chinese Language and Culture, and Computer Science
             </span>
             .
-          </span>
+          </p>
         </LineItem>
       </Stack>
     </article>
