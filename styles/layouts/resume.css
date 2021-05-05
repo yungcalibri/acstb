@@ -14,10 +14,40 @@
   background: var(--color-background);
 
   flex-basis: content;
-
-  writing-mode: vertical-rl;
 }
 
 .line-item .invert-title {
   flex-basis: content;
+
+  padding: var(--s-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > *:not(b) {
+    flex-basis: content;
+    flex-grow: 0;
+
+    padding-inline: var(--s-3);
+  }
+  & > *:first-child {
+    border-bottom: var(--s-4) solid currentColor;
+  }
+  & > *:last-child {
+    border-top: var(--s-4) solid currentColor;
+  }
+
+  & > b {
+    width: 0.35ch;
+
+    flex-basis: 50%;
+
+    background: repeating-linear-gradient(
+      to bottom,
+      currentColor 0,
+      currentColor 0.75ch,
+      transparent 0.75ch,
+      transparent 1.5ch
+    );
+  }
 }
