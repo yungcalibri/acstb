@@ -6,8 +6,7 @@ import LineItem from "./components/LineItem";
 
 const copy = {
   title: "Andrew Stebenné - Web Developer",
-  summary:
-    "I'm a skilled software engineer, and my forté is building websites. I care about my craft, and I go the extra mile to do it properly.",
+  summary: "I'm a software engineer, and my forté is building websites.",
 };
 
 const skills = [
@@ -37,9 +36,11 @@ export default function Resume() {
       <div className="p-summary">
         <p>{copy.summary}</p>
         <p>
-          I have a thorough understanding of HTML, CSS, and JavaScript, and I go
-          to great pains in building truly responsive websites, which maintain a
-          unique and consistent voice on any device.
+          I consider software engineering to be a craft. I have a thorough
+          understanding of HTML, CSS, and JavaScript, and I can harness them
+          effectively. I go to great pains in building <em>truly responsive</em>{" "}
+          websites which maintain a unique and consistent voice{"\u2014"}on any
+          device, for any reader.
         </p>
       </div>
 
