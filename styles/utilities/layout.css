@@ -7,6 +7,9 @@
 .justify-content\:end {
   justify-content: end !important;
 }
+.justify-content\:space-between {
+  justify-content: space-between !important;
+}
 
 .align-items\:baseline {
   align-items: baseline !important;
