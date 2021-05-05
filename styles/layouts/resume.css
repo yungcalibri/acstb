@@ -13,8 +13,6 @@
 
   color: var(--color-text);
   background: var(--color-background);
-
-  flex-basis: content;
 }
 
 .line-item .invert-title {
