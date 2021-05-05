@@ -1,5 +1,5 @@
 import Box from "components/Box";
-import Sidebar from "components/Sidebar";
+import Cluster from "components/Cluster";
 import Stack from "components/Stack";
 import Head from "next/head";
 import LineItem from "./components/LineItem";
@@ -9,6 +9,21 @@ const copy = {
   summary:
     "I'm a skilled software engineer, and my forté is building websites. I care about my craft, and I go the extra mile to do it properly.",
 };
+
+const skills = [
+  ["Next.js", 3],
+  ["React.js", 6],
+  ["JavaScript", 6],
+  ["Node.js", 6],
+  ["HTML", 6],
+  ["CSS", 6],
+  ["Project Management", 1],
+  ["Continuous Integration", 2],
+  ["Continuous Delivery", 1],
+  ["Git", 6],
+  ["GitHub", 6],
+  ["Vim", 10],
+];
 
 export default function Resume() {
   return (
@@ -29,6 +44,22 @@ export default function Resume() {
       </div>
 
       <h2>Skills</h2>
+      <Cluster space="var(--s0)">
+        {skills.map(([skill, time]) => (
+          <Box
+            borderWidth="var(--s-4)"
+            padding="0"
+            className="p-skill display:flex"
+            key={skill}>
+            <span style={{ padding: "var(--s-1)" }}>{skill}</span>
+            {time && (
+              <div className="invert" style={{ padding: "var(--s-1)" }}>
+                {time}yr.
+              </div>
+            )}
+          </Box>
+        ))}
+      </Cluster>
 
       <h2>Experience</h2>
       <Stack space="var(--s1)" asList className="max-width:var(--measure)">
