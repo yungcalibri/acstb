@@ -47,12 +47,7 @@ export default function Resume() {
         <Box borderWidth="var(--s-4)" padding="0">
           <Sidebar contentMin="75%" space="0">
             <div className="p-education h-event">
-              <div
-                className="text-align:center invert"
-                style={{
-                  paddingInline: "var(--s0)",
-                  paddingBlock: "var(--s-2)",
-                }}>
+              <div className="invert-title">
                 <time className="dt-start" dateTime="2012">
                   2012
                 </time>
@@ -93,12 +88,7 @@ export default function Resume() {
         <Box borderWidth="var(--s-4)" padding="0">
           <Sidebar contentMin="75%" space="0">
             <div className="p-education h-event">
-              <div
-                className="text-align:center invert"
-                style={{
-                  paddingInline: "var(--s0)",
-                  paddingBlock: "var(--s-2)",
-                }}>
+              <div className="invert-title">
                 <time className="dt-start" dateTime="2015">
                   2015
                 </time>
