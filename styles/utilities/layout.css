@@ -76,3 +76,9 @@
 .max-width\:var\(\-\-measure\) {
   max-width: var(--measure) !important;
 }
+
+@media print {
+  .print\:none {
+    display: none !important;
+  }
+}
