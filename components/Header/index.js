@@ -5,7 +5,7 @@ import Icon from "components/Icon";
 const Header = () => (
   <header>
     <PageCenter>
-      <nav>
+      <nav id="root-nav">
         <Link href="/">
           <a id="home-link">
             <Icon iconId="home" head lower>
