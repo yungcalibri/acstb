@@ -17,8 +17,7 @@ const skills = [
   ["Next.js", 3],
   ["React.js", 6],
   ["JavaScript", 6],
-  ["Continuous Integration", 2],
-  ["Continuous Delivery", 1],
+  ["CI/CD", 2],
   ["Node.js", 6],
   ["HTML", 6],
   ["CSS", 6],
@@ -29,6 +28,7 @@ const skills = [
   ["REST APIs", 6],
   ["GraphQL", 1],
 ];
+const sortedSkills = skills.sort(([_0, y0], [_1, y1]) => y1 - y0);
 
 const Resume = () => (
   <article id="resume" className="h-resume">
