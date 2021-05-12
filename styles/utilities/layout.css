@@ -77,6 +77,11 @@
   max-width: var(--measure) !important;
 }
 
+@media screen {
+  .screen\:none {
+    display: none !important;
+  }
+}
 @media print {
   .print\:none {
     display: none !important;
