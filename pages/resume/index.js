@@ -23,7 +23,7 @@ const skills = [
   ["CSS", 6],
   ["Git", 6],
   ["GitHub", 6],
-  ["Project Management", 1],
+  ["Project Mgmt.", 1],
   ["Vim", 10],
   ["REST APIs", 6],
   ["GraphQL", 1],
@@ -52,11 +52,9 @@ const Resume = () => (
       <div className="p-summary">
         <p>{copy.summary}</p>
         <p>
-          I consider software engineering to be a craft. I have a thorough
-          understanding of HTML, CSS, and JavaScript, and I can harness them
-          effectively. I go to great pains in building <em>truly responsive</em>{" "}
-          websites which present a unique and consistent voice{"\u2014"}on any
-          device, for any reader.
+          I go to great pains in building <em>truly responsive</em> websites
+          which present a unique and consistent voice on any device, for any
+          reader.
         </p>
       </div>
 
@@ -92,9 +90,10 @@ const Resume = () => (
             </div>
           }>
           <p>
-            Worked one-on-one with designers and stakeholders to implement new
-            features throughout AEDIT's Web presence, from a new editorial blog
-            platform to a full person-to-person video chat app.
+            Worked one-on-one with designers and stakeholders to ship new
+            features throughout AEDIT's Web presence, including a new editorial
+            blog platform, updated subscriber profiles, and a full,
+            HIPAA-compliant video chat system.
           </p>
         </LineItem>
         <LineItem
@@ -113,12 +112,10 @@ const Resume = () => (
           }>
           <p>
             Contributed new features and improvements to Domio's primary hotel
-            booking Web app, and sharpened my understanding of React.js and Web
-            fundamentals.
+            booking product.
           </p>
         </LineItem>
         <LineItem
-          className="p-experience"
           start="2015"
           end="2018"
           url="https://xojet.com/"
@@ -133,9 +130,9 @@ const Resume = () => (
             </div>
           }>
           <p>
-            As a member of a small tech team, contributed major features to
-            XOJet's internal Web apps, enabling their booking team to price even
-            the most complex flights faster than ever before.
+            Worked closely with a small team to update XOJet's internal Web
+            apps, enabling their booking team to price even the most complex
+            flights faster than ever before.
           </p>
         </LineItem>
       </Stack>

@@ -39,7 +39,7 @@ const LineItem = (props) => {
           </a>{" "}
           <small>{location}</small>
         </div>
-        <p>{children}</p>
+        {children}
       </Box>
     </div>
   );
