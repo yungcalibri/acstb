@@ -61,11 +61,19 @@ const Resume = () => (
       </div>
 
       <h2>Skills</h2>
-      <Cluster space="var(--s0)">
+      <Cluster space="var(--s0)" className="print:none">
         {skills.map(([name, years]) => (
           <Skill name={name} years={years} key={name} />
         ))}
       </Cluster>
+      <dl className="print-skills screen:none">
+        {sortedSkills.map(([name, years]) => (
+          <div key={name}>
+            <dt className="p-skill">{name}</dt>
+            <dd>{years} yr.</dd>
+          </div>
+        ))}
+      </dl>
 
       <h2>Experience</h2>
       <Stack space="var(--s1)" asList className="max-width:var(--measure)">

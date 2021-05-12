@@ -4,11 +4,12 @@
     padding-block: var(--s-2);
     padding-inline: var(--s-1);
   }
-  @media print {
-    & > :last-child {
-      border-left: var(--border-width) solid var(--color-text);
-    }
-  }
+}
+
+.print-skills {
+  list-style-type: none;
+  columns: 3;
+  column-gap: calc((1 / 8) * 100%);
 }
 
 .line-item > :first-child {
