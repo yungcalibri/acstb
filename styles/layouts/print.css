@@ -1,6 +1,17 @@
+@page {
+  margin: 0.5cm;
+}
+
 @media print {
   :root {
     font-size: 1rem;
+
+    --color-background: white;
+    --color-text: var(--black);
+    --color-offset: var(--lighter-black);
+
+    background: initial;
+    color: var(--color-text);
   }
 
   #root-nav {
