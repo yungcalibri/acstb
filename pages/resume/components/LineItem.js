@@ -15,7 +15,7 @@ const LineItem = (props) => {
 
   return (
     <div className={`${className} line-item h-event display:flex`}>
-      <div className="invert-title">
+      <div className="invert">
         <small>
           <strong>
             <time className="dt-end" dateTime={end}>
