@@ -52,12 +52,14 @@
 }
 
 .invert {
-  --color-background: var(--color-invert-background);
-  --color-text: var(--color-invert-text);
-  --color-text-highlight: var(--color-invert-text-highlight);
+  @media screen {
+    --color-background: var(--color-invert-background);
+    --color-text: var(--color-invert-text);
+    --color-text-highlight: var(--color-invert-text-highlight);
 
-  background: var(--color-background);
-  color: var(--color-text);
+    background: var(--color-background);
+    color: var(--color-text);
+  }
 }
 
 a:link {
