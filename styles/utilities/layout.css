@@ -77,15 +77,8 @@
   max-width: var(--measure) !important;
 }
 
-.print\:only {
-  display: none !important;
-}
-
 @media print {
   .print\:none {
     display: none !important;
-  }
-  .print\:only {
-    display: unset !important;
   }
 }
