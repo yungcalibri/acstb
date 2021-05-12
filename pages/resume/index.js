@@ -1,5 +1,5 @@
+import React from "react";
 import Head from "next/head";
-import Box from "components/Box";
 import Cluster from "components/Cluster";
 import Stack from "components/Stack";
 import Icon from "components/Icon";
