@@ -196,7 +196,7 @@ const Resume = () => (
         </LineItem>
       </Stack>
 
-      <div className="p-contact h-card print:none">
+      <div className="p-contact h-card display:none">
         <h2>Contact Me</h2>
         <p className="p-name display:none">
           <span className="p-given-name">Andrew</span>
