@@ -203,6 +203,7 @@ const Resume = () => (
           <span className="p-locality">Highland Park</span>
           {", "}
           <span className="p-region">New Jersey</span>
+          {", "}
           <span className="p-country-name">United States</span>
         </p>
       </div>
