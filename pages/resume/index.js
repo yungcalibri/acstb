@@ -5,6 +5,7 @@ import Stack from "components/Stack";
 import Icon from "components/Icon";
 import LineItem from "./components/LineItem";
 import Skill from "./components/Skill";
+import Sidebar from "components/Sidebar";
 
 const copy = {
   name: "Andrew Stebenné",
@@ -45,8 +46,19 @@ const Resume = () => (
       />
     </Head>
     <header>
-      <h1 className="p-name">{copy.name}</h1>
-      <strong className="p-category">{copy.job}</strong>
+      <Sidebar space="var(--s-2)">
+        <div className="align-items:center">
+          <div>
+            <h1 className="p-name margin:0">{copy.name}</h1>
+            <strong className="p-category">{copy.job}</strong>
+          </div>
+          <div className="text-align:right">
+            <div>
+              <a href="mailto:arthropodSeven@pm.me">arthropodSeven@pm.me</a>
+            </div>
+          </div>
+        </div>
+      </Sidebar>
     </header>
     <main>
       <div className="p-summary">
@@ -74,7 +86,7 @@ const Resume = () => (
       </dl>
 
       <h2>Experience</h2>
-      <Stack space="var(--s1)" asList className="max-width:var(--measure)">
+      <Stack space="var(--s0)" asList className="max-width:var(--measure)">
         <LineItem
           start="2019"
           end="2021"
@@ -184,7 +196,7 @@ const Resume = () => (
         </LineItem>
       </Stack>
 
-      <div className="p-contact h-card">
+      <div className="p-contact h-card print:none">
         <h2>Contact Me</h2>
         <p className="p-name display:none">
           <span className="p-given-name">Andrew</span>
