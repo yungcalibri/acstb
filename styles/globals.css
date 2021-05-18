@@ -27,9 +27,8 @@ a:active {
 }
 a:focus,
 a:focus-visible {
-  outline-style: double;
   outline-color: currentColor;
-  outline-width: var(--s-3);
+  outline-width: var(--s-4);
 }
 
 img {

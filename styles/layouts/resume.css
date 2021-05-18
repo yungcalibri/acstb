@@ -1,0 +1,59 @@
+.skill {
+  display: flex;
+  & > * {
+    padding-block: var(--s-2);
+    padding-inline: var(--s-1);
+  }
+}
+
+.print-skills {
+  list-style-type: none;
+  columns: 3;
+  column-gap: calc((1 / 8) * 100%);
+}
+
+main > :--heading {
+  break-after: avoid;
+}
+.line-item {
+  break-inside: avoid;
+}
+.line-item > :first-child {
+  flex-basis: content;
+
+  padding: calc(var(--s-4) + var(--s-1));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > *:not(b) {
+    flex-basis: content;
+    flex-grow: 0;
+
+    padding-inline: var(--s-3);
+  }
+  & > *:first-child {
+    border-bottom: var(--s-4) solid currentColor;
+  }
+  & > *:last-child {
+    border-top: var(--s-4) solid currentColor;
+  }
+
+  & > .dotted-line {
+    width: var(--s-4);
+
+    /* Such that the full height of these flex items works out to roughly
+     * the full height of their container, divided by 1.62 */
+    flex-basis: calc(
+      (100% - ((2 * var(--s-2) + (2 * var(--s-4) + 1.5em)))) / 1.62
+    );
+
+    background: repeating-linear-gradient(
+      to bottom,
+      currentColor 0,
+      currentColor var(--s-1),
+      transparent var(--s-1),
+      transparent var(--s0)
+    );
+  }
+}

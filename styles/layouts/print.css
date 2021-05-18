@@ -1,0 +1,25 @@
+@page {
+  margin: 1cm;
+}
+
+@media print {
+  :root {
+    font-size: 11pt;
+
+    --color-background: white;
+    --color-text: var(--black);
+    --color-offset: var(--lighter-black);
+
+    background: initial;
+    color: var(--color-text);
+  }
+
+  #root-nav {
+    display: none;
+  }
+
+  :--heading {
+    margin-block-start: 1em;
+    margin-block-end: 0.25em;
+  }
+}

@@ -7,9 +7,15 @@
 .justify-content\:end {
   justify-content: end !important;
 }
+.justify-content\:space-between {
+  justify-content: space-between !important;
+}
 
 .align-items\:baseline {
   align-items: baseline !important;
+}
+.align-items\:first {
+  align-items: first baseline !important;
 }
 .align-items\:start {
   align-items: start !important;
@@ -65,4 +71,19 @@
 }
 .display\:none {
   display: none !important;
+}
+
+.max-width\:var\(\-\-measure\) {
+  max-width: var(--measure) !important;
+}
+
+@media screen {
+  .screen\:none {
+    display: none !important;
+  }
+}
+@media print {
+  .print\:none {
+    display: none !important;
+  }
 }
