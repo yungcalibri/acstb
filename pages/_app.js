@@ -25,6 +25,7 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
         />
         <meta name="color-scheme" content="dark light" />
         <meta name="theme-color" content="#2F3636" />
+        <link rel="manifest" href="/manifest.json" />
         <link
           rel="icon"
           href="/favicon-dark.ico"
