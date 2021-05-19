@@ -16,14 +16,16 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
           content="acstb.name - Andrew Stebenné's Personal Website"
           key="title"
         />
-        <meta property="og:image" content="/images/acstb.webp" />
+        <meta property="og:image" content="/images/acstb.webp" key="og:image" />
+        <meta property="og:type" content="website" key="og:type" />
+        <meta property="og:site_name" content="acstb.name" key="og:site_name" />
         <meta name="author" content="Andrew Stebenné" key="author" />
         <meta
           name="description"
           content="I'm a Web developer, and this is my blog. You can get in touch with me here, or find links to my other social media profiles."
           key="description"
         />
-        <meta name="color-scheme" content="dark light" />
+        <meta name="color-scheme" content="dark light" key="color-scheme" />
         <meta name="theme-color" content="#2F3636" />
         <link rel="manifest" href="/manifest.json" />
         <link
@@ -53,12 +55,17 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
         <link
           rel="webmention"
           href="https://webmention.io/acstb.name/webmention"
+          key="webmention"
         />
-        <link rel="pingback" href="https://webmention.io/acstb.name/xmlrpc" />
+        <link
+          rel="pingback"
+          href="https://webmention.io/acstb.name/xmlrpc"
+          key="pingback"
+        />
       </Head>
       <Header />
       {center ? (
-        <PageCenter>
+        <PageCenter id="page-root">
           <Component {...pageProps} />
         </PageCenter>
       ) : (

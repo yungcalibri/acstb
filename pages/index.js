@@ -39,9 +39,13 @@ const Home = () => (
             <p>
               By trade I'm a programmer. I primarily build websites with
               Next.js, but I take pleasure in solving interesting problems of
-              any type.
+              any type. You can take a look at{" "}
+              <Link href="/resume">
+                <a>my resume</a>
+              </Link>
+              , if you're interested.
             </p>
-            <p>You can contact me here:</p>
+            <p>I can be reached here:</p>
             <ContactMe />
             <p>
               Or look for me online, under{" "}

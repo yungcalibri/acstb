@@ -1,5 +1,7 @@
 #__next > article:only-of-type,
-#__next > .default-layout {
+#__next > .default-layout,
+#__next > * > article:only-of-type,
+#__next > * > .default-layout {
   margin-top: var(--s2);
   margin-bottom: var(--s2);
 }
