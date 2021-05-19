@@ -4,7 +4,8 @@
 
 body {
   max-width: 100vw;
-  min-height: calc(100vh + var(--s3));
+  min-height: 100vh;
+  margin-bottom: var(--s3);
 }
 
 #__next > header:first-of-type {
