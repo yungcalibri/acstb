@@ -28,17 +28,18 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
         <link rel="manifest" href="/manifest.json" />
         <link
           rel="icon"
-          href="/favicon-16x16.png"
-          type="image/png"
-          sizes="16x16"
+          href="/favicon-dark.ico"
+          sizes="16x16 32x32 64x64"
+          media="prefers-color-scheme dark"
         />
         <link
           rel="icon"
-          href="/favicon-32x32.png"
-          type="image/png"
-          sizes="32x32"
+          href="/favicon-light.ico"
+          sizes="16x16 32x32 64x64"
+          media="prefers-color-scheme light"
         />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
         <link
           rel="webmention"
           href="https://webmention.io/acstb.name/webmention"
