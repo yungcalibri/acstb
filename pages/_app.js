@@ -28,28 +28,8 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
         <meta name="color-scheme" content="dark light" key="color-scheme" />
         <meta name="theme-color" content="#2F3636" />
         <link rel="manifest" href="/manifest.json" />
-        <link
-          rel="icon"
-          href="/favicon-dark.ico"
-          sizes="16x16 32x32 48x48"
-          media="(prefers-color-scheme: dark)"
-        />
-        <link
-          rel="icon"
-          href="/favicon-light.ico"
-          sizes="16x16 32x32 48x48"
-          media="(prefers-color-scheme: light)"
-        />
-        <link
-          rel="apple-touch-icon-precomposed"
-          href="/apple-touch-icon-dark.png"
-          media="(prefers-color-scheme: dark)"
-        />
-        <link
-          rel="apple-touch-icon-precomposed"
-          href="/apple-touch-icon-light.png"
-          media="(prefers-color-scheme: light)"
-        />
+        <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
         <link
           rel="webmention"
           href="https://webmention.io/acstb.name/webmention"
