@@ -40,7 +40,6 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
           sizes="16x16 32x32 48x48"
           media="(prefers-color-scheme: light)"
         />
-        <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon-precomposed"
           href="/apple-touch-icon-dark.png"
@@ -51,7 +50,6 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
           href="/apple-touch-icon-light.png"
           media="(prefers-color-scheme: light)"
         />
-        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
         <link
           rel="webmention"
           href="https://webmention.io/acstb.name/webmention"
