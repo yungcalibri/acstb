@@ -29,13 +29,13 @@ const MyApp = ({ Component, pageProps: completeProps }) => {
         <link
           rel="icon"
           href="/favicon-dark.ico"
-          sizes="16x16 32x32 64x64"
+          sizes="16x16 32x32 48x48"
           media="prefers-color-scheme dark"
         />
         <link
           rel="icon"
           href="/favicon-light.ico"
-          sizes="16x16 32x32 64x64"
+          sizes="16x16 32x32 48x48"
           media="prefers-color-scheme light"
         />
         <link rel="icon" href="/favicon.ico" />
