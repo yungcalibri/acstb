@@ -2,14 +2,14 @@
   box-sizing: border-box;
 }
 
-#__next {
+body {
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh + var(--s3));
+}
 
-  & > header:first-of-type {
-    margin-top: var(--s0);
-    margin-bottom: var(--s0);
-  }
+#__next > header:first-of-type {
+  margin-top: var(--s0);
+  margin-bottom: var(--s0);
 }
 
 a {
