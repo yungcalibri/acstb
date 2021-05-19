@@ -26,6 +26,12 @@
       "purpose": "monochrome"
     },
     {
+      "src": "/monocon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "monochrome"
+    },
+    {
       "src": "/monocon-32x32.png",
       "sizes": "32x32",
       "type": "image/png",
