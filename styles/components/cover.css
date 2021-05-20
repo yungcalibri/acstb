@@ -10,16 +10,17 @@
     margin-bottom: var(--space);
   }
 
-  & > :first-child:not(.centered) {
-    margin-top: 0;
-  }
-
-  & > :last-child:not(.centered) {
-    margin-bottom: 0;
-  }
-
+  & > :only-child,
   & > .centered {
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  & > :first-child:not(.centered):not(:only-child) {
+    margin-top: 0;
+  }
+
+  & > :last-child:not(.centered):not(:only-child) {
+    margin-bottom: 0;
   }
 }
