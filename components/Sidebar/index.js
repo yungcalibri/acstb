@@ -18,6 +18,7 @@ const LAST_CHILD = ":last-child";
  * * *Requires* an intermediary wrapper.
  * @todo Validate that `contentMin` is a string value containing a percentage.
  * @todo Validate that there is one and only one direct child.
+ * @todo Replace `noStretch` prop with an `align` prop to provide the value of `align-items` for the single direct child.
  * @param {SidebarProps} props
  */
 const Sidebar = (props) => {
