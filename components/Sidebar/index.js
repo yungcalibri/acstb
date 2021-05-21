@@ -1,3 +1,4 @@
+import React from "react";
 import isString from "lodash/isString";
 import { propStyles } from "util/style";
 
@@ -17,7 +18,6 @@ const LAST_CHILD = ":last-child";
 /**
  * * Places two grandchildren side by side. When there is not enough space, the two grandchildren wrap to a vertical layout.
  * * *Requires* an intermediary wrapper.
- * @todo Validate that there is one and only one direct child.
  * @todo Replace `noStretch` prop with an `align` prop to provide the value of `align-items` for the single direct child.
  * @param {SidebarProps} props
  */
@@ -34,6 +34,8 @@ const Sidebar = (props) => {
   } = props;
 
   validateContentMin(contentMin);
+
+  validateSidebarChildren(children);
 
   const sidebarSelector = side === LEFT ? LAST_CHILD : FIRST_CHILD;
 
@@ -74,5 +76,11 @@ function validateContentMin(contentMin) {
     throw new Error(
       `Sidebar's contentMin prop must be a percentage value, e.g.: "60%"`
     );
+  }
+}
+
+function validateSidebarChildren(children) {
+  if (React.Children.count(children) !== 1) {
+    throw new Error(`Sidebar must have exactly one direct child`);
   }
 }
