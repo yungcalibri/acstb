@@ -13,16 +13,17 @@ const LAST_CHILD = ":last-child";
  * @prop {string=} contentMin - *Must* be a percentage. The sidebar becomes vertical when its content takes less than this proportion of the available space.
  * @prop {string=} space - Gutter space between children.
  * @prop {boolean=} noStretch - Whether children should adopt their natural height in the horizontal layout.
+ * @prop {string=} alignItems - Provide a specific align-items value for the child. Supercedes `noStretch`.
  */
 
 /**
  * * Places two grandchildren side by side. When there is not enough space, the two grandchildren wrap to a vertical layout.
  * * *Requires* an intermediary wrapper.
- * @todo Replace `noStretch` prop with an `align` prop to provide the value of `align-items` for the single direct child.
  * @param {SidebarProps} props
  */
 const Sidebar = (props) => {
   const {
+    alignItems = "",
     children,
     className = "",
     side = LEFT,
@@ -52,6 +53,7 @@ const Sidebar = (props) => {
         }
         .sidebarRoot > :global(*) {
           ${propStyles([noStretch, "align-items: flex-start"])}
+          ${propStyles([alignItems, "align-items"])}
         }
         .sidebarRoot > :global(*) > :global(*) {
           ${propStyles([sideWidth, "flex-basis"])}

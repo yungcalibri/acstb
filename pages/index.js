@@ -19,8 +19,9 @@ const Home = () => (
         className="centered"
         space="var(--s2)"
         contentMin="60%"
-        side="left">
-        <div className="align-items:center">
+        side="left"
+        alignItems="center">
+        <div>
           <div>
             <Avatar className="u-photo" />
           </div>
