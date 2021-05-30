@@ -77,6 +77,34 @@
   max-width: var(--measure) !important;
 }
 
+.flex-grow\:1 {
+  flex-grow: 1;
+}
+.flex-grow\:2 {
+  flex-grow: 2;
+}
+.flex-grow\:3 {
+  flex-grow: 3;
+}
+.flex-grow\:4 {
+  flex-grow: 4;
+}
+.flex-grow\:5 {
+  flex-grow: 5;
+}
+.flex-grow\:6 {
+  flex-grow: 6;
+}
+.flex-grow\:7 {
+  flex-grow: 7;
+}
+.flex-grow\:8 {
+  flex-grow: 8;
+}
+.flex-grow\:9 {
+  flex-grow: 9;
+}
+
 @media screen {
   .screen\:none {
     display: none !important;
