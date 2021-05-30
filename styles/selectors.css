@@ -2,3 +2,4 @@
 @custom-selector :--large-heading h1, h2;
 @custom-selector :--small-heading h3, h4, h5, h6;
 @custom-selector :--section-element article, aside, nav, section;
+@custom-selector :--button button, input[type="button"], input[type="reset"], input[type="submit"];
