@@ -13,12 +13,22 @@ import { propStyles } from "util/style";
  * @param {ImpostorProps} props
  */
 const Impostor = (props) => {
-  const { breakout, children, className = "", fixed, margin, ...rest } = props;
+  const {
+    breakout,
+    children,
+    className = "",
+    fixed,
+    margin,
+    role = "dialog",
+    ...rest
+  } = props;
+
+  validateRole(role);
 
   const myClass = `impostor ${!breakout ? "contain" : ""} ${className}`;
 
   return (
-    <div className={myClass} {...rest}>
+    <div className={myClass} role={role} {...rest}>
       {children}
       <style jsx>{`
         .impostor {
@@ -30,3 +40,10 @@ const Impostor = (props) => {
 };
 
 export default Impostor;
+
+function validateRole(role) {
+  if (role === "dialog" || role === "alertdialog") {
+    return;
+  }
+  throw new Error("Impostor's role must be 'dialog' or 'alertdialog'");
+}
