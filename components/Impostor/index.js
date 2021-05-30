@@ -2,10 +2,12 @@ import Icon from "components/Icon";
 import { propStyles } from "util/style";
 
 /**
- * @typedef {Object} ImopstorProps
+ * @typedef {Object} ImpostorProps
+ * @prop {string=} borderWidth - Impostor box's border width. Set to "0" to disable the border.
  * @prop {boolean=} breakout - Whether the Impostor is allowed to break out of its container
  * @prop {boolean=} fixed - Whether to position the Impostor relative to the viewport
  * @prop {string=} margin - Space between the Impostor's outer edge and the inner edge of its container. Only applicable when `breakout` is not applied
+ * @prop {string=} padding - Padding for the Impostor box. Defaults to `var(--s0)`.
  */
 
 /**
@@ -15,11 +17,13 @@ import { propStyles } from "util/style";
  */
 const Impostor = (props) => {
   const {
+    borderWidth,
     breakout,
     children,
     className = "",
     fixed,
     margin,
+    padding,
     role = "dialog",
     ...rest
   } = props;
@@ -38,7 +42,12 @@ const Impostor = (props) => {
       {children}
       <style jsx>{`
         .impostor {
-          ${propStyles([margin, "--margin"], [fixed, "position: fixed"])}
+          ${propStyles(
+            [margin, "--margin"],
+            [fixed, "position: fixed"],
+            [borderWidth, "--border-width"],
+            [padding, "--padding"]
+          )}
         }
       `}</style>
     </div>
