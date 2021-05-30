@@ -9,35 +9,35 @@
 }
 
 .font-size\:smaller {
-  font-size: smaller;
+  font-size: smaller !important;
 }
 .font-size\:larger {
-  font-size: larger;
+  font-size: larger !important;
 }
 .font-size\:s-4 {
-  font-size: var(--s-4);
+  font-size: var(--s-4) !important;
 }
 .font-size\:s-3 {
-  font-size: var(--s-3);
+  font-size: var(--s-3) !important;
 }
 .font-size\:s-2 {
-  font-size: var(--s-2);
+  font-size: var(--s-2) !important;
 }
 .font-size\:s-1 {
-  font-size: var(--s-1);
+  font-size: var(--s-1) !important;
 }
 .font-size\:s0 {
-  font-size: var(--s0);
+  font-size: var(--s0) !important;
 }
 .font-size\:s1 {
-  font-size: var(--s1);
+  font-size: var(--s1) !important;
 }
 .font-size\:s2 {
-  font-size: var(--s2);
+  font-size: var(--s2) !important;
 }
 .font-size\:s3 {
-  font-size: var(--s3);
+  font-size: var(--s3) !important;
 }
 .font-size\:s4 {
-  font-size: var(--s4);
+  font-size: var(--s4) !important;
 }

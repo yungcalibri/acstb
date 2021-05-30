@@ -51,70 +51,70 @@
 }
 
 .flex-grow\:1 {
-  flex-grow: 1;
+  flex-grow: 1 !important;
 }
 .flex-grow\:2 {
-  flex-grow: 2;
+  flex-grow: 2 !important;
 }
 .flex-grow\:3 {
-  flex-grow: 3;
+  flex-grow: 3 !important;
 }
 .flex-grow\:4 {
-  flex-grow: 4;
+  flex-grow: 4 !important;
 }
 .flex-grow\:5 {
-  flex-grow: 5;
+  flex-grow: 5 !important;
 }
 .flex-grow\:6 {
-  flex-grow: 6;
+  flex-grow: 6 !important;
 }
 .flex-grow\:7 {
-  flex-grow: 7;
+  flex-grow: 7 !important;
 }
 .flex-grow\:8 {
-  flex-grow: 8;
+  flex-grow: 8 !important;
 }
 .flex-grow\:9 {
-  flex-grow: 9;
+  flex-grow: 9 !important;
 }
 
 .flex-shrink\:1 {
-  flex-shrink: 1;
+  flex-shrink: 1 !important;
 }
 .flex-shrink\:2 {
-  flex-shrink: 2;
+  flex-shrink: 2 !important;
 }
 .flex-shrink\:3 {
-  flex-shrink: 3;
+  flex-shrink: 3 !important;
 }
 .flex-shrink\:4 {
-  flex-shrink: 4;
+  flex-shrink: 4 !important;
 }
 .flex-shrink\:5 {
-  flex-shrink: 5;
+  flex-shrink: 5 !important;
 }
 .flex-shrink\:6 {
-  flex-shrink: 6;
+  flex-shrink: 6 !important;
 }
 .flex-shrink\:7 {
-  flex-shrink: 7;
+  flex-shrink: 7 !important;
 }
 .flex-shrink\:8 {
-  flex-shrink: 8;
+  flex-shrink: 8 !important;
 }
 .flex-shrink\:9 {
-  flex-shrink: 9;
+  flex-shrink: 9 !important;
 }
 
 .flex-direction\:row {
-  flex-direction: row;
+  flex-direction: row !important;
 }
 .flex-direction\:row-reverse {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse !important;
 }
 .flex-direction\:column {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 .flex-direction\:column-reverse {
-  flex-direction: column-reverse;
+  flex-direction: column-reverse !important;
 }
