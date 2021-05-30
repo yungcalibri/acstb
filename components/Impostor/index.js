@@ -1,3 +1,4 @@
+import Icon from "components/Icon";
 import { propStyles } from "util/style";
 
 /**
@@ -29,6 +30,9 @@ const Impostor = (props) => {
 
   return (
     <div className={myClass} role={role} {...rest}>
+      <button name="close-dialog">
+        <Icon iconId="close">Close</Icon>
+      </button>
       {children}
       <style jsx>{`
         .impostor {
