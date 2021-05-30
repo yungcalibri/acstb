@@ -105,6 +105,34 @@
   flex-grow: 9;
 }
 
+.flex-shrink\:1 {
+  flex-shrink: 1;
+}
+.flex-shrink\:2 {
+  flex-shrink: 2;
+}
+.flex-shrink\:3 {
+  flex-shrink: 3;
+}
+.flex-shrink\:4 {
+  flex-shrink: 4;
+}
+.flex-shrink\:5 {
+  flex-shrink: 5;
+}
+.flex-shrink\:6 {
+  flex-shrink: 6;
+}
+.flex-shrink\:7 {
+  flex-shrink: 7;
+}
+.flex-shrink\:8 {
+  flex-shrink: 8;
+}
+.flex-shrink\:9 {
+  flex-shrink: 9;
+}
+
 @media screen {
   .screen\:none {
     display: none !important;
