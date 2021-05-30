@@ -11,10 +11,4 @@
     max-width: calc(100% - (var(--margin) * 2));
     max-height: calc(100% - (var(--margin) * 2));
   }
-
-  & > button[name="close-dialog"] {
-    position: absolute;
-    top: var(--s1);
-    right: var(--s1);
-  }
 }

@@ -30,9 +30,11 @@ const Impostor = (props) => {
 
   return (
     <div className={myClass} role={role} {...rest}>
-      <button name="close-dialog">
-        <Icon iconId="close">Close</Icon>
-      </button>
+      <div className="display:flex flex-direction:row-reverse">
+        <button name="close-dialog">
+          <Icon iconId="close">Close</Icon>
+        </button>
+      </div>
       {children}
       <style jsx>{`
         .impostor {
