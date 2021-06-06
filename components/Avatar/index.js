@@ -20,6 +20,7 @@ const Avatar = (props) => {
       srcSet={srcSet}
       sizes="(min-width: 160ch) 345w, 230px"
       src="/images/me_three_qtr_345.jpg"
+      loading="lazy"
       {...rest}
     />
   );
