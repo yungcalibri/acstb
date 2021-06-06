@@ -17,6 +17,8 @@ const Avatar = (props) => {
     <img
       className={myClass}
       alt="An iridescent golden beetle on a fingertip"
+      height="230px"
+      width="230px"
       srcSet={srcSet}
       sizes="(min-width: 160ch) 345w, 230px"
       src="/images/me_three_qtr_345.jpg"
