@@ -1,0 +1,36 @@
+name: Cypress Tests
+
+on: [pull_request]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout acstb.name repo
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # run tests with Cyrpess's github action.
+      #
+      # For the sake of safety, the version **must be explicitly specified.**
+      #
+      # Without an explicit version, you run the risk of running insecure code.
+      #
+      # If someone else gains access to the account which publishes this GitHub
+      # Action, and pushes a new minor version which (for example) steals your
+      # code, then e.g. "@v2" will go from "v2.0.7" to "v2.0.8" without any
+      # trouble.
+      #
+      # To avoid this, use an explicitly specified version tag: e.g. "@v2.0.7".
+      - name: Cypress run
+        uses: cypress-io/github-action@v2.9.7
+        with:
+          install-command: yarn --frozen-lockfile --silent
+          start: yarn run dev
+          wait-on: "http://localhost:3000"
+          browser: chrome
+          headless: true
+        # Pass the github_token explicitly, so that Cypress can use it to
+        # identify the run.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
