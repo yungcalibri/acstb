@@ -1,6 +1,6 @@
 name: Cypress Tests
 
-on: [pull_request]
+on: [push]
 
 jobs:
   cypress-run:
@@ -25,12 +25,13 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2.9.7
         with:
+          record: true
           install-command: yarn --frozen-lockfile --silent
           start: yarn run dev
           wait-on: "http://localhost:3000"
           browser: chrome
-          headless: true
         # Pass the github_token explicitly, so that Cypress can use it to
         # identify the run.
         env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
