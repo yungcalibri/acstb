@@ -28,7 +28,7 @@ const Sidebar = (props) => {
     className = "",
     side = LEFT,
     sideWidth,
-    contentMin,
+    contentMin = "50%",
     space: rawSpace,
     noStretch = false,
     ...rest
