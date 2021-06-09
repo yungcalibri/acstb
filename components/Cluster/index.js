@@ -12,6 +12,7 @@ import { propStyles } from "util/style";
 /**
  * Displays children as a horizontally wrapping list with consistent spacing between items.
  * @param {ClusterProps} props
+ * @todo Remove the injected direct child and allow invocations to specify their own direct child. Implies validating that there is a single direct child. (The immediate need is for an element, styled like a Cluster, whose direct child is a description list <dl> and whose secondary children are <div> > [<dt>, <dd>].)
  */
 const Cluster = (props) => {
   const {
