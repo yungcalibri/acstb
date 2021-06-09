@@ -1,5 +1,5 @@
 context("Validate Metadata", () => {
-  beforeEach(() => {
+  before(() => {
     cy.visit("/");
   });
 
