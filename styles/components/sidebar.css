@@ -1,5 +1,4 @@
 .sidebarRoot {
-  --contentMin: 50%;
   --space: var(--s1);
   overflow: hidden;
 
