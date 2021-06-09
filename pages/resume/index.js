@@ -31,6 +31,7 @@ const skills = [
 ];
 const sortedSkills = skills.sort(([_0, y0], [_1, y1]) => y1 - y0);
 
+/** @todo The print media skill list is a <dl>. The screen media version should also be a <dl>. */
 const Resume = () => (
   <article id="resume" className="h-resume">
     <Head>
