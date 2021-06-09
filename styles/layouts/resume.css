@@ -8,7 +8,7 @@
 
 .print-skills {
   list-style-type: none;
-  columns: 3;
+  columns: auto 14ch;
   column-gap: calc((1 / 8) * 100%);
 }
 
