@@ -59,3 +59,10 @@ context("Validate Metadata", () => {
     });
   });
 });
+
+/** @todo Validate h-card microdata */
+// context("Validate Microformats", () => {
+//   it("has an h-card", () => {
+//     cy.get(".h-card");
+//   })
+// });
