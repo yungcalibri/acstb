@@ -1,3 +1,4 @@
 {
-  "projectId": "j4f34z"
+  "projectId": "j4f34z",
+  "testFiles": ["!examples/**"]
 }
