@@ -1,6 +1,6 @@
 context("Test Spec", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000");
+    cy.visit("/");
   });
 
   it("the nav contains a home link which points to the root", () => {
