@@ -57,7 +57,6 @@ jobs:
           install-command: yarn --frozen-lockfile --silent
           start: yarn run dev
           wait-on: "http://localhost:3000"
-          browser: chrome
         # Pass the github_token explicitly, so that Cypress can use it to
         # identify the run.
         env:
