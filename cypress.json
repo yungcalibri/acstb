@@ -1,4 +1,5 @@
 {
   "projectId": "j4f34z",
-  "testFiles": ["!examples/**"]
+  "testFiles": ["**/*"],
+  "ignoreTestFiles": ["**/examples/*"]
 }
