@@ -1,9 +1,6 @@
-.skill {
-  display: flex;
-  & > * {
-    padding-block: var(--s-2);
-    padding-inline: var(--s-1);
-  }
+.skill > * {
+  padding-block: var(--s-2);
+  padding-inline: var(--s-1);
 }
 
 .print-skills {

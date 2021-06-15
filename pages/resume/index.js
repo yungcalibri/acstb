@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
+import Box from "components/Box";
 import Cluster from "components/Cluster";
 import Stack from "components/Stack";
 import Icon from "components/Icon";
 import LineItem from "./components/LineItem";
-import Skill from "./components/Skill";
 import Sidebar from "components/Sidebar";
 
 const copy = {
@@ -73,9 +73,16 @@ const Resume = () => (
 
       <h2>Skills</h2>
       <Cluster space="var(--s0)" className="print:none">
-        <dl>
+        <dl className="max-width:unset">
           {skills.map(([name, years]) => (
-            <Skill name={name} years={years} key={name} />
+            <Box
+              borderWidth="var(--s-4)"
+              padding="0"
+              className="skill"
+              key={name}>
+              <dt className="p-skill">{name}</dt>
+              {years && <dl className="invert">{years}yr.</dl>}
+            </Box>
           ))}
         </dl>
       </Cluster>
