@@ -40,6 +40,9 @@
 .max-width\:var\(\-\-measure\) {
   max-width: var(--measure) !important;
 }
+.max-width\:unset {
+  max-width: unset !important;
+}
 
 @media screen {
   .screen\:none {
