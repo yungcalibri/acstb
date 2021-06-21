@@ -90,7 +90,7 @@ const Resume = () => (
         {sortedSkills.map(([name, years]) => (
           <div key={name}>
             <dt className="p-skill">{name}</dt>
-            <dd>{years} yr.</dd>
+            <dd>{years}yr.</dd>
           </div>
         ))}
       </dl>
