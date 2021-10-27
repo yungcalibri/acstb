@@ -1,4 +1,4 @@
-import { range } from "lodash";
+import range from "lodash/range";
 import { nato } from "constants/index";
 
 export function natoRange(...args) {
