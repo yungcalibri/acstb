@@ -6,9 +6,7 @@
   outline-color: transparent;
   outline-style: solid;
 
-  border-width: var(--border-width);
+  border-width: var(--border-width, var(--s-3));
   border-style: solid;
-
-  --border-width: var(--s-3);
-  border-color: var(--color-text);
+  border-color: var(--border-color, currentColor);
 }
