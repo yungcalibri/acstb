@@ -1,14 +1,6 @@
 .cluster {
-  --space: var(--s1);
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
-
-  & > * {
-    display: flex;
-    flex-wrap: wrap;
-    margin: calc((var(--space) / 2) * -1);
-  }
-
-  & > * > * {
-    margin: calc(var(--space) / 2);
-  }
+  gap: var(--space, var(--s1));
 }

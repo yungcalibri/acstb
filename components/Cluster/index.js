@@ -2,6 +2,9 @@ import React from "react";
 import { Children, cloneElement, isValidElement } from "react";
 import { propStyles } from "util/style";
 
+const MemoEl = ({ Element = "div", ...rest }) => <Element {...rest} />;
+const El = React.memo(MemoEl);
+
 /**
  * @typedef {Object} ClusterProps
  * @prop {string=} align - Value of `align-items`
@@ -20,6 +23,7 @@ const Cluster = (props) => {
     asList,
     children,
     className = "",
+    element = "div",
     justify,
     space,
     role,
@@ -28,10 +32,12 @@ const Cluster = (props) => {
 
   const myClass = `cluster ${className}`;
 
-  validateClusterChildren(children);
-
   return (
-    <div className={myClass} role={asList ? "list" : role} {...rest}>
+    <El
+      Element={element}
+      className={myClass}
+      role={asList ? "list" : role}
+      {...rest}>
       {asList
         ? Children.map(children, (child) =>
             isValidElement(child)
@@ -41,23 +47,15 @@ const Cluster = (props) => {
         : children}
       <style jsx>{`
         .cluster {
-          ${propStyles([space, "--space"])}
-        }
-        .cluster > :global(*) {
-          ${propStyles([justify, "justify-content"], [align, "align-items"])}
+          ${propStyles(
+            [space, "--space"],
+            [justify, "justify-content"],
+            [align, "align-items"]
+          )}
         }
       `}</style>
-    </div>
+    </El>
   );
 };
 
 export default Cluster;
-
-function validateClusterChildren(ch) {
-  const count = React.Children.count(ch);
-  if (count === 1) {
-    return;
-  }
-
-  throw new Error(`Cluster has ${count} children, should be exactly 1`);
-}

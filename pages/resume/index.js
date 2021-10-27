@@ -71,19 +71,17 @@ const Resume = () => (
       </div>
 
       <h2>Skills</h2>
-      <Cluster space="var(--s0)" className="print:none">
-        <dl className="max-width:unset">
-          {skills.map(([name, years]) => (
-            <Box
-              borderWidth="var(--s-4)"
-              padding="0"
-              className="skill"
-              key={name}>
-              <dt className="p-skill">{name}</dt>
-              {years && <dl className="invert">{years}yr.</dl>}
-            </Box>
-          ))}
-        </dl>
+      <Cluster element="dl" space="var(--s0)" className="print:none">
+        {skills.map(([name, years]) => (
+          <Box
+            borderWidth="var(--s-4)"
+            padding="0"
+            className="skill"
+            key={name}>
+            <dt className="p-skill">{name}</dt>
+            {years && <dd className="invert">{years}yr.</dd>}
+          </Box>
+        ))}
       </Cluster>
       <dl className="print-skills screen:none">
         {sortedSkills.map(([name, years]) => (
