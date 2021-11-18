@@ -8,6 +8,7 @@ const LineItem = (props) => {
     startDisplay,
     end,
     endDisplay,
+    toPresent = false,
     url,
     mainHeading,
     location,
@@ -16,13 +17,17 @@ const LineItem = (props) => {
   return (
     <div className={`${className} line-item h-event display:flex`}>
       <div className="invert">
-        <small>
-          <strong>
-            <time className="dt-end" dateTime={end}>
-              {endDisplay || end}
-            </time>
-          </strong>
-        </small>
+        {toPresent ? (
+          <Live />
+        ) : (
+          <small>
+            <strong>
+              <time className="dt-end" dateTime={end}>
+                {endDisplay || end}
+              </time>
+            </strong>
+          </small>
+        )}
         <b className="dotted-line" />
         <small>
           <strong>
@@ -44,5 +49,13 @@ const LineItem = (props) => {
     </div>
   );
 };
+
+const Live = () => (
+  <div className="live">
+    <div className="live-icon">
+      <div> </div>
+    </div>
+  </div>
+);
 
 export default LineItem;

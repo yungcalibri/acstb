@@ -98,6 +98,7 @@ const Resume = () => (
       <Stack space="var(--s0)" asList className="max-width:var(--measure)">
         <LineItem
           start="2021"
+          toPresent
           url="https://useshortcut.com/"
           mainHeading="Software Engineer II at Shortcut (née Clubhouse)"
           location={

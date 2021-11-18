@@ -1,10 +1,11 @@
 .skill {
   display: flex;
   flex-direction: row;
-}
-.skill > * {
-  padding-block: var(--s-2);
-  padding-inline: var(--s-1);
+
+  & > * {
+    padding-block: var(--s-2);
+    padding-inline: var(--s-1);
+  }
 }
 
 .print-skills {
@@ -16,9 +17,34 @@
 main > :--heading {
   break-after: avoid;
 }
+
+.live,
+.live-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-icon {
+  width: var(--s0);
+  height: var(--s0);
+  border-width: var(--s-4);
+  border-style: solid;
+  border-color: currentColor;
+  border-radius: 50%;
+
+  & > :only-child {
+    width: var(--s-1);
+    height: var(--s-1);
+    background-color: currentColor;
+    border-radius: inherit;
+  }
+}
+
 .line-item {
   break-inside: avoid;
 }
+
 .line-item > :first-child {
   flex-basis: content;
 
@@ -33,9 +59,15 @@ main > :--heading {
 
     padding-inline: var(--s-3);
   }
+
   & > *:first-child {
     border-bottom: var(--s-4) solid currentColor;
   }
+
+  & > .live:first-child {
+    border-bottom: none;
+  }
+
   & > *:last-child {
     border-top: var(--s-4) solid currentColor;
   }
