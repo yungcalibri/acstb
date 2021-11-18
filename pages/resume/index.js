@@ -70,6 +70,8 @@ const Resume = () => (
         </p>
       </div>
 
+      {/** @todo deduplicate these skills clusters. Ideally we'd like to use
+       ** the same one, whether print or screen display. */}
       <h2>Skills</h2>
       <Cluster element="dl" space="var(--s0)" className="print:none">
         {skills.map(([name, years]) => (
