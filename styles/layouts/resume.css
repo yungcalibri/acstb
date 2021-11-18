@@ -18,21 +18,15 @@ main > :--heading {
   break-after: avoid;
 }
 
-.live,
-.live-icon {
+.live {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.live {
-  padding: var(--s-3);
-}
-
 .live-icon {
   width: var(--s0);
   height: var(--s0);
-  border-width: var(--s-4);
+  border-width: calc(var(--s-2) - var(--s-3));
   border-style: solid;
   border-color: var(--color-background);
   box-shadow: 0 0 0 calc(var(--s-3) - var(--s-4)) currentColor;
@@ -46,6 +40,9 @@ main > :--heading {
 
     animation: 2s ease-in 1s infinite alternate pulse;
     @media (prefers-reduced-motion) {
+      animation: none;
+    }
+    @media print {
       animation: none;
     }
   }

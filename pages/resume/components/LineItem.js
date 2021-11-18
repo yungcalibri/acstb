@@ -52,11 +52,11 @@ const LineItem = (props) => {
 };
 
 const Live = () => (
-  <Center intrinsic className="live">
+  <div intrinsic className="live">
     <div className="live-icon">
       <div className="target"> </div>
     </div>
-  </Center>
+  </div>
 );
 
 export default LineItem;
