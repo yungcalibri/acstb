@@ -3,18 +3,22 @@
  */
 :root {
   font-size: calc(1rem + 0.35vmin);
+
+  --measure: 60ch;
 }
 
 /***
  * line height
  */
-@custom-selector :--heading h1, h2, h3, h4, h5, h6;
-@custom-selector :--large-heading h1, h2;
-@custom-selector :--small-heading h3, h4, h5, h6;
 
 * {
   line-height: 1.62;
+  max-width: var(--measure);
 }
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector :--large-heading h1, h2;
+@custom-selector :--small-heading h3, h4, h5, h6;
 
 :--heading {
   line-height: initial;
@@ -25,10 +29,6 @@
 /***
  * measure
  */
-* {
-  --measure: 60ch;
-  max-width: var(--measure);
-}
 
 /* stylelint-enable no-descending-specificity */
 
@@ -50,37 +50,38 @@ ol {
  * Effectively: An h1 is an h1, unless it's a header nested under 
  * <nav> <section> <section> <aside>, in which case it should look like an h4.
  * Reference: https://hg.mozilla.org/mozilla-central/file/tip/layout/style/res/html.css */
-@custom-selector :--section-element article, aside, nav, section;
+@custom-selector :--division article, aside, nav, section;
 
 h1 {
   font-size: 2.2em;
 }
+
 h2,
-:is(--section-element) h1 {
+:is(--division) h1 {
   font-size: 1.68em;
 }
+
 h3,
-:is(--section-element) :is(--section-element) h1 {
+:is(--division) :is(--division) h1 {
   font-size: 1.38em;
 }
+
 h4,
-:is(--section-element) :is(--section-element) :is(--section-element) h1 {
+:is(--division) :is(--division) :is(--division) h1 {
   font-size: 1em;
 }
+
 h5,
-:is(--section-element)
-  :is(--section-element)
-  :is(--section-element)
-  :is(--section-element)
-  h1 {
+:is(--division) :is(--division) :is(--division) :is(--division) h1 {
   font-size: 0.8em;
 }
+
 h6,
-:is(--section-element)
-  :is(--section-element)
-  :is(--section-element)
-  :is(--section-element)
-  :is(--section-element)
+:is(--division)
+  :is(--division)
+  :is(--division)
+  :is(--division)
+  :is(--division)
   h1 {
   font-size: 0.6em;
 }
@@ -89,6 +90,7 @@ h6,
   margin-block-start: 1.5em;
   margin-block-end: 0.5em;
 }
+
 :--small-heading {
   margin-block-start: 0.75em;
   margin-block-end: 0.25em;
