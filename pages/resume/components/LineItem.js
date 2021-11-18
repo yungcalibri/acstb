@@ -1,4 +1,5 @@
 import Box from "components/Box";
+import Center from "components/Center";
 
 const LineItem = (props) => {
   const {
@@ -51,11 +52,11 @@ const LineItem = (props) => {
 };
 
 const Live = () => (
-  <div className="live">
+  <Center className="live">
     <div className="live-icon">
       <div className="target"> </div>
     </div>
-  </div>
+  </Center>
 );
 
 export default LineItem;
