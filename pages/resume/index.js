@@ -6,7 +6,6 @@ import Stack from "components/Stack";
 import Icon from "components/Icon";
 import LineItem from "./components/LineItem";
 import Switcher from "components/Switcher";
-import Center from "components/Center";
 
 const copy = {
   name: "Andrew Stebenné",
