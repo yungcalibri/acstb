@@ -5,7 +5,8 @@ import Cluster from "components/Cluster";
 import Stack from "components/Stack";
 import Icon from "components/Icon";
 import LineItem from "./components/LineItem";
-import Sidebar from "components/Sidebar";
+import Switcher from "components/Switcher";
+import Center from "components/Center";
 
 const copy = {
   name: "Andrew Stebenné",
@@ -46,19 +47,15 @@ const Resume = () => (
       />
     </Head>
     <header>
-      <Sidebar space="var(--s-2)">
-        <div className="align-items:center">
-          <div>
-            <h1 className="p-name margin:0">{copy.name}</h1>
-            <strong className="p-category">{copy.job}</strong>
-          </div>
-          <div className="text-align:right">
-            <div>
-              <a href="mailto:arthropodSeven@pm.me">arthropodSeven@pm.me</a>
-            </div>
-          </div>
+      <Switcher space="var(--s-2)">
+        <div>
+          <h1 className="p-name margin:0">{copy.name}</h1>
+          <strong className="p-category">{copy.job}</strong>
         </div>
-      </Sidebar>
+        <div>
+          <a href="mailto:arthropodSeven@pm.me">arthropodSeven@pm.me</a>
+        </div>
+      </Switcher>
     </header>
     <main>
       <div className="p-summary">
