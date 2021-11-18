@@ -62,7 +62,10 @@ const Resume = () => (
     </header>
     <main>
       <div className="p-summary">
-        <p>{copy.summary}</p>
+        <p>
+          I'm a software engineer, and my <em className="glow">métier</em> is
+          building websites.
+        </p>
         <p>
           I go to great pains in building <em>truly responsive</em> websites
           which present a unique and consistent voice on any device, for any
