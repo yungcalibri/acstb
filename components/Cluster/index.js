@@ -25,7 +25,6 @@ const Cluster = (props) => {
 
   useEffect(() => {
     if (role === "list") {
-      console.debug("validate");
       validateChildren(children);
     }
   }, [children]);
@@ -51,10 +50,9 @@ const Cluster = (props) => {
 const isListItemElement = (child) =>
   child?.type === "li" || child?.props?.role === "listitem";
 const validateChildren = (children) => {
-  const childrenAreListItems =
-    Children.map(children, (child) => isListItemElement(child)) || [];
-  console.debug(childrenAreListItems);
-  const someInvalidChild = childrenAreListItems.some((a) => !a);
+  const someInvalidChild = (
+    Children.map(children, (child) => isListItemElement(child)) || []
+  ).some((a) => !a);
   if (someInvalidChild) {
     throw new Error(`Cluster's children are not all listitems`);
   }
