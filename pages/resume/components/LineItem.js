@@ -37,7 +37,7 @@ const LineItem = (props) => {
           </strong>
         </small>
       </div>
-      <Box padding="var(--s-2)" borderWidth="var(--s-4)">
+      <Box padding="var(--s-1)" borderWidth="var(--s-4)">
         <div className="p-location h-card">
           <a className="u-url p-name" href={url}>
             <strong>{mainHeading}</strong>
