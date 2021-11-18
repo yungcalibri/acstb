@@ -1,3 +1,7 @@
+.skill {
+  display: flex;
+  flex-direction: row;
+}
 .skill > * {
   padding-block: var(--s-2);
   padding-inline: var(--s-1);

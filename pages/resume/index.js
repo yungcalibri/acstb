@@ -73,7 +73,7 @@ const Resume = () => (
       {/** @todo deduplicate these skills clusters. Ideally we'd like to use
        ** the same one, whether print or screen display. */}
       <h2>Skills</h2>
-      <Cluster element="dl" space="var(--s0)" className="print:none">
+      <Cluster className="print:none">
         {skills.map(([name, years]) => (
           <Box
             borderWidth="var(--s-4)"
