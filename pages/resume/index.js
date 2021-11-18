@@ -95,6 +95,25 @@ const Resume = () => (
       <h2>Experience</h2>
       <Stack space="var(--s0)" asList className="max-width:var(--measure)">
         <LineItem
+          start="2021"
+          url="https://useshortcut.com/"
+          mainHeading="Software Engineer II at Shortcut (née Clubhouse)"
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">Remote</span>
+              {", "}
+              <span className="p-region">New York</span>
+              {", "}
+              <span className="p-country-name">United States</span>
+            </div>
+          }>
+          <p>
+            I'm currently a frontend software engineer at Shortcut, where I work
+            on building and improving the key features that developers and
+            product managers love.
+          </p>
+        </LineItem>
+        <LineItem
           start="2019"
           end="2021"
           url="https://aedit.com/"
