@@ -33,11 +33,16 @@ main > :--heading {
   border-color: currentColor;
   border-radius: 50%;
 
-  & > :only-child {
+  & > .target {
     width: var(--s-1);
     height: var(--s-1);
     background-color: currentColor;
     border-radius: inherit;
+
+    animation: 2s ease-in 1s infinite alternate pulse;
+    @media (prefers-reduced-motion) {
+      animation: none;
+    }
   }
 }
 
