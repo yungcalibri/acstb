@@ -98,7 +98,7 @@ const Resume = () => (
         <LineItem
           start="2021"
           toPresent
-          url="https://useshortcut.com/"
+          url="https://shortcut.com/"
           mainHeading="Software Engineer II at Shortcut (née Clubhouse)"
           location={
             <div className="p-adr h-adr">
