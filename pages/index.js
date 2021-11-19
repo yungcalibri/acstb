@@ -35,17 +35,17 @@ const Home = () => (
             </p>
             <p className="p-note">
               My friends know me as a man possessed of great hair and of adamant
-              opinions about modern history. My incredible wife knows me mainly
-              as a nuisance, and sometimes as a helpful presence around the
-              house.
+              opinions about modern history. My incredible wife, to whom I was
+              married in 2021, knows me mainly as a nuisance{`\u2014`}and
+              sometimes as a helpful presence around the house.
             </p>
             <p>
               By trade I'm a programmer. I primarily build websites with
               Next.js, but I take pleasure in solving interesting problems of
               any type.{" "}
               <Link href="/resume">
-                <a>My resume</a>{" "}
-              </Link>
+                <a>My resume</a>
+              </Link>{" "}
               is available.
             </p>
             <p>I can be reached at any of these links:</p>
