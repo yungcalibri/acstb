@@ -110,9 +110,9 @@ const Resume = () => (
             </div>
           }>
           <p>
-            I'm currently a frontend software engineer at Shortcut, where I work
-            on building and improving the key features that developers and
-            product managers love.
+            I'm currently a frontend software engineer at Shortcut. It's a team
+            of incredibly talented people who work hard to build something that
+            developers and product managers love.
           </p>
         </LineItem>
         <LineItem
