@@ -1,6 +1,11 @@
-.skill > * {
-  padding-block: var(--s-2);
-  padding-inline: var(--s-1);
+.skill {
+  display: flex;
+  flex-direction: row;
+
+  & > * {
+    padding-block: var(--s-2);
+    padding-inline: var(--s-1);
+  }
 }
 
 .print-skills {
@@ -12,13 +17,38 @@
 main > :--heading {
   break-after: avoid;
 }
+
+.live {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.live-icon {
+  width: var(--s0);
+  height: var(--s0);
+  background-color: currentColor;
+  border-color: var(--color-background);
+  border-radius: 50%;
+  border-width: var(--s-3);
+  border-style: double;
+
+  animation: 2s ease-in 1s infinite alternate pulse;
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
+  @media print {
+    animation: none;
+  }
+}
+
 .line-item {
   break-inside: avoid;
 }
+
 .line-item > :first-child {
   flex-basis: content;
 
-  padding: calc(var(--s-4) + var(--s-1));
+  padding: calc(var(--s-1));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,9 +59,15 @@ main > :--heading {
 
     padding-inline: var(--s-3);
   }
+
   & > *:first-child {
     border-bottom: var(--s-4) solid currentColor;
   }
+
+  & > .live:first-child {
+    border-bottom: none;
+  }
+
   & > *:last-child {
     border-top: var(--s-4) solid currentColor;
   }
@@ -41,9 +77,7 @@ main > :--heading {
 
     /* Such that the full height of these flex items works out to roughly
      * the full height of their container, divided by 1.62 */
-    flex-basis: calc(
-      (100% - ((2 * var(--s-2) + (2 * var(--s-4) + 1.5em)))) / 1.62
-    );
+    flex-basis: calc((100% - (((2 * var(--s-1) + 1.5em)))) / 1.62);
 
     background: repeating-linear-gradient(
       to bottom,

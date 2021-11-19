@@ -5,7 +5,7 @@ import Cluster from "components/Cluster";
 import Stack from "components/Stack";
 import Icon from "components/Icon";
 import LineItem from "./components/LineItem";
-import Sidebar from "components/Sidebar";
+import Switcher from "components/Switcher";
 
 const copy = {
   name: "Andrew Stebenné",
@@ -46,23 +46,22 @@ const Resume = () => (
       />
     </Head>
     <header>
-      <Sidebar space="var(--s-2)">
-        <div className="align-items:center">
-          <div>
-            <h1 className="p-name margin:0">{copy.name}</h1>
-            <strong className="p-category">{copy.job}</strong>
-          </div>
-          <div className="text-align:right">
-            <div>
-              <a href="mailto:arthropodSeven@pm.me">arthropodSeven@pm.me</a>
-            </div>
-          </div>
+      <Switcher space="var(--s-2)">
+        <div>
+          <h1 className="p-name margin:0">{copy.name}</h1>
+          <strong className="p-category">{copy.job}</strong>
         </div>
-      </Sidebar>
+        <div>
+          <a href="mailto:arthropodSeven@pm.me">arthropodSeven@pm.me</a>
+        </div>
+      </Switcher>
     </header>
     <main>
       <div className="p-summary">
-        <p>{copy.summary}</p>
+        <p>
+          I'm a software engineer, and my <em className="glow">métier</em> is
+          building websites.
+        </p>
         <p>
           I go to great pains in building <em>truly responsive</em> websites
           which present a unique and consistent voice on any device, for any
@@ -70,8 +69,10 @@ const Resume = () => (
         </p>
       </div>
 
+      {/** @todo deduplicate these skills clusters. Ideally we'd like to use
+       ** the same one, whether print or screen display. */}
       <h2>Skills</h2>
-      <Cluster element="dl" space="var(--s0)" className="print:none">
+      <Cluster className="print:none">
         {skills.map(([name, years]) => (
           <Box
             borderWidth="var(--s-4)"
@@ -94,6 +95,26 @@ const Resume = () => (
 
       <h2>Experience</h2>
       <Stack space="var(--s0)" asList className="max-width:var(--measure)">
+        <LineItem
+          start="2021"
+          toPresent
+          url="https://shortcut.com/"
+          mainHeading="Software Engineer II at Shortcut (née Clubhouse)"
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">Remote</span>
+              {", "}
+              <span className="p-region">New York</span>
+              {", "}
+              <span className="p-country-name">United States</span>
+            </div>
+          }>
+          <p>
+            I'm currently a frontend software engineer at Shortcut, where I work
+            on building and improving the key features that developers and
+            product managers love.
+          </p>
+        </LineItem>
         <LineItem
           start="2019"
           end="2021"

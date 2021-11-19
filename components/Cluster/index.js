@@ -1,16 +1,11 @@
-import React from "react";
-import { Children, cloneElement, isValidElement } from "react";
+import { Children, useEffect } from "react";
 import { propStyles } from "util/style";
-
-const MemoEl = ({ Element = "div", ...rest }) => <Element {...rest} />;
-const El = React.memo(MemoEl);
 
 /**
  * @typedef {Object} ClusterProps
  * @prop {string=} align - Value of `align-items`
  * @prop {string=} justify - Value of `justify-content`
  * @prop {string=} space - Padding between items in cluster
- * @prop {boolean=} asList - Mark up the cluster as a list
  */
 
 /**
@@ -20,31 +15,25 @@ const El = React.memo(MemoEl);
 const Cluster = (props) => {
   const {
     align,
-    asList,
     children,
     className = "",
-    element = "div",
     justify,
     space,
     role,
     ...rest
   } = props;
 
+  useEffect(() => {
+    if (role === "list") {
+      validateChildren(children);
+    }
+  }, [children]);
+
   const myClass = `cluster ${className}`;
 
   return (
-    <El
-      Element={element}
-      className={myClass}
-      role={asList ? "list" : role}
-      {...rest}>
-      {asList
-        ? Children.map(children, (child) =>
-            isValidElement(child)
-              ? cloneElement(child, { role: "listitem" })
-              : child
-          )
-        : children}
+    <div className={myClass} role={role} {...rest}>
+      {children}
       <style jsx>{`
         .cluster {
           ${propStyles(
@@ -54,8 +43,19 @@ const Cluster = (props) => {
           )}
         }
       `}</style>
-    </El>
+    </div>
   );
+};
+
+const isListItemElement = (child) =>
+  child?.type === "li" || child?.props?.role === "listitem";
+const validateChildren = (children) => {
+  const someInvalidChild = (
+    Children.map(children, (child) => isListItemElement(child)) || []
+  ).some((a) => !a);
+  if (someInvalidChild) {
+    throw new Error(`Cluster's children are not all listitems`);
+  }
 };
 
 export default Cluster;

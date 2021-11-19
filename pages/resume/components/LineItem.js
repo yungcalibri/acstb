@@ -1,4 +1,5 @@
 import Box from "components/Box";
+import Center from "components/Center";
 
 const LineItem = (props) => {
   const {
@@ -8,6 +9,7 @@ const LineItem = (props) => {
     startDisplay,
     end,
     endDisplay,
+    toPresent = false,
     url,
     mainHeading,
     location,
@@ -16,13 +18,17 @@ const LineItem = (props) => {
   return (
     <div className={`${className} line-item h-event display:flex`}>
       <div className="invert">
-        <small>
-          <strong>
-            <time className="dt-end" dateTime={end}>
-              {endDisplay || end}
-            </time>
-          </strong>
-        </small>
+        {toPresent ? (
+          <Live />
+        ) : (
+          <small>
+            <strong>
+              <time className="dt-end" dateTime={end}>
+                {endDisplay || end}
+              </time>
+            </strong>
+          </small>
+        )}
         <b className="dotted-line" />
         <small>
           <strong>
@@ -32,7 +38,7 @@ const LineItem = (props) => {
           </strong>
         </small>
       </div>
-      <Box padding="var(--s-2)" borderWidth="var(--s-4)">
+      <Box padding="var(--s-1)" borderWidth="var(--s-4)">
         <div className="p-location h-card">
           <a className="u-url p-name" href={url}>
             <strong>{mainHeading}</strong>
@@ -44,5 +50,11 @@ const LineItem = (props) => {
     </div>
   );
 };
+
+const Live = () => (
+  <div intrinsic className="live">
+    <div className="live-icon"></div>
+  </div>
+);
 
 export default LineItem;

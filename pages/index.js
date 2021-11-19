@@ -34,8 +34,10 @@ const Home = () => (
               .
             </p>
             <p className="p-note">
-              My friends know me as a quiet person, possessed of great hair and
-              of adamant opinions about modern history.
+              My friends know me as a man possessed of great hair and of adamant
+              opinions about modern history. My incredible wife knows me mainly
+              as a nuisance, and sometimes as a helpful presence around the
+              house.
             </p>
             <p>
               By trade I'm a programmer. I primarily build websites with
@@ -70,7 +72,11 @@ const Home = () => (
           </div>
         </div>
       </Sidebar>
-      <p>There will be blog posts here soon.</p>
+      <p>
+        I'm still working out what I'd be interested in blogging about here, but
+        for the one person who's paying attention, trust that it's still on my
+        mind. 🙂
+      </p>
     </Cover>
   </article>
 );
