@@ -26,25 +26,18 @@ main > :--heading {
 .live-icon {
   width: var(--s0);
   height: var(--s0);
-  border-width: calc(var(--s-2) - var(--s-3));
-  border-style: solid;
+  background-color: currentColor;
   border-color: var(--color-background);
-  box-shadow: 0 0 0 calc(var(--s-3) - var(--s-4)) currentColor;
   border-radius: 50%;
+  border-width: var(--s-3);
+  border-style: double;
 
-  & > .target {
-    width: 100%;
-    height: 100%;
-    background-color: currentColor;
-    border-radius: inherit;
-
-    animation: 2s ease-in 1s infinite alternate pulse;
-    @media (prefers-reduced-motion) {
-      animation: none;
-    }
-    @media print {
-      animation: none;
-    }
+  animation: 2s ease-in 1s infinite alternate pulse;
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
+  @media print {
+    animation: none;
   }
 }
 
