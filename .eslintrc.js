@@ -4,7 +4,12 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:cypress/recommended",
+    "prettier",
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -12,7 +17,6 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react"],
   settings: {
     react: {
       version: "detect",
@@ -33,5 +37,15 @@ module.exports = {
         selfClosing: "line-aligned",
       },
     ],
+    "cypress/no-unnecessary-waiting": 0,
   },
+
+  overrides: [
+    {
+      files: "cypress/integration/examples/*",
+      rules: {
+        "no-unused-vars": 0,
+      },
+    },
+  ],
 };
