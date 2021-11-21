@@ -1,5 +1,4 @@
 import Box from "components/Box";
-import Center from "components/Center";
 
 const LineItem = (props) => {
   const {
