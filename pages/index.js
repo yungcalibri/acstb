@@ -35,9 +35,10 @@ const Home = () => (
             </p>
             <p className="p-note">
               My friends know me as a man possessed of great hair and of adamant
-              opinions about modern history. My incredible wife, to whom I was
-              married in 2021, knows me mainly as a nuisance{`\u2014`}and
-              sometimes as a helpful presence around the house.
+              opinions about modern history. My incredible{" "}
+              <em className="glow">ingénue</em> wife knows me mainly as a
+              nuisance{`\u2014`}and sometimes as a helpful presence around the
+              house.
             </p>
             <p>
               By trade I'm a programmer. I primarily build websites with
