@@ -1,10 +1,10 @@
 import styles from "./avatar.module.css";
 
 const sources = [
-  ["/images/me_qtr_115.jpg", "115w"],
-  ["/images/me_half_230.jpg", "230w"],
-  ["/images/me_three_qtr_345.jpg", "345w"],
-  // ["/images/me_full_460.jpg", "460w"],
+  ["/images/me.jpg", "115w"],
+  ["/images/me/one_half_230.jpg", "230w"],
+  ["/images/me/three_qtr_345.jpg", "345w"],
+  ["/images/me/full_460.jpg", "460w"],
 ];
 const srcSet = sources.map((pair) => pair.join(" ")).join(", ");
 
@@ -16,13 +16,12 @@ const Avatar = (props) => {
   return (
     <img
       className={myClass}
-      alt="An iridescent golden beetle on a fingertip"
+      alt="An iridescent golden beetle on a fingertip: my avatar."
       height="230px"
       width="230px"
       srcSet={srcSet}
       sizes="(min-width: 160ch) 345w, 230px"
-      src="/images/me_three_qtr_345.jpg"
-      loading="lazy"
+      src="/images/me/full_460.jpg"
       {...rest}
     />
   );
