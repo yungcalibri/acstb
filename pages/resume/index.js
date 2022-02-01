@@ -111,8 +111,8 @@ const Resume = () => (
           }>
           <p>
             I'm currently a frontend software engineer at Shortcut. It's a team
-            of incredibly talented people who work hard to build something that
-            developers and product managers love.
+            of incredibly talented people, all of whom are dedicated to building
+            task tracking software that developers and product managers love.
           </p>
         </LineItem>
         <LineItem
