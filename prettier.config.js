@@ -1,3 +1,3 @@
 module.exports = {
-  jsxBracketSameLine: true,
+  bracketSameLine: true,
 };
