@@ -37,7 +37,15 @@ main > :--heading {
     animation: none;
   }
   @media print {
-    animation: none;
+    display: none;
+  }
+}
+.live-text {
+  display: none;
+  border-bottom: var(--s-4) solid currentColor;
+  padding-inline: var(--s-3);
+  @media print {
+    display: initial;
   }
 }
 
@@ -86,5 +94,8 @@ main > :--heading {
       transparent var(--s-1),
       transparent var(--s0)
     );
+    @media print {
+      background: currentColor;
+    }
   }
 }

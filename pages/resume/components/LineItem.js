@@ -51,9 +51,14 @@ const LineItem = (props) => {
 };
 
 const Live = () => (
-  <div intrinsic className="live">
-    <div className="live-icon"></div>
-  </div>
+  <>
+    <div className="live">
+      <div className="live-icon"></div>
+    </div>
+    <small className="live-text">
+      <strong>Now</strong>
+    </small>
+  </>
 );
 
 export default LineItem;
