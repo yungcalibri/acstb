@@ -27,7 +27,7 @@ const Cluster = (props) => {
     if (role === "list") {
       validateChildren(children);
     }
-  }, [children]);
+  }, [children, role]);
 
   const myClass = `cluster ${className}`;
 
