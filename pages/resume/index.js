@@ -97,7 +97,7 @@ const Resume = () => (
       <Stack space="var(--s0)" asList className="max-width:var(--measure)">
         <LineItem
           start="2021"
-          toPresent
+          end="2022"
           url="https://shortcut.com/"
           mainHeading="Software Engineer II at Shortcut (née Clubhouse)"
           location={
@@ -110,9 +110,10 @@ const Resume = () => (
             </div>
           }>
           <p>
-            I'm currently a frontend software engineer at Shortcut. It's a team
-            of incredibly talented people, all of whom are dedicated to building
-            task tracking software that developers and product managers love.
+            Most recently, I worked as a frontend software engineer at Shortcut.
+            It's a team of incredibly talented people, all of whom are dedicated
+            to building task tracking software that developers and product
+            managers love.
           </p>
         </LineItem>
         <LineItem
