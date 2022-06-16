@@ -28,7 +28,7 @@
     "vercel": "^24.2.5"
   },
   "devDependencies": {
-    "@types/node": "^17.0.38",
+    "@types/node": "^18.0.0",
     "@types/react": "^18.0.9",
     "cypress": "^10.0.1",
     "eslint": "^8.16.0",
