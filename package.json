@@ -25,7 +25,7 @@
     "postcss-preset-env": "^7.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "vercel": "^24.2.5"
+    "vercel": "^25.2.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.38",
