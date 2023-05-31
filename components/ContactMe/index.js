@@ -19,11 +19,11 @@ const ContactMe = (props) => {
       </Box>
       <Box className={styles.contactCard} borderWidth="var(--s-4)">
         <a
-          href="mailto:me@acstb.name"
+          href="mailto:acstb@pm.me"
           rel="me external"
           className="padding:0 margin:0">
           <Icon iconId="envelope">
-            <span className="u-email">me@acstb.name</span>
+            <span className="u-email">acstb@pm.me</span>
           </Icon>
         </a>
       </Box>
