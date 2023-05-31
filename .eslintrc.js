@@ -23,6 +23,7 @@ module.exports = {
     },
   },
   rules: {
+    "react/no-unknown-property": 0,
     "no-unused-vars": [
       1,
       { argsIgnorePattern: "^_", ignoreRestSiblings: true },
