@@ -16,14 +16,14 @@ const copy = {
 
 const skills = [
   ["Next.js", 3],
-  ["React.js", 6],
-  ["JavaScript", 6],
+  ["React.js", 8],
+  ["JavaScript", 8],
   ["CI/CD", 2],
   ["Node.js", 6],
-  ["HTML", 6],
-  ["CSS", 6],
-  ["Git", 6],
-  ["GitHub", 6],
+  ["HTML", 8],
+  ["CSS", 8],
+  ["Git", 8],
+  ["GitHub", 8],
   ["Project Mgmt.", 1],
   ["Vim", 10],
   ["REST APIs", 6],
@@ -96,6 +96,35 @@ const Resume = () => (
       <h2>Experience</h2>
       <Stack space="var(--s0)" asList className="max-width:var(--measure)">
         <LineItem
+          start="2022"
+          end="2023"
+          url="https://tirrel.io/"
+          mainHeading="Software Engiener at Tirrel Corp."
+          location={
+            <div className="p-adr h-adr">
+              <span className="p-locality">Remote</span>
+              {", "}
+              <span className="p-region">San Francisco</span>
+              {", "}
+              <span className="p-country-name">United States</span>
+            </div>
+          }>
+          <p>
+            At Tirrel Corp., I worked together with a small, tight-knit team to
+            deliver features on a number of unique products, and helped build an
+            upstart content company in a novel technical and social environment.
+            Together we built the first payment integration in this market
+            segment, and launched the&nbsp;
+            <a
+              href="https://tirrel.io/scene/index.html"
+              target="_blank"
+              rel="noopener noreferrer">
+              Scene
+            </a>
+            &nbsp;desktop app.
+          </p>
+        </LineItem>
+        <LineItem
           start="2021"
           end="2022"
           url="https://shortcut.com/"
@@ -110,10 +139,13 @@ const Resume = () => (
             </div>
           }>
           <p>
-            Most recently, I worked as a frontend software engineer at Shortcut.
-            It's a team of incredibly talented people, all of whom are dedicated
-            to building task tracking software that developers and product
-            managers love.
+            As a frontend software engineer at Shortcut, I was blessed to work
+            with a team of incredibly talented people, all dedicated to building
+            task tracking software that developers and product managers love. My
+            duties included updating outdated frontend code to work with
+            paradigmatic, modern React, shipping new features like custom field
+            types, and collaborating with an extremely talented team of Clojure
+            developers to seamlessly integrate backend and frontend.
           </p>
         </LineItem>
         <LineItem
