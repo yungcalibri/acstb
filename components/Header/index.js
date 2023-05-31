@@ -9,15 +9,15 @@ const Header = () => (
       <nav id="root-nav">
         <Cluster role="list">
           {/** @todo fix duplicated role=listitem here, conflict with Cluster validation */}
-          <Link href="/" role="listitem">
-            <a id="home-link" role="listitem">
-              <Icon iconId="home" head>
-                acstb.name
-              </Icon>
-            </a>
+          <Link href="/" role="listitem" id="home-link">
+
+            <Icon iconId="home" head>
+              acstb.name
+            </Icon>
+
           </Link>
           <Link href="/resume" role="listitem">
-            <a role="listitem">Resume</a>
+            Resume
           </Link>
         </Cluster>
       </nav>

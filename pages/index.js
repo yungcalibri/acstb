@@ -28,8 +28,8 @@ const Home = () => (
           <div>
             <p>
               This is my website,{" "}
-              <Link href="/">
-                <a className="u-url">acstb.name</a>
+              <Link href="/" className="u-url">
+                acstb.name
               </Link>
               .
             </p>
@@ -45,7 +45,7 @@ const Home = () => (
               Next.js, but I take pleasure in solving interesting problems of
               any type.{" "}
               <Link href="/resume">
-                <a>My resume</a>
+                My resume
               </Link>{" "}
               is available.
             </p>
