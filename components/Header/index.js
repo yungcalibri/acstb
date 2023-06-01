@@ -12,7 +12,7 @@ const Header = () => (
           <Link href="/" role="listitem" id="home-link">
 
             <Icon iconId="home" head>
-              acstb.name
+              acstb
             </Icon>
 
           </Link>
