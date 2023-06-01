@@ -112,16 +112,9 @@ const Resume = () => (
           <p>
             At Tirrel Corp., I worked together with a small, tight-knit team to
             deliver features on a number of unique products, and helped build an
-            upstart content company in a novel technical and social environment.
-            Together we built the first payment integration in this market
-            segment, and launched the&nbsp;
-            <a
-              href="https://tirrel.io/scene/index.html"
-              target="_blank"
-              rel="noopener noreferrer">
-              Scene
-            </a>
-            &nbsp;desktop app.
+            upstart content company in a narrow emerging market. During this
+            time, we built the first payment integration in our market segment,
+            and launched the Scene desktop app.
           </p>
         </LineItem>
         <LineItem
