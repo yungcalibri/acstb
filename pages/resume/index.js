@@ -99,7 +99,7 @@ const Resume = () => (
           start="2022"
           end="2023"
           url="https://tirrel.io/"
-          mainHeading="Software Engiener at Tirrel Corp."
+          mainHeading="Software Engineer at Tirrel Corp."
           location={
             <div className="p-adr h-adr">
               <span className="p-locality">Remote</span>
