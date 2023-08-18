@@ -7,15 +7,15 @@
     "vdev": "vercel dev",
     "build": "next build",
     "start": "next start",
-    "fix": "yarn pretty.fix && yarn lint.js.fix && yarn lint.style.fix",
+    "fix": "npm run pretty.fix && npm run lint.js.fix && npm run lint.style.fix",
     "pretty": "prettier --check ./",
     "pretty.fix": "prettier --write ./",
     "lint.js": "eslint --cache ./",
     "lint.js.fix": "eslint --cache --fix ./",
     "lint.style": "stylelint ./**/*.css",
     "lint.style.fix": "stylelint --fix ./**/*.css",
-    "lint": "yarn lint.js && yarn lint.style",
-    "lint.fix": "yarn lint.js.fix && yarn lint.style.fix"
+    "lint": "npm run lint.js && npm run lint.style",
+    "lint.fix": "npm run lint.js.fix && npm run lint.style.fix"
   },
   "dependencies": {
     "lodash": "^4.17.21",
