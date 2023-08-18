@@ -87,15 +87,16 @@ main > :--heading {
      * the full height of their container, divided by 1.62 */
     flex-basis: calc((100% - (((2 * var(--s-1) + 1.5em)))) / 1.62);
 
-    background: repeating-linear-gradient(
-      to bottom,
-      currentColor 0,
-      currentColor var(--s-1),
-      transparent var(--s-1),
-      transparent var(--s0)
-    );
-    @media print {
-      background: currentColor;
-    }
+    background: black;
+
+    /* @media screen { */
+      background: repeating-linear-gradient(
+        to bottom,
+        currentColor 0,
+        currentColor var(--s-1),
+        transparent var(--s-1),
+        transparent var(--s0)
+      );
+    /* } */
   }
 }

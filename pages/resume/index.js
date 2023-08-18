@@ -11,7 +11,7 @@ const copy = {
   name: "Andrew Stebenné",
   job: "Web Developer",
   title: "Andrew Stebenné - Web Developer",
-  summary: "I'm a software engineer, and my forté is building websites.",
+  summary: "I'm a software engineer, and my métier is building websites.",
 };
 
 const skills = [
@@ -63,38 +63,36 @@ const Resume = () => (
           building websites.
         </p>
         <p>
-          I go to great pains in building <em>truly responsive</em> websites
-          which present a unique and consistent voice on any device, for any
-          reader.
+          I take great pride in building <em className="glow">truly responsive</em> websites which present a
+          unique and consistent voice on any device, for any reader.
         </p>
       </div>
 
       {/** @todo deduplicate these skills clusters. Ideally we'd like to use
        ** the same one, whether print or screen display. */}
       <h2>Skills</h2>
-      <Cluster className="print:none">
-        {skills.map(([name, years]) => (
-          <Box
-            borderWidth="var(--s-4)"
-            padding="0"
-            className="skill"
-            key={name}>
-            <dt className="p-skill">{name}</dt>
-            {years && <dd className="invert">{years}yr.</dd>}
-          </Box>
-        ))}
-      </Cluster>
-      <dl className="print-skills screen:none">
-        {sortedSkills.map(([name, years]) => (
-          <div key={name}>
-            <dt className="p-skill">{name}</dt>
-            <dd>{years}yr.</dd>
-          </div>
-        ))}
-      </dl>
+      <p>
+        I've worked extensively with React.js, Node, Git, and Next.js throughout my
+        career, delivering value for modern web applications in many different
+        verticals. REST APIs are second nature; my thoughts are well-formed HTML, and
+        I'll defend CSS till my dying breath, however ugly it is.
+      </p>
+      <p>
+        Lately, I've been using my free time to learn&nbsp;
+        <a href="https://htmx.org" target="_blank" rel="noopener noreferrer">
+          HTMX
+        </a>
+        &nbsp;and&nbsp;
+        <a
+          href="https://developers.urbit.org/overview/hoon"
+          target="_blank"
+          rel="noopener noreferrer">
+          Hoon
+        </a>, and have found both of these extremely rewarding.
+      </p>
 
       <h2>Experience</h2>
-      <Stack space="var(--s0)" asList className="max-width:var(--measure)">
+      <Stack space="var(--s0)" asList>
         <LineItem
           start="2022"
           end="2023"
@@ -111,10 +109,11 @@ const Resume = () => (
           }>
           <p>
             At Tirrel Corp., I worked together with a small, tight-knit team to
-            deliver features on a number of unique products, and helped build an
-            upstart content company in a narrow emerging market. During this
-            time, we built the first payment integration in our market segment,
-            and launched the Scene desktop app.
+            ship the first bank-card payment integration in the emerging Urbit ecosystem,
+            which we used to accept payment for merchandise at the Assembly Miami
+            conference in October of 2022. We also created the Scene desktop app, a new
+            and convenient interface for Urbit users with tight integration with Tirrel's
+            Urbit hosting service, driving a 20% increase in hosting subscriptions.
           </p>
         </LineItem>
         <LineItem
@@ -134,15 +133,16 @@ const Resume = () => (
           <p>
             As a frontend software engineer at Shortcut, I was blessed to work
             with a team of incredibly talented people, all dedicated to building
-            task tracking software that developers and product managers love. My
-            duties included updating outdated frontend code to work with
-            paradigmatic, modern React, shipping new features like custom field
-            types, and collaborating with an extremely talented team of Clojure
-            developers to seamlessly integrate backend and frontend.
+            task tracking software that developers and product managers love.
+            I helped modernize an aging data visualization system, giving subscribers
+            clearer insight into the resources being dedicated to specific initiatives
+            and projects. I replaced outdated frontend code with paradigmatic, modern
+            React, collaborating closely with a world-class team of Clojure backend
+            engineers, to dramatically improve customer experience and client retention.
           </p>
         </LineItem>
         <LineItem
-          start="2019"
+          start="2018"
           end="2021"
           url="https://aedit.com/"
           mainHeading="Senior Software Engineer at AEDIT"
@@ -156,29 +156,15 @@ const Resume = () => (
             </div>
           }>
           <p>
-            Worked one-on-one with designers and stakeholders to ship new
-            features throughout AEDIT's Web presence, including a new editorial
-            blog platform, updated subscriber profiles, and a full,
-            HIPAA-compliant video chat system.
-          </p>
-        </LineItem>
-        <LineItem
-          start="2018"
-          end="2019"
-          url="https://domio.com/"
-          mainHeading="Software Engineer at Domio"
-          location={
-            <div className="p-adr h-adr">
-              <span className="p-locality">New York</span>
-              {", "}
-              <span className="p-region">New York</span>
-              {", "}
-              <span className="p-country-name">United States</span>
-            </div>
-          }>
-          <p>
-            Contributed new features and improvements to Domio's primary hotel
-            booking product.
+            At AEDIT I worked one-on-one with designers and stakeholders to architect,
+            implement, and ship new features throughout the company's Web presence.
+            I implemented a top-to-bottom redesign of the company's editorial blog
+            platform, driving a 2-fold increase in search-inbound client traffic.
+            Improved Web profiles for subscribed providers helped AEDIT's clients to speak
+            authoritatively about their practices, share customer testimonials, and drive
+            bookings in a competitive market. And a full-featured, HIPAA-compliant video
+            chat app put those providers in direct contact with prospective patients,
+            all helping to make the brand a marquee name in the cosmetic surgery industry.
           </p>
         </LineItem>
         <LineItem
@@ -196,56 +182,10 @@ const Resume = () => (
             </div>
           }>
           <p>
-            Worked closely with a small team to update XOJet's internal Web
-            apps, enabling their booking team to price even the most complex
-            flights faster than ever before.
-          </p>
-        </LineItem>
-      </Stack>
-
-      <h2>Education</h2>
-      <Stack space="var(--s1)" asList className="max-width:var(--measure)">
-        <LineItem
-          className="p-education"
-          start="2012"
-          end="2017"
-          url="https://nau.edu/"
-          mainHeading="Northern Arizona University"
-          location={
-            <div className="p-adr h-adr">
-              <span className="p-locality">Flagstaff</span>,{" "}
-              <span className="p-region">Arizona</span>,{" "}
-              <span className="p-country-name">United States</span>
-            </div>
-          }>
-          <p>
-            Two courses of study:{" "}
-            <span className="p-name">
-              Computer Science and Comparative Cultural Studies
-            </span>
-            .
-          </p>
-        </LineItem>
-
-        <LineItem
-          className="p-education"
-          start="2015"
-          end="2016"
-          url="http://english.cqupt.edu.cn/"
-          mainHeading="Chongqing University of Posts and Telecommunications "
-          location={
-            <div className="p-adr h-adr">
-              <span className="p-locality">Nanshan</span>,{" "}
-              <span className="p-region">Chongqing</span>,{" "}
-              <span className="p-country-name">China</span>
-            </div>
-          }>
-          <p>
-            Exchange program:{" "}
-            <span className="p-name">
-              Chinese Language and Culture, and Computer Science
-            </span>
-            .
+            I worked closely with XOJet's Revenue Management team to update a suite of
+            internal Web apps. These changes significantly multiplied the RM team's
+            productivity, expediting the quoting and confirmation of complex flight
+            itineraries and leading to a 15% increase in flight revenue.
           </p>
         </LineItem>
       </Stack>
