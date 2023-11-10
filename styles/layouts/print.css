@@ -27,4 +27,9 @@
     text-decoration: none;
     color: var(--color-text) !important;
   }
+
+  em.glow {
+    text-shadow: none;
+    text-decoration: underline;
+  }
 }

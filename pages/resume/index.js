@@ -94,8 +94,8 @@ const Resume = () => (
       <h2>Experience</h2>
       <Stack space="var(--s0)" asList>
         <LineItem
-          start="2022"
-          end="2023"
+          start="May 2022"
+          end="Feb 2023"
           url="https://tirrel.io/"
           mainHeading="Software Engineer at Tirrel Corp."
           location={
@@ -117,8 +117,8 @@ const Resume = () => (
           </p>
         </LineItem>
         <LineItem
-          start="2021"
-          end="2022"
+          start="Jun 2021"
+          end="Mar 2022"
           url="https://shortcut.com/"
           mainHeading="Software Engineer II at Shortcut (née Clubhouse)"
           location={
@@ -142,8 +142,8 @@ const Resume = () => (
           </p>
         </LineItem>
         <LineItem
-          start="2018"
-          end="2021"
+          start="Jun 2019"
+          end="Mar 2021"
           url="https://aedit.com/"
           mainHeading="Senior Software Engineer at AEDIT"
           location={
@@ -168,8 +168,8 @@ const Resume = () => (
           </p>
         </LineItem>
         <LineItem
-          start="2015"
-          end="2018"
+          start="Oct 2015"
+          end="Feb 2018"
           url="https://xojet.com/"
           mainHeading="Software Engineer at XOJet"
           location={

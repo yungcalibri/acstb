@@ -20,7 +20,7 @@ const LineItem = (props) => {
         {toPresent ? (
           <Live />
         ) : (
-          <small>
+          <small style={{textAlign: 'center'}}>
             <strong>
               <time className="dt-end" dateTime={end}>
                 {endDisplay || end}
@@ -29,7 +29,7 @@ const LineItem = (props) => {
           </small>
         )}
         <b className="dotted-line" />
-        <small>
+        <small style={{textAlign: 'center'}}>
           <strong>
             <time className="dt-start" dateTime={start}>
               {startDisplay || start}
